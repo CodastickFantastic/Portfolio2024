@@ -1,0 +1,31 @@
+@use "../helpers/variables.scss";
+
+
+
+.quote {
+    border: 1px solid variables.$purple;
+    border-radius: 4px;
+    padding: 12px 24px 17px;
+    position: relative;
+
+
+    .quote__text {
+        font-family: variables.$poppins;
+        font-size: 14px;
+        font-weight: 600;
+        color: variables.$purple;
+    }
+
+    .quote__author {
+        position: absolute;
+        bottom: -12px;
+        right: 16px;
+        font-family: variables.$poppins;
+        font-size: 14px;
+        font-weight: 600;
+        color: white;
+        background-color: variables.$purple;
+        padding: 2px 8px;
+        border-radius: 2px;
+    }
+}

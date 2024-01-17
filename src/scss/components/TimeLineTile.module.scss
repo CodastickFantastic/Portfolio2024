@@ -1,0 +1,65 @@
+@use "../helpers/variables.scss";
+
+.timeLineTile {
+    display: flex;
+
+    .left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            width: 64px;
+            height: auto;
+            object-fit: contain;
+        }
+    }
+
+    .right {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        .date {
+            font-family: variables.$nunito;
+            font-weight: 700;
+            font-size: 14px;
+            color: variables.$deep-purple;
+            margin-bottom: 3px;
+            line-height: 1;
+        }
+
+        .title {
+            font-family: variables.$nunito;
+            font-weight: 800;
+            font-size: 18px;
+            color: variables.$deep-purple;
+            margin-bottom: 6px;
+            line-height: 1;
+        }
+
+        .info {
+            font-family: variables.$nunito;
+            font-weight: 700;
+            font-size: 16px;
+            color: variables.$pink;
+            margin-bottom: 12px;
+            line-height: 1;
+        }
+
+        ul {
+            list-style: disc;
+            margin-left: 32px;
+
+            li {
+                font-family: variables.$nunito;
+                font-weight: 700;
+                font-size: 16px;
+                color: variables.$deep-purple;
+                margin-bottom: 6px;
+                line-height: 1;
+            }
+        }
+    }
+}

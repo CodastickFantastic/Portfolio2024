@@ -1,8 +1,20 @@
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import './globals.css'
+import "@/scss/helpers/reset.scss"
+import "@/scss/global.scss"
 
-const inter = Inter({ subsets: ['latin'] })
+import NavigationBar from '@/components/globalComponents/NavigationBar'
+import type { Metadata } from 'next'
+import { Nunito, Poppins } from 'next/font/google'
+
+export const nunito = Nunito({
+  subsets: ['latin'],
+  variable: "--font-nunito",
+})
+
+export const poppins = Poppins({
+  weight: ["400", "500", "600", "700"],
+  subsets: ['latin'],
+  variable: "--font-poppins",
+})
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -15,8 +27,13 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="pl" className={`${nunito.variable} ${poppins.variable}`}>
+      <body>
+        <header className="container">
+          <NavigationBar />
+        </header>
+        {children}
+      </body>
     </html>
   )
 }

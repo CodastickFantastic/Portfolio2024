@@ -1,0 +1,89 @@
+@use "helpers/variables";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+h1,
+h2 {
+    font-family: variables.$poppins;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: normal;
+    color: variables.$deep-purple;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    font-family: variables.$poppins;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: normal;
+    color: variables.$deep-purple;
+}
+
+.button {
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-family: variables.$poppins;
+    font-weight: 500;
+    font-size: 14px;
+    border: 1px solid variables.$deep-purple;
+    margin-right: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: variables.$deep-purple;
+    transition: all 0.3s ease-in-out;
+
+    &.active {
+        background-color: variables.$deep-purple;
+        color: white;
+
+        &:hover {
+            background-color: transparent;
+            color: variables.$deep-purple;
+        }
+    }
+
+    &:hover {
+        background-color: variables.$deep-purple;
+        color: white;
+    }
+
+    img {
+        width: 32px;
+        height: 32px;
+    }
+
+    &:has(img) {
+        max-height: 40px;
+        max-width: 60px;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            background: transparent;
+            transform: rotate(12deg);
+        }
+    }
+}
+
+.purple {
+    color: variables.$purple;
+}

@@ -1,0 +1,80 @@
+.navigationBar {
+    padding: 12px 24px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo {
+        height: 48px;
+        object-fit: contain;
+    }
+
+    .rightSection {
+        display: flex;
+        align-items: center;
+
+        .navLinks {
+            margin-right: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            .navItem {
+                padding: 6px 12px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .navItemText {
+                    font-family: var(--font-nunito);
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: normal;
+                    color: #2f1c6a;
+
+                    &.selected {
+                        color: #fc5185;
+                    }
+
+                    &:hover {
+                        color: #fc5185;
+
+                    }
+                }
+
+                &:has(.navItemText.selected) {
+                    border-bottom: 1px solid #fc5185;
+                }
+            }
+        }
+
+        .horizontalDivider {
+            width: 1px;
+            height: 18px;
+            background-color: #2f1c6a;
+            margin-right: 12px;
+        }
+
+        .divider {
+            width: 1px;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .flag {
+            width: 35px;
+            height: 24px;
+            cursor: pointer;
+
+            &:not(:last-of-type) {
+                margin-right: 12px;
+            }
+
+            &:hover {
+                transform: scale(0.85);
+            }
+        }
+    }
+}

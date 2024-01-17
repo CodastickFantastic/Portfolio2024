@@ -1,0 +1,103 @@
+@use "../helpers/variables.scss";
+
+.personCard {
+    width: 290px;
+    height: 360px;
+    position: relative;
+
+    .flexWrapperOne {
+        border-radius: 4px;
+        border: 1px solid red;
+        position: absolute;
+
+        .bgImg {
+            width: 100%;
+            height: 100%;
+            border-radius: 4px;
+        }
+
+        .person {
+            width: auto;
+            height: 324px;
+            object-fit: contain;
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+        }
+
+        .glyph {
+            width: 42px;
+            height: 42px;
+            background-color: red;
+            overflow: hidden;
+            border-radius: 2px;
+            padding: 3px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            left: 8px;
+            top: 8px;
+
+            .icon {
+                width: 32px;
+                height: 32px;
+            }
+        }
+    }
+
+    .showMoreBtn {
+        background-color: red;
+        overflow: hidden;
+        border-radius: 2px;
+        padding: 6px 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        right: 18px;
+        bottom: -10px;
+        cursor: pointer;
+
+
+        .showMoreBtnText {
+            font-family: variables.$nunito;
+            font-size: 14px;
+            font-weight: 600;
+            color: #fff;
+            margin-right: 6px;
+        }
+
+        .backIcon {
+            width: 7px;
+            height: 13px;
+        }
+    }
+
+
+
+    .label {
+        background-color: red;
+        overflow: hidden;
+        border-radius: 4px;
+        padding: 6px 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        right: -12px;
+        top: 18px;
+        width: 14px;
+        height: 140px;
+    }
+
+    .labelText {
+        font-family: variables.$nunito;
+        font-size: 14px;
+        font-weight: 600;
+        color: rgba(255, 255, 255, 1);
+        transform: rotate(90deg);
+    }
+
+}

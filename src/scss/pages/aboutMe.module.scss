@@ -1,0 +1,18 @@
+.heroSection {
+    display: flex;
+    justify-content: center;
+    column-gap: 150px;
+
+    .left {
+        margin-top: 48px;
+    }
+
+    .right {
+        margin-top: 124px;
+    }
+}
+
+.section {
+    margin-top: 90px;
+    width: 100%;
+}

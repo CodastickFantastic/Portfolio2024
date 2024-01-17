@@ -1,0 +1,102 @@
+@use "../helpers/variables";
+
+.processDescription {
+    p {
+        text-align: center;
+    }
+
+    .steps {
+        margin-top: 24px;
+        display: flex;
+        width: 100%;
+
+        .step {
+            width: 20%;
+            padding: 28px 14px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .triangle {
+                position: absolute;
+                top: 38px;
+                left: 0;
+                width: 0;
+                height: 0;
+                border-top: 36px solid transparent;
+                border-bottom: 36px solid transparent;
+                border-left: 36px solid green;
+
+            }
+
+            &:first-of-type {
+                background-color: #2F1C6A;
+            }
+
+            &:nth-of-type(2) {
+                background-color: #3C2487;
+
+                .triangle {
+                    border-left-color: #2F1C6A;
+                }
+            }
+
+            &:nth-of-type(3) {
+                background-color: #43269B;
+
+                .triangle {
+                    border-left-color: #3C2487;
+                }
+            }
+
+            &:nth-of-type(4) {
+                background-color: #5030B3;
+
+                .triangle {
+                    border-left-color: #43269B;
+                }
+            }
+
+            &:nth-of-type(5) {
+                background-color: #5C37CF;
+
+                .triangle {
+                    border-left-color: #5030B3;
+                }
+            }
+
+
+            .number {
+                font-family: variables.$nunito;
+                font-size: 150px;
+                line-height: 1;
+                color: white;
+            }
+
+            .title {
+                font-family: variables.$nunito;
+                font-size: 24px;
+                color: white;
+            }
+
+            .pointDescription {
+                margin-top: 24px;
+                font-size: 16px;
+                font-weight: 400;
+                color: white;
+                min-height: 75px;
+            }
+
+            img {
+                margin-top: 12px;
+                width: 64px;
+                height: 64px;
+                object-fit: contain;
+            }
+
+        }
+
+    }
+}
