@@ -1,39 +1,74 @@
+"use client"
+
 import styles from "@/scss/components/NavigationBar.module.scss"
 import Link from "next/link"
+import Image from "next/image"
+
+import Logo from "@/../public/img/logo.png"
+import burgerMenu from "@/../public/img/icons/menu.png"
+import Close from "@/../public/img/icons/close.png"
+import { useEffect, useRef } from "react"
 
 const NavigationBar = (): React.JSX.Element => {
+
+    const fixedElement = useRef<HTMLDivElement>(null)
+    const menuBtnRef = useRef<HTMLInputElement>(null)
+
+    useEffect(() => {
+        fixedElement.current?.addEventListener("touchmove", (e) => {
+            e.preventDefault()
+        }, false)
+
+        return () => {
+            fixedElement.current?.removeEventListener("touchmove", (e) => {
+                e.preventDefault()
+            }, false)
+        }
+    }, [])
+
+    const closeMenu = () => {
+        if (menuBtnRef.current) {
+            menuBtnRef.current.checked = false
+        }
+    }
+
 
     return (
         <nav className={styles.navigationBar}>
             <Link href="/">
-                <img
+                <Image
                     alt="Usługi IT - Jakub Wojtysiak - Logo"
                     className={styles.logo}
-                    src="https://static.overlay-tech.com/assets/7894b333-dfb1-416d-af8b-4732b45d0f1c.png"
+                    src={Logo}
                 />
             </Link>
-            <div className={styles.rightSection}>
+            <label htmlFor="burgerMenu" className={styles.burgerMenuLabel} >
+                <input type="checkbox" id="burgerMenu" className={styles.burgerMenuInput} ref={menuBtnRef} />
+                <Image src={burgerMenu} alt="Menu" className={styles.burgerMenu} />
+            </label>
+            <div className={styles.rightSection} ref={fixedElement}>
+                <Image src={Close} alt="Schowaj menu" className={styles.burgerMenuClose} onClick={closeMenu} />
                 <div className={styles.navLinks}>
                     <div className={styles.navItem}>
-                        <Link className={`${styles.navItemText} ${styles.selected}`} href="/">
+                        <Link className={`${styles.navItemText} ${styles.selected}`} href="/" onClick={closeMenu}>
                             Strona Główna
                         </Link>
                     </div>
                     <div className={styles.navItem}>
-                        <Link className={styles.navItemText} href="/o-mnie">O mnie</Link>
+                        <Link className={styles.navItemText} href="/o-mnie" onClick={closeMenu}>O mnie</Link>
                     </div>
                     <div className={styles.navItem}>
-                        <Link className={styles.navItemText} href="/#usługi" >Usługi</Link>
+                        <Link className={styles.navItemText} href="/#usługi" onClick={closeMenu} >Usługi</Link>
                     </div>
                     <div className={styles.navItem}>
-                        <Link className={styles.navItemText} href="/portfolio" >Portfolio</Link>
+                        <Link className={styles.navItemText} href="/portfolio" onClick={closeMenu} >Portfolio</Link>
                     </div>
                     <div className={styles.navItem}>
-                        <Link className={styles.navItemText} href="/#kontakt" >Kontakt</Link>
+                        <Link className={styles.navItemText} href="/#kontakt" onClick={closeMenu} >Kontakt</Link>
                     </div>
                 </div>
                 <div className={styles.horizontalDivider} />
-                <div className={styles.rightSection}>
+                <div className={styles.flagSection}>
                     <img
                         alt=""
                         className={styles.flag}

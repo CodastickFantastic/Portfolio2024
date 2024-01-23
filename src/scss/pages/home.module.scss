@@ -25,3 +25,39 @@
 .contactSection {
     margin-top: 86px;
 }
+
+@media (max-width: 1250px) {
+    .heroSection {
+        .left {
+            margin-right: 0;
+        }
+
+        .right {
+            margin-top: 86px;
+
+            img {
+                width: 460px;
+            }
+        }
+    }
+}
+
+@media (max-width: 840px) {
+    .heroSection {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .left {
+            margin-right: 0;
+        }
+
+        .right {
+            margin-top: 64px;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

@@ -22,7 +22,7 @@ export default function Home() {
         <ServiceSection />
       </div>
       <div id="kontakt" className={`${styles.contactSection} container`}>
-        <ContactSection />
+        {/* <ContactSection /> */}
       </div>
     </main>
   )
