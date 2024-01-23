@@ -1,0 +1,27 @@
+.serviceSection {
+    p {
+        text-align: center;
+    }
+
+    .buttons {
+        margin-top: 24px;
+        margin-bottom: 36px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .servicesSingle {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        column-gap: 24px;
+        row-gap: 36px;
+    }
+
+    .servicesPack {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        row-gap: 24px;
+    }
+}

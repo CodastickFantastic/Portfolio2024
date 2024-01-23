@@ -2,6 +2,7 @@ import styles from "@/scss/components/NavigationBar.module.scss"
 import Link from "next/link"
 
 const NavigationBar = (): React.JSX.Element => {
+
     return (
         <nav className={styles.navigationBar}>
             <Link href="/">
@@ -22,13 +23,13 @@ const NavigationBar = (): React.JSX.Element => {
                         <Link className={styles.navItemText} href="/o-mnie">O mnie</Link>
                     </div>
                     <div className={styles.navItem}>
-                        <Link className={styles.navItemText} href="/" >Usługi</Link>
+                        <Link className={styles.navItemText} href="/#usługi" >Usługi</Link>
                     </div>
                     <div className={styles.navItem}>
-                        <Link className={styles.navItemText} href="/" >Portfolio</Link>
+                        <Link className={styles.navItemText} href="/portfolio" >Portfolio</Link>
                     </div>
                     <div className={styles.navItem}>
-                        <Link className={styles.navItemText} href="/" >Kontakt</Link>
+                        <Link className={styles.navItemText} href="/#kontakt" >Kontakt</Link>
                     </div>
                 </div>
                 <div className={styles.horizontalDivider} />

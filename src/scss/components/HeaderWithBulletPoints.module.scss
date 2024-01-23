@@ -1,0 +1,37 @@
+@use "../helpers/variables.scss";
+
+.header {
+    width: 100%;
+    max-width: 504px;
+
+    .bulletPoints {
+        margin-top: 24px;
+
+        li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+            font-family: variables.$nunito;
+            font-size: 18px;
+            font-weight: 650;
+            color: variables.$deep-purple;
+
+            img {
+                width: 18px;
+                object-fit: contain;
+                height: auto;
+                margin-right: 12px;
+            }
+        }
+    }
+
+    .buttons {
+        margin-top: 24px;
+        display: flex;
+
+        a:first-of-type {
+            margin-right: 12px;
+        }
+
+    }
+}

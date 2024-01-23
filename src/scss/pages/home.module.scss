@@ -1,0 +1,27 @@
+.heroSection {
+    display: flex;
+    justify-content: center;
+
+    .left {
+        margin-top: 28px;
+        margin-right: 104px;
+    }
+
+    .right {
+        margin-top: 64px;
+
+        img {
+            width: 520px;
+            height: auto;
+            object-fit: contain;
+        }
+    }
+}
+
+.serviceSection {
+    margin-top: 86px;
+}
+
+.contactSection {
+    margin-top: 86px;
+}

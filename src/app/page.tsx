@@ -1,27 +1,28 @@
-import PersonCard from "@/components/microComponents/PersonCard";
+import styles from "@/scss/pages/home.module.scss";
 
-import devopsBg from "@/../public/img/devopsBg.png";
-import admin from "@/../public/img/admin.png";
-import infinityArrow from "@/../public/img/icons/infinityArrow.png";
-import HeaderWithQuote from "@/components/macroComponents/HeaderWithQuote";
+import HeaderWithBulletPoints from "@/components/macroComponents/HeaderWithBulletPoints";
+import Image from "next/image";
+
+import hero from "@/../public/img/hero_01_2024.png";
+import ServiceSection from "@/components/macroComponents/ServiceSection";
+import ContactSection from "@/components/macroComponents/ContactSection";
 
 export default function Home() {
   return (
     <main>
-      <div className="heroSection container">
-        <div className="left">
-          <HeaderWithQuote />
+      <div className={`${styles.heroSection} container`}>
+        <div className={styles.left}>
+          <HeaderWithBulletPoints />
         </div>
-        <div className="right">
-          <PersonCard
-            color="#673de6"
-            imageBg={devopsBg}
-            imageBgAlt="Tło z fioletowymi napisami DevOps"
-            imageFg={admin}
-            imageFgAlt="Usmiechnięty mężczyzna z komputerem"
-            icon={infinityArrow}
-            label="ADMINISTRATOR" />
+        <div className={styles.right}>
+          <Image src={hero} alt="Mężczyzna trzymający się za okulary" />
         </div>
+      </div>
+      <div id="usługi" className={`${styles.serviceSection} container`}>
+        <ServiceSection />
+      </div>
+      <div id="kontakt" className={`${styles.contactSection} container`}>
+        <ContactSection />
       </div>
     </main>
   )

@@ -4,6 +4,7 @@ import "@/scss/global.scss"
 import NavigationBar from '@/components/globalComponents/NavigationBar'
 import type { Metadata } from 'next'
 import { Nunito, Poppins } from 'next/font/google'
+import Footer from "@/components/globalComponents/Footer"
 
 export const nunito = Nunito({
   subsets: ['latin'],
@@ -33,6 +34,9 @@ export default function RootLayout({
           <NavigationBar />
         </header>
         {children}
+        <footer>
+          <Footer />
+        </footer>
       </body>
     </html>
   )
