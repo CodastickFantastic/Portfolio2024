@@ -1,9 +1,13 @@
 @use "../helpers/variables.scss";
 
 .timeLineTile {
+    padding: 0 6px;
+    width: 100%;
+    max-width: 400px;
     display: flex;
 
     .left {
+        margin-right: 12px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -28,6 +32,7 @@
             color: variables.$deep-purple;
             margin-bottom: 3px;
             line-height: 1;
+            text-align: left;
         }
 
         .title {
@@ -37,6 +42,7 @@
             color: variables.$deep-purple;
             margin-bottom: 6px;
             line-height: 1;
+            text-align: left;
         }
 
         .info {
@@ -46,6 +52,7 @@
             color: variables.$pink;
             margin-bottom: 12px;
             line-height: 1;
+            text-align: left;
         }
 
         ul {
@@ -59,6 +66,7 @@
                 color: variables.$deep-purple;
                 margin-bottom: 6px;
                 line-height: 1;
+                text-align: left;
             }
         }
     }

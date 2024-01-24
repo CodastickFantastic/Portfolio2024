@@ -17,11 +17,11 @@ const ContactInfo = (): React.JSX.Element => {
                 <p className={styles.contactTileText}>+48 501 721 417</p>
             </a>
             <div className={styles.row}>
-                <a href="/" className={styles.contactTile}>
-                    <Image src={fb} alt="Ikona telefonu" />
+                <a href="https://www.facebook.com/JakubMagikWojtysiak/" className={styles.contactTile} target="_blank">
+                    <Image src={fb} alt="Ikona Facebooka" />
                 </a>
-                <a href="/" className={styles.contactTile}>
-                    <Image src={linkedIn} alt="Ikona telefonu" />
+                <a href="https://www.linkedin.com/in/jakub-wojtysiak-6a16912b0/" className={styles.contactTile} target="_blank">
+                    <Image src={linkedIn} alt="Ikona LinkedIn" />
                 </a>
             </div>
             <a href="mailto:it.jakub.wojtysiak@gmail.com" className={styles.contactTile}>

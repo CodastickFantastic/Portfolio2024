@@ -1,5 +1,33 @@
 @use "../helpers/variables.scss";
 
+@keyframes mvLeft {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(20px);
+    }
+
+    100% {
+        transform: translateX(10px);
+    }
+}
+
+@keyframes mvRight {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(-20px);
+    }
+
+    100% {
+        transform: translateX(-10px);
+    }
+}
+
 .personSlider {
     width: 700px;
     display: flex;
@@ -30,10 +58,6 @@
             position: absolute;
             display: flex;
             column-gap: 32px;
-
-
-
-            .slide {}
         }
     }
 
@@ -84,30 +108,107 @@
     }
 }
 
-@keyframes mvLeft {
-    0% {
-        transform: translateX(0);
-    }
+@media(max-width: 1180px) {
+    .personSlider {
+        width: 570px;
 
-    50% {
-        transform: translateX(20px);
-    }
+        .slider {
+            width: 570px;
 
-    100% {
-        transform: translateX(10px);
+            .slideTrack {
+                column-gap: 0px;
+            }
+        }
     }
 }
 
-@keyframes mvRight {
-    0% {
-        transform: translateX(0);
-    }
+@media(max-width: 1000px) {
+    .personSlider {
+        margin-top: 24px;
+        width: 280px;
+        height: 370px;
 
-    50% {
-        transform: translateX(-20px);
-    }
+        .p1 {
+            font-size: 14px;
+            margin-bottom: -20px;
+        }
 
-    100% {
-        transform: translateX(-10px);
+        .slider {
+            width: 280px;
+        }
+
+        .sliderNav {
+            margin-top: 6px;
+
+            .prev,
+            .next {
+                img {
+                    width: 74px;
+                }
+
+                .navText {
+                    font-size: 12px;
+                }
+            }
+        }
+
+
+    }
+}
+
+@media(max-width: 700px) {
+    .personSlider {
+        width: 100%;
+        height: 420px;
+
+        .p1 {
+            font-size: 16px;
+            margin-bottom: 6px;
+        }
+
+        .slider {
+            margin: 0px auto;
+            width: 100%;
+
+            .slideTrack {
+                column-gap: 0px;
+            }
+        }
+
+        .sliderNav {
+            margin-top: 0px;
+            width: 90%;
+
+            .prev,
+            .next {
+                img {
+                    width: 120px;
+                }
+
+                .navText {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 430px) {
+    .personSlider {
+        .sliderNav {
+            margin-top: 0px;
+            width: 90%;
+
+            .prev,
+            .next {
+                img {
+                    width: 80px;
+                }
+
+                .navText {
+                    font-size: 14px;
+                }
+            }
+        }
     }
 }

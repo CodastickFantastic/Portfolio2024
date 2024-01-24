@@ -12,7 +12,7 @@ const ProcessDescription = (): React.JSX.Element => {
 
     return (
         <section id="process" className={styles.processDescription}>
-            <h2>Jak wygląda współpraca?</h2>
+            <h2>Opis Współpracy</h2>
             <p>Droga do <span className="purple">suckesu</span> wymaga wielu <span className="purple">mniejszych</span> kroków</p>
             <div className={styles.steps}>
                 <div className={styles.step}>

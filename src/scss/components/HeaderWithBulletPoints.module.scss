@@ -35,3 +35,23 @@
 
     }
 }
+
+@media(max-width: 700px) {
+    .header {
+        .bulletPoints {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .buttons {
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+
+            a:nth-of-type(2) {
+                margin-right: 0px;
+            }
+        }
+    }
+}

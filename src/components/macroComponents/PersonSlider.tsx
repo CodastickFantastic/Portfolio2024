@@ -50,7 +50,10 @@ const PersonSlider = (): React.JSX.Element => {
                             imageFg={admin}
                             imageFgAlt="Usmiechnięty mężczyzna z komputerem"
                             icon={infinityArrow}
-                            label="SystemAdmin" />
+                            label="SystemAdmin"
+                            showMoreNo={1}
+                            description="Moja przygoda z administracją serwerami zaczęła się w 2021 roku, kiedy to stawiałem pierwsze kroki w CyberBezpieczeństwie. Szkolenia z zakresu Red oraz Blue Team dały mi świadomość o wektorach ataków oraz metodach obrony. Poznałem wtedy dogłębnie metodykę pracy z Linuxem oraz wszelkiego rodzaju zagadnienia sieciowe. Na dzień dzisiejszy konfiguracja DNS oraz serwerów WWW to moja codzienność (zarządzam  około 40 domenami oraz 3 serwerami VPS)"
+                        />
                     </div>
                     <div className={styles.lide}>
                         <PersonCard
@@ -60,7 +63,10 @@ const PersonSlider = (): React.JSX.Element => {
                             imageFg={programmer}
                             imageFgAlt="Skupiony mężczyzna trzymający laptopa"
                             icon={programming}
-                            label="WebDeveloper" />
+                            label="WebDeveloper"
+                            showMoreNo={2}
+                            description="Programowanie stało się moją pasją juz w 2022 roku gdy pisałem swoje pierwsze crowlery oraz boty autoamtyzujące prace w Pythonie. Pomimo tego, że bardzo lubiłem ten język porgramowania postanowiłem przejść na JavaScript ze względu na chęć tworzenia aplikacji Webowych. Na dzień dzisiejszy specjalizuję się w tworzeniu aplikacji w NextJS, a co za tym idzie równiez w React. Moja sympataia do NextJs w głównej mierze wynika z łatwości i szybkości tworzenia backendowych API."
+                        />
                     </div>
                     <div className={styles.slide}>
                         <PersonCard
@@ -70,7 +76,10 @@ const PersonSlider = (): React.JSX.Element => {
                             imageFg={designer}
                             imageFgAlt="Zamyślony mężczyzna trzymający tablet"
                             icon={design}
-                            label="InterfaceDesigner" />
+                            label="InterfaceDesigner"
+                            showMoreNo={3}
+                            description="Na początku mojej przygody z WebDevelopmentem nie przykładałem szczególnej uwagi do estetyki moich prac, na szczęście szybko zdałem sobie sprawę z faktu że UI to tak naprawdę główny czynnik decydujący o sukcesie danej aplikacji tuż po logice biznesowej. Początki były trudne jednakże im wiecej czasu poświecałem na praktykę tym adekwatnie lepsze Interwfejsy byłem w stanie tworzyć. Na dzień dzisiejszy tworzenie UI/UX stało się dla mnie nieodłącznym elementem tworzenia kazdej aplikacji."
+                        />
                     </div>
                     <div className={styles.slide}>
                         <PersonCard
@@ -80,7 +89,10 @@ const PersonSlider = (): React.JSX.Element => {
                             imageFg={solutionArchitekt}
                             imageFgAlt="Pewny siebie mężczyzna w garniturze i kamizelce"
                             icon={bulb}
-                            label="SolutionArchitekt" />
+                            label="SolutionArchitekt"
+                            showMoreNo={4}
+                            description="Ty masz problem, ja mam rozwiązanie. Każdy klient, z którym współpracuję przychodzi do mnie ze swego rodzaju prbolemem, który muszę rozwiązać niezalęznie od tego czy dana osoba potrzebuje tylko opieki nad swoim serwerem czy rozbudowanej aplikacji webowej. Jako SolutionArchitekt moim zadaniem jest znalezienie najbardziej optymalnych rozwiązań do problemów moich klientów. Jestem odpowiedzialny od początku do końca za każdy projekt, który realizuję."
+                        />
                     </div>
                 </div>
             </div>

@@ -4,9 +4,10 @@
     position: relative;
     border: 1px solid black;
     border-radius: 4px;
-    width: 100%;
+    width: 30%;
     max-width: 420px;
-    height: 200px;
+    height: 220px;
+    min-height: 220px;
     border: 1px solid variables.$deep-purple;
     transform-style: preserve-3d;
     transition: 0.2s linear;
@@ -32,6 +33,7 @@
             p {
                 font-family: variables.$poppins;
                 color: variables.$deep-purple;
+                text-align: left;
             }
 
 
@@ -40,6 +42,7 @@
                 font-weight: 600;
                 line-height: normal;
                 color: variables.$pink;
+                text-align: left;
 
             }
 
@@ -145,9 +148,83 @@
             }
         }
     }
+}
+
+@media (max-width: 1360px) {
+    .serviceTile {
+        &:has(input:checked) {
+            height: 240px;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .serviceTile {
+        height: 240px;
+
+        &:has(input:checked) {
+            height: 320px;
+        }
+    }
+}
+
+@media (max-width: 1020px) {
+    .serviceTile {
+        width: 45%;
+        max-width: 45%;
 
 
+        &:has(input:checked) {
+            height: 220px;
+        }
+    }
+}
 
+@media (max-width: 910px) {
+    .serviceTile {
+        &:has(input:checked) {
+            height: 240px;
+        }
+    }
+}
 
+@media (max-width: 760px) {
+    .serviceTile {
+        &:has(input:checked) {
+            height: 290px;
+        }
+    }
+}
 
+@media (max-width: 700px) {
+    .serviceTile {
+        width: 100%;
+        max-width: 100%;
+        min-height: 190px;
+
+        &:has(input:checked) {
+            height: 190px;
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .serviceTile {
+        height: 220px;
+
+        &:has(input:checked) {
+            height: 240px;
+        }
+
+        .tileFooter {
+            right: 12px;
+        }
+
+        .back {
+            .tileFooter {
+                right: unset;
+                left: 12px;
+            }
+        }
+    }
 }

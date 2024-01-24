@@ -20,5 +20,31 @@
             color: variables.$purple;
         }
     }
+}
 
+@media (max-width: 950px) {
+    .contactSection {
+        .row {
+            width: 100%;
+
+            &>p {
+                margin: 0px;
+            }
+        }
+    }
+}
+
+@media (max-width: 760px) {
+    .contactSection {
+        .row {
+            flex-direction: column;
+
+            &>p {
+                font-size: 18px;
+                font-weight: 500;
+                margin: 16px 0px 32px;
+                color: variables.$purple;
+            }
+        }
+    }
 }

@@ -30,8 +30,8 @@ const ServiceSection = () => {
             <p>W jaki sposób mogę Ci <span className="purple">pomóc</span></p>
 
             <div className={styles.buttons}>
-                <button className={`button ${section === "single" && "active"}`} onClick={() => setSection("single")}>Pojedyncze Usługi</button>
-                <button className={`button badge ${section === "pack" && "active"}`} onClick={() => setSection("pack")}>Pakiety Usług</button>
+                <button className={`button ${section === "single" && "active"}`} onClick={() => { setSection("single"); console.log("test") }} >Pojedyncze Usługi</button>
+                <button className={`button badge ${section === "pack" && "active"}`} onClick={() => { setSection("pack"); console.log(section) }}>Pakiety Usług</button>
             </div>
             {
                 section === 'single' && <div className={styles.servicesSingle}>
@@ -47,7 +47,7 @@ const ServiceSection = () => {
                         tileNumber={2}
                         imageSrc={wph}
                         title='Wordpress Hosting'
-                        title2='Bezpieczny Hosting Wordpress'
+                        title2='Bezpieczny Hosting'
                         description='Oddaj obsługe nad swoją stroną Wordpress w ręce specjalisty.'
                         descriptionBack='
                     Zapewniam hosting WordPress najwyższej jakości! Moje szybkie i bezpieczne serwery gwarantują nieprzerwaną dostępność Twojej strony. Dzięki dedykowanym rozwiązaniom dla WordPress, mogę zapewnić Ci optymalną wydajność i bezproblemową obsługę.'

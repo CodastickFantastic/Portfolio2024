@@ -22,7 +22,7 @@ const NavigationBar = (): React.JSX.Element => {
         return () => {
             fixedElement.current?.removeEventListener("touchmove", (e) => {
                 e.preventDefault()
-            }, false)
+            })
         }
     }, [])
 

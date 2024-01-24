@@ -6,8 +6,8 @@ const TimeLineTile = ({ icon, title, date, description, info }: {
     icon: StaticImageData,
     title: string,
     date: string,
-    description: string[],
-    info: string
+    description?: string[],
+    info?: string
 
 }): React.JSX.Element => {
 
@@ -21,7 +21,7 @@ const TimeLineTile = ({ icon, title, date, description, info }: {
                 <p className={styles.title}>{title}</p>
                 <p className={styles.info}>{info}</p>
                 <ul>
-                    {description.map((item, index) => {
+                    {description?.map((item, index) => {
                         return <li key={index}>{item}</li>
                     })}
                 </ul>

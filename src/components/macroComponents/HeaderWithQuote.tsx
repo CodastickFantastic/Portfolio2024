@@ -18,10 +18,9 @@ const HeaderWithQuote = (): React.JSX.Element => {
             <Quote
                 quote={`"Większość programistów programuje nie dlatego, że spodziewają się zapłaty lub uwielbienia tłumów, ale dlatego, że programowanie jest dla nich zabawą."`}
                 author="Linus Torvalds"
-                width={430}
             />
             <div className={styles.buttons}>
-                <a href="#process" className='button active'>Jak wygląda współpraca</a>
+                <a href="#process" className='button active'>Opis Współpracy</a>
                 <a href="#technologies" className='button'>Technologie</a>
             </div>
             <div className={styles.buttons}>

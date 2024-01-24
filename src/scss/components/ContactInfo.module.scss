@@ -49,3 +49,20 @@
         }
     }
 }
+
+@media (max-width: 760px) {
+    .contactInfo {
+
+        .row {
+            column-gap: 24px;
+
+            .contactTile {
+                padding: 6px 48px;
+            }
+        }
+
+        .contactTile {
+            padding: 6px 12px;
+        }
+    }
+}

@@ -1,8 +1,9 @@
 @use "../helpers/variables.scss";
 
-
-
 .quote {
+    width: 100%;
+    max-width: 430px;
+    height: auto;
     border: 1px solid variables.$purple;
     border-radius: 4px;
     padding: 12px 24px 17px;
@@ -10,6 +11,7 @@
 
 
     .quote__text {
+        width: 100%;
         font-family: variables.$poppins;
         font-size: 14px;
         font-weight: 600;

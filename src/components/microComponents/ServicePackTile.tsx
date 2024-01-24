@@ -39,7 +39,7 @@ const ServicePackTile = ({
                         {description2[0]}
                     </p>
                 </div>
-                <Image src={plus} alt="Ikona plusa" />
+                {/* <Image src={plus} alt="Ikona plusa" /> */}
                 <div className={styles.service}>
                     <Image src={imageSrc[1]} alt="Ikona usługi" />
                     <p className={styles.description}>
@@ -49,7 +49,7 @@ const ServicePackTile = ({
                         {description2[1]}
                     </p>
                 </div>
-                <Image src={plus} alt="Ikona plusa" />
+                {/* <Image src={plus} alt="Ikona plusa" /> */}
                 <div className={styles.service}>
                     <Image src={imageSrc[2]} alt="Ikona usługi" />
                     <p className={styles.description}>
@@ -59,7 +59,7 @@ const ServicePackTile = ({
                         {description2[2]}
                     </p>
                 </div>
-                <Image src={plus} alt="Ikona plusa" />
+                {/* <Image src={plus} alt="Ikona plusa" /> */}
                 <div className={styles.service}>
                     <Image src={imageSrc[3]} alt="Ikona usługi" />
                     <p className={styles.description}>
@@ -69,7 +69,7 @@ const ServicePackTile = ({
                         {description2[3]}
                     </p>
                 </div>
-                <Image src={plus} alt="Ikona plusa" />
+                {/* <Image src={plus} alt="Ikona plusa" /> */}
                 <div className={styles.service}>
                     <Image src={imageSrc[4]} alt="Ikona usługi" />
                     <p className={styles.description}>
