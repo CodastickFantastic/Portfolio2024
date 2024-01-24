@@ -3,8 +3,14 @@ import Link from "next/link"
 
 const Footer = (): React.JSX.Element => {
     return (
-        <div style={{ width: "100%", height: 300, background: "#261A4C", marginTop: 60 }}>
-
+        <div className={styles.footer}>
+            <div className="container">
+                <div className={styles.footerInnerContainer}>
+                    <p>© 2024 Usługi IT Jakub Wojtysiak</p>
+                    <Link href="/polityka-prywatnosci">Polityka prywatności</Link>
+                    <p>Icons by:<Link href="https://icons8.com/" rel="nofollow">Icons8</Link></p>
+                </div>
+            </div>
         </div>
     )
 }

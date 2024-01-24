@@ -28,7 +28,7 @@ const HeaderWithQuote = (): React.JSX.Element => {
                 <Link href="https://github.com/CodastickFantastic" className='button' target='_blank'>
                     <Image src={Github} alt="Github" />
                 </Link>
-                <Link href="#" className='button'>
+                <Link href="https://www.linkedin.com/in/jakub-wojtysiak-6a16912b0/" target='_blank' className='button'>
                     <Image src={Linkedin} alt="Linkedin" />
                 </Link>
             </div>
