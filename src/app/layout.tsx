@@ -6,12 +6,12 @@ import type { Metadata } from 'next'
 import { Nunito, Poppins } from 'next/font/google'
 import Footer from "@/components/globalComponents/Footer"
 
-export const nunito = Nunito({
+const nunito = Nunito({
   subsets: ['latin'],
   variable: "--font-nunito",
 })
 
-export const poppins = Poppins({
+const poppins = Poppins({
   weight: ["400", "500", "600", "700"],
   subsets: ['latin'],
   variable: "--font-poppins",

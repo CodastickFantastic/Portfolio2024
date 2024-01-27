@@ -27,7 +27,7 @@ const PersonSlider = (): React.JSX.Element => {
 
     const moveSlide = (direction: "left" | "right"): void => {
         const sliderWidth = sliderTrackRef.current?.clientWidth as number
-        const singleSlideWidth = (sliderWidth / sliderTrackRef.current?.childElementCount) + 7 as number
+        const singleSlideWidth = (sliderWidth / sliderTrackRef.current!.childElementCount) + 7 as number
 
 
         if (direction === "left") {
