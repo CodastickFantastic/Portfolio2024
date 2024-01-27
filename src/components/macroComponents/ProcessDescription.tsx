@@ -1,4 +1,4 @@
-import styles from "@/scss/components/processDescription.module.scss";
+import styles from "@/scss/components/ProcessDescription.module.scss";
 
 import Image from 'next/image';
 
