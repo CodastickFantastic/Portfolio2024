@@ -1,0 +1,119 @@
+@use "../helpers/variables.scss";
+
+.lastRealization {
+    width: 640px;
+    height: 375px;
+    border: 1px solid variables.$purple;
+    border-radius: 4px;
+    position: relative;
+
+    img {
+        width: 100%;
+        height: 100%;
+        border-radius: 2px;
+        object-fit: cover;
+    }
+
+    .type {
+        position: absolute;
+        bottom: 12px;
+        left: 16px;
+        background: variables.$purple;
+        border-radius: 2px;
+        padding: 4px 12px;
+
+        p {
+            color: white;
+            font-size: 12px;
+            font-weight: 500;
+
+            &:hover {
+                content: "test ";
+            }
+        }
+
+
+
+    }
+
+    .link {
+        position: absolute;
+        bottom: -14px;
+        right: 24px;
+        background: variables.$purple;
+        border-radius: 2px;
+        padding: 8px 12px;
+        color: white;
+        font-family: variables.$poppins;
+        font-size: 12px;
+        font-weight: 500;
+        display: flex;
+        justify-content: center;
+        transition: 0.2s linear;
+
+        img {
+            margin-left: 6px;
+            width: 7px;
+            height: auto;
+            object-fit: contain;
+        }
+
+        &:hover {
+            right: 16px;
+            background: variables.$pink;
+        }
+    }
+
+    .label {
+        position: absolute;
+        top: 84px;
+        right: -78px;
+        background: variables.$purple;
+        font-size: 12px;
+        rotate: 90deg;
+        color: white;
+        padding: 4px 12px;
+        text-transform: uppercase;
+        border-radius: 2px;
+    }
+
+    .title {
+        position: absolute;
+        top: 12px;
+        left: 16px;
+        color: white;
+        font-size: 14px;
+        font-weight: 500;
+        padding: 4px 12px;
+        font-family: variables.$poppins;
+        background: variables.$purple;
+    }
+}
+
+@media(max-width: 1150px) {
+    .lastRealization {
+        width: 540px;
+        height: 325px;
+    }
+}
+
+@media(max-width: 1000px) {
+    .lastRealization {
+        width: 440px;
+        height: 275px;
+    }
+}
+
+@media(max-width: 900px) {
+    .lastRealization {
+        width: 340px;
+        height: 245px;
+    }
+}
+
+@media(max-width: 770px) {
+    .lastRealization {
+        width: 98%;
+        height: auto;
+    }
+}

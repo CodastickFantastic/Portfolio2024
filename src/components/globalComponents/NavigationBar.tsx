@@ -50,7 +50,7 @@ const NavigationBar = (): React.JSX.Element => {
                 <Image src={Close} alt="Schowaj menu" className={styles.burgerMenuClose} onClick={closeMenu} />
                 <div className={styles.navLinks}>
                     <div className={styles.navItem}>
-                        <Link className={`${styles.navItemText} ${styles.selected}`} href="/" onClick={closeMenu}>
+                        <Link className={`${styles.navItemText}`} href="/" onClick={closeMenu}>
                             Strona Główna
                         </Link>
                     </div>

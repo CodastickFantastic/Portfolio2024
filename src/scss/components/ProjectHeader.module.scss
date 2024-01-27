@@ -1,0 +1,66 @@
+@use "../helpers/variables.scss";
+
+.projectHeader {
+    .underTitle {
+        font-weight: 500;
+        margin-top: 12px;
+        max-width: 610px;
+    }
+
+    .bulletPoints {
+        margin-top: 24px;
+
+        li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+            font-family: variables.$nunito;
+            font-size: 18px;
+            font-weight: 650;
+            color: variables.$deep-purple;
+
+            img {
+                width: 18px;
+                object-fit: contain;
+                height: auto;
+                margin-right: 12px;
+            }
+        }
+    }
+
+    .infoSectionHeader {
+        margin-top: 24px;
+        font-family: variables.$nunito;
+        font-size: 18px;
+        font-weight: 650;
+        color: variables.$pink;
+    }
+
+    .addInfo {
+        font-weight: 500;
+
+        &:nth-of-type(3) {
+            margin-top: 12px;
+            margin-bottom: 2px;
+        }
+
+        img {
+            margin-right: 6px;
+        }
+    }
+}
+
+@media(max-width:800px) {
+    .projectHeader {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        .bulletPoints {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
