@@ -4,7 +4,6 @@ WORKDIR /usr/src/app
 
 COPY public ./public
 COPY src ./src
-# COPY .env .
 COPY tsconfig.json .
 COPY package.json .
 COPY package-lock.json .
