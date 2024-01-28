@@ -17,31 +17,13 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  title: 'Strony internetowe, sklepy internetowe, aplikacje mobilne - Jakub Wojtysiak, Uługi IT',
-  description: 'Tworzę strony internetowe, sklepy internetowe, aplikacje mobilne. Zajmuję się również pozycjonowaniem stron internetowych. Postaw na pewnego partnera IT i zacznij zarabiać w internecie już dziś!',
   robots: 'index, follow',
-  keywords: ['strony internetowe', 'sklepy internetowe', 'aplikacje mobilne',
-    'pozycjonowanie stron', 'tworzenie stron', 'tworzenie sklepów internetowych',
-    'tworzenie aplikacji mobilnych', 'pozycjonowanie stron internetowych', 'pozycjonowanie stron www',
-    'pozycjonowanie sklepów internetowych', 'pozycjonowanie aplikacji mobilnych', 'pozycjonowanie aplikacji mobilnych'
-  ],
   creator: 'Jakub Wojtysiak',
   publisher: 'Jakub Wojtysiak',
   formatDetection: {
     telephone: true,
     email: true,
   },
-  alternates: {
-    canonical: 'http://jakubwojtysiak.pl',
-    languages: {
-      'pl-PL': 'http://jakubwojtysiak.pl',
-    }
-  }
-  
-
-
-
-
 }
 
 export default function RootLayout({
@@ -49,9 +31,33 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  const organizationLD = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Usługi IT - Jakub Wojtysiak",
+    "alternateName": "Partner IT - Jakub Wojtysiak",
+    "url": "https://jakubwojtysiak.online",
+    "logo": "https://jakubwojtysiak.online/logo.webp",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+48501721417",
+      "contactType": "customer service",
+      "areaServed": "PL",
+      "availableLanguage": ["en", "Polish"]
+    },
+    "sameAs": [
+      "https://www.facebook.com/JakubMagikWojtysiak",
+      "https://www.linkedin.com/in/jakub-wojtysiak-6a16912b0",
+      "https://github.com/CodastickFantastic"
+    ]
+  }
   return (
     <html lang="pl" className={`${nunito.variable} ${poppins.variable}`}>
       <body>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationLD) }}
+        />
         <header className="container">
           <NavigationBar />
         </header>

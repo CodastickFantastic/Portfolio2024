@@ -73,7 +73,7 @@ const ServiceSection = () => {
                         imageSrc={hosting}
                         title='System Admin'
                         title2='Zarządzanie Serwerami'
-                        description='Zarzadzanie serwerami opartymi na Linuxie oraz tymi które wykorzystują panel Plesk'
+                        description='Zarzadzanie serwerami opartymi na Linuxie oraz tymi które wykorzystują panele administracyjne takie jak cPanel, Plesk, DirectAdmin.'
                         descriptionBack='Kompleksowa usługa administrowania systemami informatycznymi. Optymalizuję wydajność, zabezpieczam dane i eliminuję awarie. Zaufaj mi, abyś mógł skoncentrować się na rozwoju swojej działalności, mając pewność stabilności i efektywności systemów.'
                     />
                     <ServiceTile

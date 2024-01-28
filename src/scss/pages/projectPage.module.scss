@@ -16,6 +16,7 @@
 
         .right {
             width: 50%;
+            height: 380px;
         }
     }
 
@@ -44,6 +45,18 @@
 
             .right {
                 width: 90%;
+                height: 380px;
+            }
+        }
+    }
+}
+
+@media(max-width: 480px) {
+    .projectPage {
+        .header {
+            .right {
+                width: 90%;
+                height: 230px;
             }
         }
     }
