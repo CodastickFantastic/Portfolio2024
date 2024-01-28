@@ -2,24 +2,25 @@
 
 import styles from "@/scss/components/PersonSlider.module.scss";
 
+import { useRef } from "react";
 import Image from "next/image"
 
 import PersonCard from "@/components/microComponents/PersonCard";
 
 import arrow from "@/../public/img/icons/arrow.png"
-import devopsBg from "@/../public/img/devopsBg.png";
-import admin from "@/../public/img/admin.png";
+import devopsBg from "@/../public/img/devopsBg.webp";
+import admin from "@/../public/img/admin.webp";
 import infinityArrow from "@/../public/img/icons/infinityArrow.png";
-import webdevBg from "@/../public/img/webdevBg.png";
-import programmer from "@/../public/img/programmer.png";
+import webdevBg from "@/../public/img/webdevBg.webp";
+import programmer from "@/../public/img/programmer.webp";
 import programming from "@/../public/img/icons/programming.png";
-import uiuxBg from "@/../public/img/uiuxBg.png";
-import designer from "@/../public/img/designer.png";
+import uiuxBg from "@/../public/img/uiuxBg.webp";
+import designer from "@/../public/img/designer.webp";
 import design from "@/../public/img/icons/design.png";
-import solutionBg from "@/../public/img/solutionBg.png";
-import solutionArchitekt from "@/../public/img/solutionArchitekt.png";
+import solutionBg from "@/../public/img/solutionBg.webp";
+import solutionArchitekt from "@/../public/img/solutionArchitekt.webp";
 import bulb from "@/../public/img/icons/bulb.png";
-import { useRef } from "react";
+
 
 const PersonSlider = (): React.JSX.Element => {
     const sliderRef = useRef<HTMLDivElement>(null)

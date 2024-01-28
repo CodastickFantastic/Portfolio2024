@@ -4,7 +4,7 @@ import styles from "@/scss/components/NavigationBar.module.scss"
 import Link from "next/link"
 import Image from "next/image"
 
-import Logo from "@/../public/img/logo.png"
+import Logo from "@/../public/img/logo.webp"
 import burgerMenu from "@/../public/img/icons/menu.png"
 import Close from "@/../public/img/icons/close.png"
 import { useEffect, useRef } from "react"
@@ -67,7 +67,7 @@ const NavigationBar = (): React.JSX.Element => {
                         <Link className={styles.navItemText} href="/#kontakt" onClick={closeMenu} >Kontakt</Link>
                     </div>
                 </div>
-                <div className={styles.horizontalDivider} />
+                {/* <div className={styles.horizontalDivider} />
                 <div className={styles.flagSection}>
                     <img
                         alt=""
@@ -79,7 +79,7 @@ const NavigationBar = (): React.JSX.Element => {
                         className={styles.flag}
                         src="https://static.overlay-tech.com/assets/bfe5d8a9-d149-46a8-a0f9-5484b59fc391.png"
                     />
-                </div>
+                </div> */}
             </div>
         </nav>
     )
