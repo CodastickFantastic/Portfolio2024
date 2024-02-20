@@ -15,14 +15,6 @@ const TimeLine = (): React.JSX.Element => {
             <p>Ważne daty w <span className='purple'>mojej</span> karierze</p>
 
             <TimeLineTile
-                icon={suitcase}
-                date="Styczeń 2019"
-                title="Działalność Gospodarcza"
-                info="Pierwotny Model Działalności"
-                description={["Automatyzacja i Otymalizacja Procesów", "Usługi Finansowe i Ubezpieczeniowe", "HR oraz Zarządzanie", "Szkolenia"]}
-            />
-            <div className={styles.vl} />
-            <TimeLineTile
                 icon={master}
                 date="Czerwiec 2019"
                 title="Ukończenie Studiów Licencjackich"
