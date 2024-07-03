@@ -1,15 +1,30 @@
-FROM node:20-alpine
+### Build img with CMD: 
+##  docker build . -t jakubwojtysiak.online:v1.0
+##  docker run -p 127.0.0.1:8080:80/tcp <IMG-ID>
+#
 
-WORKDIR /usr/src/app
+FROM node:22.4.0-slim
+LABEL maintainer="Jakub Wojtysiak <it.jakub.wojtysiak@gmail.com>"
 
-COPY public ./public
-COPY src ./src
-COPY tsconfig.json .
-COPY package.json .
-COPY package-lock.json .
-COPY next.config.js .
+RUN chsh -s /usr/sbin/nologin root
+RUN groupadd -r noob && useradd -r -g noob noob
 
-RUN npm install
+WORKDIR /app
+COPY . .
+
+# RUN apt update -y && apt upgrade -y 
+# RUN apt install -y openssl
+RUN npm install -y
 RUN npm run build
+# RUN npx prisma migrate deploy
+RUN rm -f .env
 
+EXPOSE 80
+
+RUN chown -R noob:noob .next
+USER noob
 CMD ["npm", "run", "start"]
+
+# Environment Variables
+ENV HOME /home/jakub
+ENV DEBIAN_FRONTEND=noninteractive
