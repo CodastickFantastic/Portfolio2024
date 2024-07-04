@@ -36,9 +36,9 @@ jobs:
       - name: Deploy Docker image on VPS
         uses: cross-the-world/ssh-scp-ssh-pipelines@latest
         with:
-          host: ${{env.VPS_HOST}}
-          user: ${{env.VPS_USER}}
-          pass: ${{env.VPS_PASS}}
+          host: ${{secrets.VPS_HOST}}
+          user: ${{secrets.VPS_USER}}
+          pass: ${{secrets.VPS_PASS}}
           connection_timeout: 10s
           first_ssh: |
             cd /srv/www/jakubwojtysiak.tld
