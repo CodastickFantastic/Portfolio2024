@@ -12,11 +12,9 @@ RUN groupadd -r noob && useradd -r -g noob noob
 WORKDIR /app
 COPY . .
 
-# RUN apt update -y && apt upgrade -y 
-# RUN apt install -y openssl
 RUN npm install -y
 RUN npm run build
-# RUN npx prisma migrate deploy
+
 RUN rm -f .env
 
 EXPOSE 80

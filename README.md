@@ -6,13 +6,20 @@ services:
   portfolio-website-nextjs:
     container_name: portfolio-website-nextjs
     image: ghcr.io/codastickfantastic/portfolio2024:master
-    # expose:
-      # - 3000
-    ports:
-      - 3000:3000
+    expose:
+      - 80
+      - 443
     restart: always
     environment:
-      EMAIL_USER: <EMAIL TO RECIVE FORM DATA>
-      EMAIL_PASSWORD: <PASSWORD FOR EMAIL_USER>
+      VIRTUAL_HOST: jakubwojtysiak.online,www.jakubwojtysiak.online #Docker Proxy
+      LETSENCRYPT_HOST: jakubwojtysiak.online,www.jakubwojtysiak.online #Docker Proxy
+      LETSENCRYPT_EMAIL: it.jakub.wojtysiak@gmail.com #Docker Proxy
+      EMAIL_USER: <email> # Emails
+      EMAIL_PASSWORD: <password> # Emails
+
+networks:
+  default:
+    name: nginx-proxy #Docker Proxy
+    external: true
 ```
 
