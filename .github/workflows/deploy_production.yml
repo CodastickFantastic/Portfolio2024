@@ -3,7 +3,7 @@ name: Deploy To VPS (via GitHub Registry)
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   build_image_and_deploy_to_vps:
