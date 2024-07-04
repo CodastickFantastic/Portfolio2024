@@ -18,7 +18,7 @@ jobs:
           registry: ${{ env.REGISTRY }}
           username: ${{ github.actor }}
           password: ${{ secrets.PAT }}
-          
+
       - name: Extract metadata (tags, labels) for Docker
         id: meta
         uses: docker/metadata-action@v5
@@ -44,4 +44,3 @@ jobs:
             cd /srv/www/jakubwojtysiak.tld
             docker compose pull
             docker compose up -d --build --force-recreate
-            
