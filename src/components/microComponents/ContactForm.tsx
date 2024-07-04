@@ -46,7 +46,7 @@ const ContactForm = (): React.JSX.Element => {
 
     return (
         <section className={styles.contactForm}>
-            <p className={styles.title}>Wyepłnij Formularz</p>
+            <p className={styles.title}>Wypełnij Formularz</p>
             <p className={styles.title2}>Odezwę się w 24 godziny</p>
             <form onSubmit={sendEmail}>
                 <label htmlFor="name">Imię i Nazwisko
