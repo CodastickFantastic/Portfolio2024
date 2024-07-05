@@ -17,7 +17,7 @@ RUN npm run build
 
 RUN rm -f .env
 
-EXPOSE 80
+EXPOSE 8080
 
 RUN chown -R noob:noob .next
 USER noob
