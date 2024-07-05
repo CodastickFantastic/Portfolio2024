@@ -1,0 +1,30 @@
+#jakubwojtysiak.online
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: jakubwojtysiak-website-deployment
+  labels:
+    app: jakubwojtysiak-webiste
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: jakubwojtysiak-webiste
+  template:
+    metadata:
+      labels:
+        app: jakubwojtysiak-webiste
+    spec:
+      containers:
+        - name: jakubwojtysiak-webiste
+          resources:
+            limits:
+              memory: "1Gi"
+              cpu: "500m"
+          image: ghcr.io/codastickfantastic/portfolio2024:master
+          ports:
+            - containerPort: 8080
+          env:
+            - name: MONGO_INITDB_ROOT_USERNAME
+          imagePullSecrets:
+            - name: github-registry-secret.credentials
