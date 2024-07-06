@@ -1,7 +1,7 @@
 import Image from "next/image";
 import type { Metadata } from 'next'
 import hero from "@/../public/img/hero_01_2024.webp";
-import styles from "@/scss/pages/home.module.scss";
+import styles from "@/styles/pages/home.module.css";
 import dynamic from "next/dynamic";
 
 const HeaderWithBulletPoints = dynamic(() => import("@/components/macroComponents/HeaderWithBulletPoints"));

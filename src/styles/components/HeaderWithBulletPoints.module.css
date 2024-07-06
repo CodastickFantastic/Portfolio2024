@@ -1,0 +1,45 @@
+.header {
+  width: 100%;
+  max-width: 504px;
+}
+.header .bulletPoints {
+  margin-top: 24px;
+}
+.header .bulletPoints li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  font-family: var(--font-nunito);
+  font-size: 18px;
+  font-weight: 650;
+  color: #261A4C;
+}
+.header .bulletPoints li img {
+  width: 18px;
+  object-fit: contain;
+  height: auto;
+  margin-right: 12px;
+}
+.header .buttons {
+  margin-top: 24px;
+  display: flex;
+}
+.header .buttons a:first-of-type {
+  margin-right: 12px;
+}
+
+@media (max-width: 700px) {
+  .header .bulletPoints {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .header .buttons {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .header .buttons a:nth-of-type(2) {
+    margin-right: 0px;
+  }
+}

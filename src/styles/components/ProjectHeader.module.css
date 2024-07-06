@@ -1,0 +1,54 @@
+.projectHeader .underTitle {
+  font-weight: 500;
+  margin-top: 12px;
+  max-width: 610px;
+}
+.projectHeader .bulletPoints {
+  margin-top: 24px;
+}
+.projectHeader .bulletPoints li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  font-family: var(--font-nunito);
+  font-size: 18px;
+  font-weight: 650;
+  color: #261A4C;
+}
+.projectHeader .bulletPoints li img {
+  width: 18px;
+  object-fit: contain;
+  height: auto;
+  margin-right: 12px;
+}
+.projectHeader .infoSectionHeader {
+  margin-top: 24px;
+  font-family: var(--font-nunito);
+  font-size: 18px;
+  font-weight: 650;
+  color: #FC5185;
+}
+.projectHeader .addInfo {
+  font-weight: 500;
+}
+.projectHeader .addInfo:nth-of-type(3) {
+  margin-top: 12px;
+  margin-bottom: 2px;
+}
+.projectHeader .addInfo img {
+  margin-right: 6px;
+}
+
+@media (max-width: 800px) {
+  .projectHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .projectHeader .bulletPoints {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -1,0 +1,45 @@
+.projectPage .header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 64px;
+  padding-top: 64px;
+}
+.projectPage .header .left {
+  max-width: 40%;
+}
+.projectPage .header .right {
+  width: 50%;
+  height: 380px;
+}
+.projectPage .step1 {
+  margin-top: 64px;
+  width: 100%;
+}
+.projectPage .step1 .figmaWindow {
+  border: 1px solid #673de6;
+  width: 100%;
+  height: 450px;
+}
+
+@media (max-width: 801px) {
+  .projectPage .header {
+    flex-direction: column;
+    margin-top: 84px;
+  }
+  .projectPage .header .left {
+    max-width: 100%;
+    margin-bottom: 24px;
+  }
+  .projectPage .header .right {
+    width: 90%;
+    height: 380px;
+  }
+}
+@media (max-width: 480px) {
+  .projectPage .header .right {
+    width: 90%;
+    height: 230px;
+  }
+}

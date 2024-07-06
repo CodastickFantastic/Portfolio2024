@@ -1,0 +1,115 @@
+.processDescription p {
+  text-align: center;
+}
+.processDescription .steps {
+  margin-top: 24px;
+  display: flex;
+  width: 100%;
+}
+.processDescription .steps .step {
+  width: 20%;
+  padding: 28px 14px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.processDescription .steps .step .triangle {
+  position: absolute;
+  top: 38px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-top: 36px solid transparent;
+  border-bottom: 36px solid transparent;
+  border-left: 36px solid green;
+}
+.processDescription .steps .step:first-of-type {
+  background-color: #2F1C6A;
+}
+.processDescription .steps .step:nth-of-type(2) {
+  background-color: #3C2487;
+}
+.processDescription .steps .step:nth-of-type(2) .triangle {
+  border-left-color: #2F1C6A;
+}
+.processDescription .steps .step:nth-of-type(3) {
+  background-color: #43269B;
+}
+.processDescription .steps .step:nth-of-type(3) .triangle {
+  border-left-color: #3C2487;
+}
+.processDescription .steps .step:nth-of-type(4) {
+  background-color: #5030B3;
+}
+.processDescription .steps .step:nth-of-type(4) .triangle {
+  border-left-color: #43269B;
+}
+.processDescription .steps .step:nth-of-type(5) {
+  background-color: #5C37CF;
+}
+.processDescription .steps .step:nth-of-type(5) .triangle {
+  border-left-color: #5030B3;
+}
+.processDescription .steps .step .number {
+  font-family: var(--font-nunito);
+  font-size: 150px;
+  line-height: 1;
+  color: white;
+}
+.processDescription .steps .step .title {
+  font-family: var(--font-nunito);
+  font-size: 24px;
+  color: white;
+}
+.processDescription .steps .step .pointDescription {
+  margin-top: 24px;
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  min-height: 75px;
+}
+.processDescription .steps .step img {
+  margin-top: 12px;
+  width: auto;
+  height: 64px;
+  object-fit: contain;
+}
+
+@media (max-width: 1600px) {
+  .processDescription .steps {
+    padding: 0px;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .processDescription .steps .step {
+    width: 100%;
+    max-width: 33.333333%;
+  }
+  .processDescription .steps .step:nth-child(4), .processDescription .steps .step:nth-child(5) {
+    width: 50%;
+    max-width: unset;
+  }
+}
+@media (max-width: 960px) {
+  .processDescription .steps .step {
+    width: 50%;
+    max-width: unset;
+  }
+  .processDescription .steps .step:nth-child(5) {
+    width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .processDescription .steps .step {
+    width: 100% !important;
+    max-width: unset !important;
+  }
+  .processDescription .steps .step .triangle {
+    top: -24px;
+    left: unset;
+    right: 32px;
+    rotate: 90deg;
+  }
+}

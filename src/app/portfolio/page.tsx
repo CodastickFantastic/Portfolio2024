@@ -1,4 +1,4 @@
-import styles from "@/scss/pages/PortfolioPage.module.scss"
+import styles from "@/styles/pages/PortfolioPage.module.css"
 
 import type { Metadata } from 'next'
 

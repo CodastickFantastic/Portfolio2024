@@ -1,0 +1,133 @@
+.navigationBar {
+  padding: 12px 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navigationBar .logo {
+  width: auto;
+  height: 48px;
+  object-fit: contain;
+}
+.navigationBar .burgerMenuLabel input {
+  display: none;
+}
+.navigationBar .burgerMenuLabel .burgerMenu {
+  display: none;
+}
+.navigationBar .rightSection {
+  display: flex;
+  align-items: center;
+}
+.navigationBar .rightSection .burgerMenuClose {
+  display: none;
+}
+.navigationBar .rightSection .navLinks {
+  margin-right: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.navigationBar .rightSection .navLinks .navItem {
+  padding: 6px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navigationBar .rightSection .navLinks .navItem .navItemText {
+  font-family: var(--font-nunito);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+  color: #2f1c6a;
+}
+.navigationBar .rightSection .navLinks .navItem .navItemText.selected {
+  color: #fc5185;
+}
+.navigationBar .rightSection .navLinks .navItem .navItemText:hover {
+  color: #fc5185;
+}
+.navigationBar .rightSection .navLinks .navItem:has(.navItemText.selected) {
+  border-bottom: 1px solid #fc5185;
+}
+.navigationBar .rightSection .horizontalDivider {
+  width: 1px;
+  height: 18px;
+  background-color: #2f1c6a;
+  margin-right: 12px;
+}
+.navigationBar .rightSection .flag {
+  width: 35px;
+  height: 24px;
+  cursor: pointer;
+}
+.navigationBar .rightSection .flag:not(:last-of-type) {
+  margin-right: 12px;
+}
+.navigationBar .rightSection .flag:hover {
+  transform: scale(0.85);
+}
+
+@media (max-width: 840px) {
+  .navigationBar {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    padding: 12px 8px 6px;
+    background: white;
+  }
+  .navigationBar .burgerMenuLabel input {
+    display: none;
+  }
+  .navigationBar .burgerMenuLabel .burgerMenu {
+    display: block;
+    width: 32px;
+    height: auto;
+  }
+  .navigationBar .rightSection {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    z-index: 999;
+    height: 100dvh;
+    width: 100%;
+    background-color: #261A4C;
+    transition: all 0.4s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .navigationBar .rightSection .burgerMenuClose {
+    display: block;
+    position: absolute;
+    z-index: 9999;
+    top: 24px;
+    right: 24px;
+    width: 32px;
+    height: auto;
+    object-fit: contain;
+  }
+  .navigationBar .rightSection .navLinks {
+    margin-right: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .navigationBar .rightSection .navLinks .navItem .navItemText {
+    font-size: 22px;
+    color: white;
+  }
+  .navigationBar .rightSection .horizontalDivider {
+    display: none;
+  }
+  .navigationBar .rightSection .flagSection {
+    margin-top: 24px;
+  }
+  .navigationBar:has(.burgerMenuLabel input:checked) .rightSection {
+    left: 0;
+  }
+}
