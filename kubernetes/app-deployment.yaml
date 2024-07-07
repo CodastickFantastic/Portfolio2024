@@ -3,6 +3,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: jakubwojtysiak-website-deployment
+  namespace: ns-jakubwojtysiak-website
   labels:
     app: jakubwojtysiak-webiste
 spec:
@@ -22,9 +23,8 @@ spec:
               memory: "1Gi"
               cpu: "500m"
           image: ghcr.io/codastickfantastic/portfolio2024:master
+          imagePullPolicy: Always
           ports:
             - containerPort: 8080
-          env:
-            - name: MONGO_INITDB_ROOT_USERNAME
           imagePullSecrets:
             - name: github-registry-secret.credentials
