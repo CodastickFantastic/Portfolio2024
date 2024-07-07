@@ -12,6 +12,10 @@ import kredyteoImg from "@/../public/img/portfolio/kredyteo.webp"
 import pollinImage from "@/../public/img/portfolio/pollin.webp"
 import megatransImg from "@/../public/img/portfolio/megatrans.webp"
 import czystykamienImg from "@/../public/img/portfolio/czystykamien.webp"
+import naklejeczkaImg from "@/../public/img/portfolio/naklejeczka.webp"
+import jazbaImg from "@/../public/img/portfolio/jazba.webp"
+import skanowanieStrukturalneImg from "@/../public/img/portfolio/skanowanie-strukturalne.webp"
+import skanowanieImg from "@/../public/img/portfolio/skanowanie.webp"
 import p1Img from "@/../public/img/portfolio/p1.webp"
 
 export const metadata: Metadata = {
@@ -39,14 +43,48 @@ const PortfolioPage = (): React.JSX.Element => {
                 </div>
                 <div className={styles.right}>
                     <LastRealization
+                        img={skanowanieImg}
+                        type="Shopify - Hydrogen"
+                        link="/portfolio/skanowanie"
+                        title="Sklep Internetowy (W przebudowie...)"
+                    />
+                </div>
+            </section>
+            <section className={styles.projectsSection}>
+                <div className={styles.tile}>
+                    <RealizationTile
+                        img={skanowanieStrukturalneImg}
+                        type="NextJS"
+                        link="https://skanowaniestrukturalne.pl"
+                        title="Nowoczesny Landing Page"
+                        noFollow
+                    />
+                </div>
+                <div className={styles.tile}>
+                    <RealizationTile
+                        img={jazbaImg}
+                        type="Shopify - Hydrogen"
+                        link="/portfolio/jazba"
+                        title="Sklep Interentowy + Integracje"
+                    />
+                </div>
+                <div className={styles.tile}>
+                    <RealizationTile
+                        img={naklejeczkaImg}
+                        type="Wordpress"
+                        link="https://naklejeczka.pl"
+                        title="Landing Page"
+                        noFollow
+                    />
+                </div>
+                <div className={styles.tile}>
+                    <RealizationTile
                         img={franciszkanieImg}
                         type="NextJS"
                         link="/portfolio/system-archiwalno-biblioteczny"
                         title="System Ar-Bi"
                     />
                 </div>
-            </section>
-            <section className={styles.projectsSection}>
                 <div className={styles.tile}>
                     <RealizationTile
                         img={czystykamienImg}

@@ -17,12 +17,12 @@
         margin-top: 64px;
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: flex-start;
         column-gap: 24px;
-        row-gap: 24px;
+        row-gap: 32px;
 
         .tile {
-            width: 30%;
+            width: 32%;
         }
 
     }
