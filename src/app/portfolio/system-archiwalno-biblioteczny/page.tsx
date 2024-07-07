@@ -7,6 +7,7 @@ import RealizationTile from '@/components/microComponents/RealizationTile';
 
 
 import heroImg from '@/../public/img/portfolio/franciszkanie.webp';
+import clientLogo from '@/../public/img/clients/skanowanie-logo-black.png';
 
 export const metadata: Metadata = {
     title: 'System Archiwalno Biblioteczny',
@@ -32,6 +33,7 @@ const ArBiPage = (): React.JSX.Element => {
                         bullets={["Digitalizacja ksiąg", "Dostep wymaga autoryzacji admina", "Bezstratna minimalizacja plików (nawet 99% kompresja powierzchni)"]}
                         technologies="NextJS + Prisma"
                         time="2 tygodnie"
+                        clientLogo={clientLogo}
                     />
                 </div>
                 <div className={styles.right}>

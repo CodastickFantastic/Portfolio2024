@@ -9,6 +9,7 @@
 
     .bulletPoints {
         margin-top: 24px;
+        margin-left: 16px;
 
         li {
             display: flex;
@@ -37,6 +38,7 @@
     }
 
     .addInfo {
+        margin-left: 16px;
         font-weight: 500;
 
         &:nth-of-type(3) {
@@ -47,6 +49,12 @@
         img {
             margin-right: 6px;
         }
+    }
+
+    .clientLogo {
+        display: inline-block;
+        margin-top: 6px;
+        margin-left: 16px;
     }
 }
 
@@ -61,6 +69,12 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+        }
+
+        .bulletPoints,
+        .addInfo,
+        .clientLogo {
+            margin-left: 0;
         }
     }
 }
