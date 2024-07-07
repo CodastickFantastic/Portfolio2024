@@ -1,4 +1,4 @@
-import "@/styles/global.css"
+import "@/scss/global.scss"
 
 import NavigationBar from '@/components/globalComponents/NavigationBar'
 import type { Metadata } from 'next'

@@ -1,4 +1,4 @@
-import styles from "@/styles/pages/aboutMe.module.css";
+import styles from "@/scss/pages/aboutMe.module.scss";
 
 import dynamic from "next/dynamic";
 import type { Metadata } from 'next'
