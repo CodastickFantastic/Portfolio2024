@@ -31,7 +31,14 @@ export default function Home() {
     <main>
       <div className={`${styles.heroSection} container`}>
         <div className={styles.left}>
-          <HeaderWithBulletPoints />
+          <HeaderWithBulletPoints
+            h1='Strony <span class="purple">internetowe</span> i marketing'
+            underTitle='Pozwól sobie pomóc i <span class="purple">zaistniej</span> ze mną w sieci'
+            bullets={["Wordpress", "Strony Internetowe", "Systemy Infromatyczne", "Aplikacje Mobilne", "Administracja Serwerów", "Wizualizacja UI", "Hosting"]}
+            cta1={{ text: "Nawiążmy Kontakt", url: "#kontakt" }}
+            cta2={{ text: "Portfolio", url: "/potfolio" }}
+            protectBadge
+          />
         </div>
         <div className={styles.right}>
           <Image src={hero} alt="Mężczyzna trzymający się za okulary" priority />
@@ -43,6 +50,6 @@ export default function Home() {
       <div id="kontakt" className={`${styles.contactSection} container`}>
         <ContactSection />
       </div>
-    </main>
+    </main >
   )
 }

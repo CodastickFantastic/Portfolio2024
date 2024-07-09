@@ -64,6 +64,9 @@ const NavigationBar = (): React.JSX.Element => {
                         <Link className={styles.navItemText} href="/portfolio" onClick={closeMenu} >Portfolio</Link>
                     </div>
                     <div className={styles.navItem}>
+                        <Link className={styles.navItemText} href="/nauka-it" onClick={closeMenu} >Nauka IT</Link>
+                    </div>
+                    <div className={styles.navItem}>
                         <Link className={styles.navItemText} href="/#kontakt" onClick={closeMenu} >Kontakt</Link>
                     </div>
                 </div>
