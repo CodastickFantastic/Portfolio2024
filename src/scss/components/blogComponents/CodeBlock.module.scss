@@ -1,0 +1,55 @@
+@use "../../helpers/variables";
+
+.codeBlockSection {
+    margin-top: 12px;
+    margin-bottom: 16px;
+
+    .preCodeBlock {
+        font-family: variables.$poppins;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: normal;
+        color: variables.$pink;
+    }
+
+    .codeBlock {
+        display: flex;
+        flex-direction: column;
+        row-gap: 6px;
+        width: 100%;
+        background-color: variables.$deep-purple;
+        color: white;
+        font-family: variables.$nunito;
+        font-size: 13px;
+        font-weight: 500;
+        line-height: normal;
+        padding: 12px 24px;
+        border-radius: 4px;
+        text-align: left;
+        margin-top: 3px;
+
+        var {
+            color: variables.$pink;
+
+            &:before {
+                content: "<";
+            }
+
+            &:after {
+                content: ">";
+            }
+        }
+    }
+}
+
+@media(max-width:840px) {
+    .codeBlockSection {
+        .preCodeBlock {
+            text-align: left;
+        }
+
+        .codeBlock {
+            padding: 12px;
+        }
+    }
+}

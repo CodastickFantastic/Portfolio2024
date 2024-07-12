@@ -1,0 +1,157 @@
+@use "../helpers/variables.scss";
+
+
+.articlePage {
+    padding-top: 24px;
+
+    .articleContainer {
+        width: 100%;
+        max-width: 1180px;
+        padding: 0 24px;
+        margin: auto;
+    }
+
+
+    .articleSection {
+        width: 100%;
+
+        .sectionDivider {
+            padding: 12px 0;
+            background-color: variables.$purple;
+            margin-bottom: 24px;
+
+            h2 {
+                color: white;
+                text-align: left;
+                font-size: 24px;
+            }
+
+        }
+
+        .sectionContent {
+            margin-bottom: 36px;
+
+            .sectionContentHeader {
+                font-family: variables.$poppins;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: normal;
+                color: variables.$deep-purple;
+                margin-top: 24px;
+                margin-bottom: 9px;
+            }
+
+            .sectionContentText {
+                font-family: variables.$poppins;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: normal;
+                color: variables.$deep-purple;
+            }
+
+            ul,
+            ol {
+                list-style: disc;
+                margin-left: 24px;
+                margin-top: 6px;
+                margin-bottom: 12px;
+            }
+
+            ol {
+                list-style: decimal;
+            }
+
+            li {
+                font-family: variables.$poppins;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: normal;
+                color: variables.$deep-purple;
+                margin-bottom: 3px;
+            }
+
+            .blogImg {
+                display: block;
+                width: 100%;
+                height: auto;
+                object-fit: contain;
+                margin-top: 12px;
+                margin-bottom: 12px;
+                margin-inline: auto;
+
+            }
+        }
+
+        .linkBtn {
+            margin-top: 16px;
+            display: block;
+            width: 100%;
+            background-color: variables.$deep-purple;
+            color: white;
+            font-family: variables.$poppins;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: normal;
+            padding: 12px 24px;
+            border-radius: 4px;
+            text-align: center;
+            text-decoration: none;
+            transition: .1s linear;
+
+            &:hover {
+                background-color: variables.$purple;
+            }
+        }
+
+        .pathBox {
+            background: red;
+            padding: 2px 6px;
+            border-radius: 4px;
+            background-color: variables.$deep-purple;
+            color: white;
+            font-family: variables.$poppins;
+            font-weight: 500;
+        }
+    }
+}
+
+@media(max-width: 840px) {
+    .articlePage {
+        padding-top: 64px;
+
+        .articleContainer {
+            padding: 0 8px;
+        }
+
+
+        .articleSection {
+            .sectionDivider {
+                margin-bottom: 0px !important;
+
+                h2 {
+                    font-size: 20px;
+                }
+
+            }
+
+            .sectionContent {
+                margin-bottom: 36px;
+
+                .sectionContentHeader {
+                    margin-top: 16px;
+                    font-size: 18px;
+                }
+
+                .sectionContentText {
+                    text-align: left;
+                }
+
+                ul,
+                ol {
+                    margin-left: 16px;
+                }
+            }
+        }
+    }
+
+}

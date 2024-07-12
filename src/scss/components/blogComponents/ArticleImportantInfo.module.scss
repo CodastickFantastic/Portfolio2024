@@ -1,0 +1,80 @@
+@use "../../helpers/variables.scss";
+
+.articleImportantInfo {
+    margin-top: 16px;
+    margin-bottom: 12px;
+    border-radius: 4px;
+
+
+    .infoHeader {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        .title {
+            font-size: 16px;
+            font-weight: 600;
+            line-height: normal;
+        }
+
+        .icon {
+            width: 28px;
+            height: 28px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+
+            &.warningIcon {
+                background-image: url("/blogImgs/icons/warning.png");
+            }
+
+            &.hintIcon {
+                background-image: url("/blogImgs/icons/hint.png");
+            }
+
+            &.howIcon {
+                background-image: url("/blogImgs/icons/how.png");
+            }
+        }
+    }
+
+    .content {
+        margin-top: 12px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .cta {
+        display: inline-block;
+        margin-top: 12px;
+        font-family: variables.$poppins;
+        font-size: 13px;
+        font-weight: 500;
+        border: 1px solid white;
+        color: white;
+        padding: 9px 12px;
+        border-radius: 4px;
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+            background-color: white;
+            color: variables.$deep-purple;
+        }
+    }
+
+    li {
+        font-weight: 500 !important;
+    }
+}
+
+@media(max-width:840px) {
+    .articleImportantInfo {
+        padding: 12px;
+    }
+
+    .content {
+        text-align: left;
+    }
+}
