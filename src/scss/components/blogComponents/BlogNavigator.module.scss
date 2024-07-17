@@ -1,0 +1,68 @@
+@use "../../helpers/variables";
+
+.blogNavigator {
+    width: 100%;
+    max-width: 1180px;
+    padding: 0 24px;
+    margin: auto;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .lessonsNavigator {
+        display: flex;
+        align-items: center;
+        column-gap: 6px;
+    }
+
+    .linkBtn {
+        font-family: variables.$poppins;
+        font-size: 14px;
+        padding: 6px 9px;
+        background-color: variables.$deep-purple;
+        color: white;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        column-gap: 3px;
+        transition: .2s linear;
+
+        &.pink {
+            background-color: variables.$pink;
+        }
+
+        .icon {
+            width: 16px;
+            height: 16px;
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+
+            &.arrowBack,
+            &.arrowNext {
+                background-image: url("/blogImgs/icons/arrow_white.png");
+            }
+
+            &.arrowBack {
+                rotate: 180deg;
+            }
+        }
+
+        &:hover {
+            cursor: pointer;
+            background-color: variables.$pink;
+        }
+    }
+
+}
+
+@media(max-width: 840px) {
+    .blogNavigator {
+        padding: 0 8px;
+
+        .backBtn {
+            font-size: 16px;
+        }
+    }
+}

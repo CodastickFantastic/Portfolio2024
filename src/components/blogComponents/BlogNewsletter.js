@@ -15,19 +15,19 @@ export default function BlogNewsletter() {
                 <h2>Newsleter IT</h2>
                 <div className={styles.newsletterIcon} />
             </div>
-            <p>Subskrybując mój newsletter otrzymasz za darmo:</p>
-            <ol>
+            <p>Nie przegap żadnych nowości !</p>
+            {/* <ol>
                 <li>0 SPAMU</li>
                 <li>Kursy programowania JavaScript</li>
                 <li>Kursy Devops</li>
                 <li>Najlepsze Zasady Bezpieczeńśtwa</li>
                 <li>Będziesz zawsze ze mną na bieżąco</li>
-            </ol>
+            </ol> */}
             <form onSubmit={submitForm}>
                 <input type="email" placeholder="Twoj adres e-mail" />
                 <button type="submit">Chcę wejść do IT</button>
             </form>
-            <div className={styles.formStatus}>Zweryfikuj poprawność swoich danych</div>
+            {/* <div className={styles.formStatus}>Zweryfikuj poprawność swoich danych</div> */}
         </div >
     )
 }

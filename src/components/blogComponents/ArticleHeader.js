@@ -3,12 +3,13 @@ import Image from 'next/image';
 import styles from '@/scss/components/blogComponents/ArticleHeader.module.scss'
 import Link from 'next/link';
 
-export default function ArticleHeader({ h1, articleInfo, contentsTitle, contents, headerImg }) {
+export default function ArticleHeader({ h1, articleInfo, contentsTitle, contents, headerImg, underTitle }) {
 
     return (
         <header className={styles.articleHeader}>
             <div className={styles.leftColumn}>
                 <h1 dangerouslySetInnerHTML={{ __html: h1 }} />
+                {underTitle && <p className={styles.underTitle}>{underTitle}</p>}
                 {articleInfo &&
                     <div className={styles.articleInfo}>
                         <div className={`${styles.infoTile} ${styles.time}`}>

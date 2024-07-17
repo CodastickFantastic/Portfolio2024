@@ -13,6 +13,7 @@ import output1 from "@/../public/blogImgs/bezpieczna-konfiguracja-vps/output_1.p
 import output2 from "@/../public/blogImgs/bezpieczna-konfiguracja-vps/output_2.png";
 import output3 from "@/../public/blogImgs/bezpieczna-konfiguracja-vps/output_3.png";
 import output4 from "@/../public/blogImgs/bezpieczna-konfiguracja-vps/output_4.png";
+import BlogNavigator from "@/components/blogComponents/BlogNavigator";
 
 
 
@@ -30,6 +31,10 @@ export const metadata = {
 export default function ArticlePage() {
   return (
     <main className={styles.articlePage}>
+      <BlogNavigator
+        previousLesson={{ title: "Wstęp", url: "/blog-it/kurs-devops-dla-juniorow" }}
+        nextLesson={{ title: "Lekcja 1", url: "/blog-it/kurs-devops-dla-juniorow/jak-bezpiecznie-skonfigurowac-moj-pierwszy-serwer-vps" }}
+      />
       <article>
         <div className={styles.articleContainer}>
           <ArticleHeader
