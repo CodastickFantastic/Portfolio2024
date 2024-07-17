@@ -153,6 +153,7 @@
         margin-bottom: 12px;
 
         .icon {
+            min-width: 24px;
             width: 28px;
             height: 28px;
         }
@@ -179,6 +180,8 @@
             margin-bottom: 12px;
 
             .icon {
+                min-width: 26px;
+                min-height: 26px;
                 width: 26px;
                 height: 26px;
             }
@@ -213,6 +216,12 @@
         }
 
         h1 {
+            width: 100%;
+            text-align: center;
+        }
+
+        .underTitle {
+            width: 100%;
             text-align: center;
         }
 
@@ -235,6 +244,7 @@
             width: 100%;
 
             a {
+                margin-left: 0px;
                 justify-content: center;
             }
         }
@@ -244,7 +254,6 @@
 @media(max-width: 550px) {
     .articleHeader {
         h1 {
-            text-align: center;
             font-size: 24px;
 
             &.blogHeader {
@@ -252,20 +261,30 @@
             }
         }
 
+        .underTitle {
+            width: 100%;
+            text-align: center;
+        }
+
         .articleInfo {
-            justify-content: flex-start;
+            justify-content: center;
         }
 
         .contentsTitle {
             justify-content: flex-start;
             margin-bottom: 12px;
-            text-align: left;
+            text-align: center;
+
+            .icon {
+                display: none;
+            }
         }
 
         .contents {
             width: 100%;
 
             a {
+                margin-left: 0px;
                 justify-content: flex-start;
             }
         }

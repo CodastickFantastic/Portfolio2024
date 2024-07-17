@@ -99,7 +99,7 @@ function CourseTile({ title, level, icon, available = false, url }) {
 function ArticleTile({ title, img, url, content }) {
   return (
     <article className={styles.articleTile}>
-      <Image src={img} alt={`${title} - Wizualizacja`} width={400} height={400} className={styles.articleImg} />
+      <Image src={img} alt={`${title} - Wizualizacja`} width={400} height={200} className={styles.articleImg} />
       <div className={styles.articlePreview}>
         <h3>{title}</h3>
         <p dangerouslySetInnerHTML={{ __html: content }} />
