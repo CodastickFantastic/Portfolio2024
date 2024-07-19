@@ -65,4 +65,34 @@
         <changefreq>weekly</changefreq>
         <priority>1</priority>
     </url>
+    <url>
+        <loc>https://jakubwojtysiak.online/blog-it</loc>
+        <lastmod>2024-03-01</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1</priority>
+    </url>
+    <url>
+        <loc>https://jakubwojtysiak.online/blog-it/kurs-devops-dla-juniorow</loc>
+        <lastmod>2024-03-01</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1</priority>
+    </url>
+    <url>
+        <loc>https://jakubwojtysiak.online/blog-it/kurs-devops-dla-juniorow/jak-bezpiecznie-skonfigurowac-moj-pierwszy-serwer-vps</loc>
+        <lastmod>2024-03-01</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1</priority>
+    </url>
+    <url>
+        <loc>https://jakubwojtysiak.online/blog-it/kurs-devops-dla-juniorow/dokeryzacja-aplikacji-podstawy-dockera</loc>
+        <lastmod>2024-03-01</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1</priority>
+    </url>
+    <url>
+        <loc>https://jakubwojtysiak.online/blog-it/nowosci-ze-swiata-it/gigantyczna-awaria-microsoftu-subkietywna-opinia</loc>
+        <lastmod>2024-03-01</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1</priority>
+    </url>
 </urlset>

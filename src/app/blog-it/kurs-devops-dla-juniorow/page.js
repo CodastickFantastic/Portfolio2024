@@ -32,16 +32,16 @@ export default function KursDevOpsDlaJuniorow() {
           <ArticleHeader
             h1="Kurs <span class='purple'>DevOps</span> dla Juniorów<br/>"
             underTitle="Czyli od 0 do DevOps w kilku krokach"
-            articleInfo={{ time: "3 dni", specialization: "DevOps", level: "Junior - Mid" }}
+            articleInfo={{ time: "Spiesz się powoli", specialization: "DevOps", level: "Junior - Mid" }}
             headerImg={articleHero}
             contentsTitle="Podstawy Hostowania na Własnym Serwerze VPS"
             contents={[
               { text: "Bezpieczna konfiguracja serwera VPS ", url: "/blog-it/kurs-devops-dla-juniorow/jak-bezpiecznie-skonfigurowac-moj-pierwszy-serwer-vps", icon: "pageIcon" },
-              { text: "Dokeryzacja Aplikacji - Podstawy Docker’a", url: "#logowanie-i-aktualizacja-linuxa", icon: "pageIcon" },
-              { text: "Składowanie Obrazu - Github Container Registry", url: "#konfiguracja-firewalla-linux", icon: "pageIcon" },
-              { text: "Docker Compose - Podstawy YAML’a", url: "#nowy-sudoer-i-ssh-key", icon: "pageIcon" },
-              { text: "Pokaż Aplikację Światu - Traefik Reverse Proxy", url: "#bezpieczna-konfiguracja-ssh", icon: "pageIcon" },
-              { text: "CI/CD Docker x GithubActions", url: "#bezpieczna-konfiguracja-ssh", icon: "pageIcon" }
+              { text: "Dokeryzacja Aplikacji - Podstawy Docker’a", url: "/blog-it/kurs-devops-dla-juniorow/dokeryzacja-aplikacji-podstawy-dockera", icon: "pageIcon" },
+              { text: "Składowanie Obrazu - Github Container Registry", url: "/blog-it/kurs-devops-dla-juniorow", icon: "pageIcon", notAvailable: true },
+              { text: "Docker Compose - Podstawy YAML’a", url: "/blog-it/kurs-devops-dla-juniorow", icon: "pageIcon", notAvailable: true },
+              { text: "Pokaż Aplikację Światu - Traefik Reverse Proxy", url: "/blog-it/kurs-devops-dla-juniorow", icon: "pageIcon", notAvailable: true },
+              { text: "CI/CD Docker x GithubActions", url: "/blog-it/kurs-devops-dla-juniorow", icon: "pageIcon", notAvailable: true }
             ]}
           />
         </div>

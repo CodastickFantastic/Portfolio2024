@@ -7,6 +7,7 @@ import Link from "next/link";
 
 import Image from "next/image";
 import articleHero from "@/../public/blogImgs/_index/blog_hero_img.png";
+import awariaMicrosoftu from "@/../public/blogImgs/blogPreviews/awaria_microsoft.png";
 import frontend2024 from "@/../public/blogImgs/blogPreviews/frontend_placeholder.png";
 
 
@@ -57,12 +58,12 @@ export default function BlogHomePage() {
         <div className={`${styles.sectionContent} ${styles.articleContainer} ${styles.latestArticels}`}>
           <div className={styles.left}>
             <ArticleTile
-              title="Dlaczego sam Frontend to za mało w 2024 roku?"
-              img={frontend2024}
-              url="/blog-it"
-              content="W dobie dynamicznie rozwijającej się technologii i rosnących oczekiwań użytkowników, sam frontend to już za mało, aby stworzyć kompleksowe i nowoczesne aplikacje internetowe. Rok 2024 przynosi ze sobą nowe wyzwania..."
+              title="Wielka awaria Microsoftu - Subiektywna Opinia"
+              img={awariaMicrosoftu}
+              url="/blog-it/nowosci-ze-swiata-it/gigantyczna-awaria-microsoftu-subkietywna-opinia"
+              content="Dzisiaj (19.07.2024) doszło do jednej z największych w historii awarii serwerów firmy Microsoft, która doprowadziła do uziemienia lotnisk, koleii i firm na całym świecie. Czy nadal możemy ufać gigantom IT? "
             />
-            <ArticleTile
+            {/* <ArticleTile
               title="Jaki język programowania jest najlepszy w 2024 roku?"
               img={frontend2024}
               url="/blog-it"
@@ -73,7 +74,7 @@ export default function BlogHomePage() {
               img={frontend2024}
               url="/blog-it"
               content="W dobie dynamicznie rozwijającej się technologii i rosnących oczekiwań użytkowników, sam frontend to już za mało, aby stworzyć kompleksowe i nowoczesne aplikacje internetowe. Rok 2024 przynosi ze sobą nowe wyzwania..."
-            />
+            /> */}
           </div>
           <div className={styles.right}>
             <BlogNewsletter />

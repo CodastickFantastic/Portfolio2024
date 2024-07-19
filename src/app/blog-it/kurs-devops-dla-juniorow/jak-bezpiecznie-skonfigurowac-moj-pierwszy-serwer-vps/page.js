@@ -21,9 +21,9 @@ export const metadata = {
   title: 'Jak bezpiecznie skonfigurowć mój pierwszy serwer VPS?',
   description: 'Konfiguracja Twójego pierwszego serwera VPS w bezpieczny sposób nie jest tak straszna jak Ci się wydaje...',
   alternates: {
-    canonical: 'https://jakubwojtysiak.pl/nauka-it',
+    canonical: 'https://jakubwojtysiak.pl/blog-it/kurs-devops-dla-juniorow/jak-bezpiecznie-skonfigurowac-moj-pierwszy-serwer-vps',
     languages: {
-      'pl-PL': 'https://jakubwojtysiak.pl/nauka-it',
+      'pl-PL': 'https://jakubwojtysiak.pl/blog-it/kurs-devops-dla-juniorow/jak-bezpiecznie-skonfigurowac-moj-pierwszy-serwer-vps',
     }
   }
 }
@@ -33,13 +33,13 @@ export default function ArticlePage() {
     <main className={styles.articlePage}>
       <BlogNavigator
         previousLesson={{ title: "Wstęp", url: "/blog-it/kurs-devops-dla-juniorow" }}
-        nextLesson={{ title: "Lekcja 1", url: "/blog-it/kurs-devops-dla-juniorow/jak-bezpiecznie-skonfigurowac-moj-pierwszy-serwer-vps" }}
+        nextLesson={{ title: "Lekcja 2", url: "/blog-it/kurs-devops-dla-juniorow/dokeryzacja-aplikacji-podstawy-dockera" }}
       />
       <article>
         <div className={styles.articleContainer}>
           <ArticleHeader
             h1="Jak <span class='purple'>bezpiecznie</span> skonfigurować mój pierwszy serwer VPS?"
-            articleInfo={{ time: "1 godzina", specialization: "DevOps", level: "Junior" }}
+            articleInfo={{ time: "2 godziny", specialization: "DevOps", level: "Junior" }}
             headerImg={articleHero}
             contentsTitle="Konfiguracja Serwera VPS Krok po Kroku"
             contents={[

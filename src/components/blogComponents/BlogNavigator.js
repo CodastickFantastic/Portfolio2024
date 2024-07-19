@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { usePathname } from "next/navigation";
 
 
-export default function BlogNavigator({ previousLesson, nextLesson }) {
+export default function BlogNavigator({ hardCodedPreviousPage, previousLesson, nextLesson }) {
     const location = usePathname()
     let previousPageArray = location.split("/")
     previousPageArray.pop()
@@ -13,7 +13,7 @@ export default function BlogNavigator({ previousLesson, nextLesson }) {
 
     return (
         <div className={styles.blogNavigator}>
-            <Link href={previousPage} className={`${styles.linkBtn} ${styles.pink}`}><span className={`${styles.icon} ${styles.arrowBack}`} />Powrót</Link>
+            <Link href={hardCodedPreviousPage ? hardCodedPreviousPage : previousPage} className={`${styles.linkBtn} ${styles.pink}`}><span className={`${styles.icon} ${styles.arrowBack}`} />Powrót</Link>
             <div className={styles.lessonsNavigator}>
                 {previousLesson && <Link href={previousLesson.url} className={styles.linkBtn}><span className={`${styles.icon} ${styles.arrowBack}`} /> {previousLesson.title}</Link>}
                 {nextLesson && <Link href={nextLesson.url} className={styles.linkBtn}>{nextLesson.title} <span className={`${styles.icon} ${styles.arrowNext}`} /></Link>}

@@ -186,6 +186,11 @@
                 height: 26px;
             }
 
+            &.notAvailable {
+                text-decoration: line-through !important;
+                text-decoration-color: variables.$pink !important;
+            }
+
             &:hover {
                 text-decoration: underline;
             }
@@ -200,7 +205,7 @@
         align-items: flex-start;
 
         .leftColumn {
-            max-width: unset;
+            max-width: 100%;
             margin-bottom: 24px;
         }
 
@@ -218,6 +223,10 @@
         h1 {
             width: 100%;
             text-align: center;
+
+            .beta {
+                display: none;
+            }
         }
 
         .underTitle {
@@ -271,7 +280,6 @@
         }
 
         .contentsTitle {
-            justify-content: flex-start;
             margin-bottom: 12px;
             text-align: center;
 
