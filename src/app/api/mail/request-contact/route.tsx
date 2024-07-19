@@ -30,7 +30,7 @@ export async function POST(request: Request) {
     `;
 
         const SEND_EMAIL = await transporter.sendMail({
-            from: "Kredyteo <kontakt@kredyteo.info>",
+            from: "Admin <kontakt@kredyteo.info>",
             to: "it.jakub.wojtysiak@gmail.com",
             subject: "Nowy kontakt z formularza",
             html: MESSAGE,

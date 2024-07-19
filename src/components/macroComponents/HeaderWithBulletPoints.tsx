@@ -5,29 +5,29 @@ import ok from "@/../public/img/icons/ok.png";
 import protect from "@/../public/img/icons/protect.png";
 
 
-const HeaderWithBulletPoints = (): React.JSX.Element => {
+const HeaderWithBulletPoints = (
+    { h1, underTitle, bullets, cta1, cta2, protectBadge }: { h1: string, underTitle: string, bullets: string[], cta1: { text: string, url: string }, cta2: { text: string, url: string }, protectBadge?: boolean }
+): React.JSX.Element => {
 
     return (
         <section className={styles.header}>
-            <h1>Strony <span className="purple">internetowe </span>i marketing</h1>
-            <p className={styles.paragraph}>Pozwól sobie pomóc i <span className='purple'>zaistniej</span> ze mną w sieci</p>
+            <h1 dangerouslySetInnerHTML={{ __html: h1 }} />
+            <p className={styles.paragraph} dangerouslySetInnerHTML={{ __html: underTitle }} />
             <ul className={styles.bulletPoints}>
-                <li><Image src={ok} alt="Ikona ptaszka" /> Wordpress</li>
-                <li><Image src={ok} alt="Ikona ptaszka" /> Strony Internetowe</li>
-                <li><Image src={ok} alt="Ikona ptaszka" /> Systemy Informatyczne</li>
-                <li><Image src={ok} alt="Ikona ptaszka" /> Aplikacje Mobilne</li>
-                <li><Image src={ok} alt="Ikona ptaszka" /> Administracja Serwerów</li>
-                <li><Image src={ok} alt="Ikona ptaszka" /> Wizualizacja UI</li>
-                <li><Image src={ok} alt="Ikona ptaszka" /> Hosting</li>
+                {bullets.map((bullet, index) => {
+                    return <li key={index}><Image src={ok} alt="Ikona ptaszka" /> {bullet}</li>
+                })}
             </ul>
             <div className={styles.buttons}>
-                <a href="#kontakt" className='button active'>Nawiążmy Kontakt</a>
-                <a href="/portfolio" className='button'>Portfolio</a>
+                <a href={cta1.url} className='button active'>{cta1.text}</a>
+                <a href={cta2.url} className='button'>{cta2.text}</a>
             </div>
-            <div className="badgeWithText">
-                <Image src={protect} alt="Ikona ptaszka" />
-                <p>Gwarancja <span className='purple'>satysfakcji</span> oraz najwyższej <span className='purple'>jakości</span></p>
-            </div>
+            {protectBadge &&
+                <div className="badgeWithText">
+                    <Image src={protect} alt="Ikona ptaszka" />
+                    <p>Gwarancja <span className='purple'>satysfakcji</span> oraz najwyższej <span className='purple'>jakości</span></p>
+                </div>
+            }
         </section >
     )
 }

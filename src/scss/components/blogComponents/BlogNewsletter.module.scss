@@ -1,0 +1,106 @@
+@use "../../helpers/variables";
+
+.blogNewsletter {
+    background-color: variables.$pink;
+    padding: 6px 12px 12px 12px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+
+    .newsletterTitle {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+
+        h2 {
+            font-size: 24px;
+            font-weight: 500;
+            color: white;
+            text-align: left;
+        }
+
+        .newsletterIcon {
+            width: 30px;
+            height: 30px;
+            background-image: url("/blogImgs/icons/newsletter.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    }
+
+    p {
+        font-family: variables.$nunito;
+        color: white;
+        font-size: 16px;
+        font-weight: 500;
+        margin: 0px;
+        text-align: left;
+
+        span {
+            color: white;
+        }
+    }
+
+    ol {
+        list-style-type: disc;
+        list-style-position: inside;
+        margin-left: 6px;
+        margin-top: 6px;
+
+        li {
+            font-family: variables.$nunito;
+            color: white;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 1.3;
+            text-align: left;
+        }
+    }
+
+    form {
+        margin-top: 12px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        input {
+            height: 28px;
+            border-radius: 4px 0 0 4px;
+            border: none;
+            padding: 0 6px;
+            flex: 1 1 auto;
+            font-family: variables.$nunito;
+            font-size: 14px;
+        }
+
+        button {
+            height: 28px;
+            border: none;
+            border-radius: 0 4px 4px 0;
+            background-color: variables.$deep-purple;
+            color: white;
+            font-family: variables.$nunito;
+            font-size: 14px;
+            font-weight: 600;
+            padding: 0 12px;
+            cursor: pointer;
+
+        }
+    }
+
+    .formStatus {
+        width: 100%;
+        text-align: center;
+        background: variables.$deep-purple;
+        color: white;
+        padding: 6px 0;
+        border-radius: 4px;
+        margin-top: 6px;
+    }
+
+
+}
