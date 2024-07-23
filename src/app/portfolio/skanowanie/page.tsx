@@ -14,9 +14,9 @@ export const metadata: Metadata = {
     description: 'Realizacja polegała na kompletnej przebudowie istniejącego sklepu internetowego opartego na Wordpress do Shopify.',
     keywords: ["Sklep Internetowy", "Sklep Internetowy Wordpress", "Sklep Internetowy Shopify", "Sklep Internetowy Skanowanie.pl"],
     alternates: {
-        canonical: 'http://jakubwojtysiak.pl/portfolio/skanowanie',
+        canonical: 'https://jakubwojtysiak.pl/portfolio/skanowanie',
         languages: {
-            'pl-PL': 'http://jakubwojtysiak.pl/portfolio/skanowanie',
+            'pl-PL': 'https://jakubwojtysiak.pl/portfolio/skanowanie',
         }
     }
 }

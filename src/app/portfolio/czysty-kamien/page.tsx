@@ -13,9 +13,9 @@ export const metadata: Metadata = {
     description: 'Strona firmowa dla firmy z branży czyszczenia kostki brukowej. Aplikacja PWA z możliwością instalacji na urządzeniu mobilnym. Pełna responsywność, szybkie ładowanie oraz cusotmowe podstrony.',
     keywords: ["Strona firmowa", "Strona firmowa PWA", "Strona firmowa NextJS", "Strona firmowa z możliwością instalacji na urządzeniu mobilnym", "Strona firmowa wordpress", "Strona firmowa dla firmy czyszczącej kostkę brukową"],
     alternates: {
-        canonical: 'http://jakubwojtysiak.pl/portfolio/czysty-kamien',
+        canonical: 'https://jakubwojtysiak.pl/portfolio/czysty-kamien',
         languages: {
-            'pl-PL': 'http://jakubwojtysiak.pl/portfolio/czysty-kamienn',
+            'pl-PL': 'https://jakubwojtysiak.pl/portfolio/czysty-kamienn',
         }
     }
 }

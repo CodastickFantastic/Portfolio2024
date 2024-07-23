@@ -15,9 +15,9 @@ export const metadata: Metadata = {
         "Strona firmowa Wordpress", "Strona Wordpres dla firmy budowlanej", "Strona Wordpress dla firmy konstrukcyjnej"
     ],
     alternates: {
-        canonical: 'http://jakubwojtysiak.pl/portfolio/stalomat',
+        canonical: 'https://jakubwojtysiak.pl/portfolio/stalomat',
         languages: {
-            'pl-PL': 'http://jakubwojtysiak.pl/portfolio/stalomat',
+            'pl-PL': 'https://jakubwojtysiak.pl/portfolio/stalomat',
         }
     }
 }

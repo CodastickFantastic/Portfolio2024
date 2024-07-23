@@ -15,9 +15,9 @@ export const metadata: Metadata = {
         "System dla firmy transportowej", "System dla firmy spedycyjnej", "System dla firmy logistycznej"
     ],
     alternates: {
-        canonical: 'http://jakubwojtysiak.pl/portfolio/system-logistyczny-crm',
+        canonical: 'https://jakubwojtysiak.pl/portfolio/system-logistyczny-crm',
         languages: {
-            'pl-PL': 'http://jakubwojtysiak.pl/portfolio/system-logistyczny-crm',
+            'pl-PL': 'https://jakubwojtysiak.pl/portfolio/system-logistyczny-crm',
         }
     }
 }

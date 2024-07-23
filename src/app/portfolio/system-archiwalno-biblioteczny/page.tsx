@@ -14,9 +14,9 @@ export const metadata: Metadata = {
     description: 'System słóżący do digitalizacji oraz skłądowania plików. Bezstratna konwersja dużych plików w celu zaoszczędzenia miejsca na dysku.',
     keywords: ['System Archiwalno Biblioteczny', "Ar-Bi", "System dla biblioteki", "Digitalizacja ksiąg", "Digitalizacja zbiorów"],
     alternates: {
-        canonical: 'http://jakubwojtysiak.pl/portfolio/system-archiwalno-biblioteczny',
+        canonical: 'https://jakubwojtysiak.pl/portfolio/system-archiwalno-biblioteczny',
         languages: {
-            'pl-PL': 'http://jakubwojtysiak.pl/portfolio/system-archiwalno-biblioteczny',
+            'pl-PL': 'https//jakubwojtysiak.pl/portfolio/system-archiwalno-biblioteczny',
         }
     }
 }

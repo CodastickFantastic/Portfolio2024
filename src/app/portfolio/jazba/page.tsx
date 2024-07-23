@@ -13,9 +13,9 @@ export const metadata: Metadata = {
     description: 'Sklep internetowy oparty o Shopify, z wysoką customizacją, oraz integracją z Baselinkerem',
     keywords: ["Sklep Interentowy", "Sklep Internetowy Shopify", "Integracja Baselinker", "Sklep Internetowy Jazba"],
     alternates: {
-        canonical: 'http://jakubwojtysiak.pl/portfolio/jazba',
+        canonical: 'https://jakubwojtysiak.pl/portfolio/jazba',
         languages: {
-            'pl-PL': 'http://jakubwojtysiak.pl/portfolio/jazba',
+            'pl-PL': 'https://jakubwojtysiak.pl/portfolio/jazba',
         }
     }
 }

@@ -15,9 +15,9 @@ export const metadata: Metadata = {
         "Aplikacja React Native", "Aplikacja React Native IoT", "Aplikacja React Native sterująca urządzeniami IoT"
     ],
     alternates: {
-        canonical: 'http://jakubwojtysiak.pl/portfolio/pollin',
+        canonical: 'https://jakubwojtysiak.pl/portfolio/pollin',
         languages: {
-            'pl-PL': 'http://jakubwojtysiak.pl/portfolio/pollin',
+            'pl-PL': 'https://jakubwojtysiak.pl/portfolio/pollin',
         }
     }
 }

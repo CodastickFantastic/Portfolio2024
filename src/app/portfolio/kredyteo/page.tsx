@@ -15,9 +15,9 @@ export const metadata: Metadata = {
         "Strona dla pośrednika kredytowego", "Strona dla pośrednika ubezpieczeńiowego"
     ],
     alternates: {
-        canonical: 'http://jakubwojtysiak.pl/portfolio/kredyteo',
+        canonical: 'https://jakubwojtysiak.pl/portfolio/kredyteo',
         languages: {
-            'pl-PL': 'http://jakubwojtysiak.pl/portfolio/kredyteo',
+            'pl-PL': 'https://jakubwojtysiak.pl/portfolio/kredyteo',
         }
     }
 }

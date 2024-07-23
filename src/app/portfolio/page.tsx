@@ -27,9 +27,9 @@ export const metadata: Metadata = {
         'pozycjonowanie sklepów internetowych', 'pozycjonowanie aplikacji mobilnych', 'pozycjonowanie aplikacji mobilnych'
     ],
     alternates: {
-        canonical: 'http://jakubwojtysiak.pl/portfolio',
+        canonical: 'https://jakubwojtysiak.pl/portfolio',
         languages: {
-            'pl-PL': 'http://jakubwojtysiak.pl/portfolio',
+            'pl-PL': 'https://jakubwojtysiak.pl/portfolio',
         }
     }
 }

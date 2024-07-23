@@ -18,9 +18,9 @@ export const metadata: Metadata = {
     'pozycjonowanie sklepów internetowych', 'pozycjonowanie aplikacji mobilnych', 'pozycjonowanie aplikacji mobilnych'
   ],
   alternates: {
-    canonical: 'http://jakubwojtysiak.pl/o-mnie',
+    canonical: 'https://jakubwojtysiak.pl/o-mnie',
     languages: {
-      'pl-PL': 'http://jakubwojtysiak.pl/o-mnie',
+      'pl-PL': 'https://jakubwojtysiak.pl/o-mnie',
     }
   }
 }
