@@ -43,6 +43,7 @@ const NavigationBar = (): React.JSX.Element => {
                     alt="Usługi IT - Jakub Wojtysiak - Logo"
                     className={styles.logo}
                     src={Logo}
+                    priority
                 />
             </CustomLinkComponent>
             <label htmlFor="burgerMenu" className={styles.burgerMenuLabel} >
