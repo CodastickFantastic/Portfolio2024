@@ -74,17 +74,36 @@
             margin-right: 12px;
         }
 
-        .flag {
-            width: 35px;
-            height: 24px;
-            cursor: pointer;
+        .flagSection {
+            display: flex;
+            align-items: center;
+            
 
-            &:not(:last-of-type) {
-                margin-right: 12px;
-            }
+            .flag {
+                display: block;
+                width: 35px;
+                height: 24px;
+                cursor: pointer;
 
-            &:hover {
-                transform: scale(0.85);
+                &:not(:last-of-type) {
+                    margin-right: 12px;
+                }
+
+                &:hover {
+                    transform: scale(0.85);
+                }
+
+                &.polishFlag {
+                    background-image: url("/img/icons/poland_flag.png");
+                    background-position: center center;
+                    background-size: contain;
+                }
+
+                &.englishFlag {
+                    background-image: url("/img/icons/england_flag.png");
+                    background-position: center center;
+                    background-size: contain;
+                }
             }
         }
     }

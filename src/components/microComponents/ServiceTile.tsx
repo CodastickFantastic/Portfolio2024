@@ -6,6 +6,7 @@ import Image from 'next/image';
 import styles from '@/scss/components/ServiceTile.module.scss';
 
 import forward from '@/../public/img/icons/forward.png';
+import { determineLanguage } from '@/helpers/translations';
 
 const ServiceTile = (
     {
@@ -24,6 +25,7 @@ const ServiceTile = (
         descriptionBack: string,
     }): React.JSX.Element => {
 
+    const language = determineLanguage()
     const [showMore, setShowMore] = useState(false)
 
     return (
@@ -42,7 +44,7 @@ const ServiceTile = (
                 </p>
                 <label className={styles.tileFooter} htmlFor={`showMore${tileNumber}`}>
                     <input type='checkbox' id={`showMore${tileNumber}`} name={`showMore${tileNumber}`} checked={showMore} onChange={e => { setShowMore(e.target.checked) }} />
-                    <p>Szczegóły</p>
+                    <p>{language === 'pl' ? 'Szczegóły' : 'Details'}</p>
                     <Image src={forward} alt="Szczegóły" />
                 </label>
             </div>
@@ -53,7 +55,7 @@ const ServiceTile = (
                 <label className={styles.tileFooter} htmlFor={`showLess${tileNumber}`} >
                     <input type='checkbox' id={`showLess${tileNumber}`} name={`showLess${tileNumber}`} checked={showMore} onChange={e => { setShowMore(e.target.checked) }} />
                     <Image src={forward} alt="Szczegóły" />
-                    <p>Cofnij</p>
+                    <p>{language === 'pl' ? 'Cofnij' : 'Back'}</p>
 
                 </label>
             </div>

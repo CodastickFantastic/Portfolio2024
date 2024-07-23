@@ -2,11 +2,11 @@ import Image from "next/image";
 import type { Metadata } from 'next'
 import hero from "@/../public/img/hero_01_2024.webp";
 import styles from "@/scss/pages/home.module.scss";
-import dynamic from "next/dynamic";
 
-const HeaderWithBulletPoints = dynamic(() => import("@/components/macroComponents/HeaderWithBulletPoints"));
-const ServiceSection = dynamic(() => import("@/components/macroComponents/ServiceSection"));
-const ContactSection = dynamic(() => import("@/components/macroComponents/ContactSection"));
+import HeaderWithBulletPoints from "@/components/macroComponents/HeaderWithBulletPoints";
+import ServiceSection from "@/components/macroComponents/ServiceSection";
+import ContactSection from "@/components/macroComponents/ContactSection";
+
 
 
 export const metadata: Metadata = {
@@ -19,9 +19,11 @@ export const metadata: Metadata = {
     'pozycjonowanie sklepów internetowych', 'pozycjonowanie aplikacji mobilnych', 'pozycjonowanie aplikacji mobilnych'
   ],
   alternates: {
-    canonical: 'https://jakubwojtysiak.pl',
+    canonical: 'https://jakubwojtysiak.online',
     languages: {
-      'pl-PL': 'https://jakubwojtysiak.pl',
+      'pl-PL': 'https://jakubwojtysiak.online',
+      'en-US': 'https://jakubwojtysiak.online/en',
+      "en-GB": 'https://jakubwojtysiak.online/en',
     }
   }
 }
@@ -36,15 +38,15 @@ export default function Home() {
             underTitle='Pozwól sobie pomóc i <span class="purple">zaistniej</span> ze mną w sieci'
             bullets={["Wordpress", "Strony Internetowe", "Systemy Infromatyczne", "Aplikacje Mobilne", "Administracja Serwerów", "Wizualizacja UI", "Hosting"]}
             cta1={{ text: "Nawiążmy Kontakt", url: "#kontakt" }}
-            cta2={{ text: "Portfolio", url: "/potfolio" }}
-            protectBadge
+            cta2={{ text: "Portfolio", url: "/portfolio" }}
+            protectBadge="Gwarancja <span class='purple'>satysfakcji</span> oraz najwyższej <span class='purple'>jakości</span>"
           />
         </div>
         <div className={styles.right}>
           <Image src={hero} alt="Mężczyzna trzymający się za okulary" priority />
         </div>
       </div>
-      <div id="usługi" className={`${styles.serviceSection} container`}>
+      <div id="uslugi" className={`${styles.serviceSection} container`}>
         <ServiceSection />
       </div>
       <div id="kontakt" className={`${styles.contactSection} container`}>

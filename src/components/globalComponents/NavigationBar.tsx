@@ -8,9 +8,12 @@ import Logo from "@/../public/img/logo.webp"
 import burgerMenu from "@/../public/img/icons/menu.png"
 import Close from "@/../public/img/icons/close.png"
 import { useEffect, useRef } from "react"
+import { usePathname } from "next/navigation"
+import { goToPolish, goToEnglish } from "@/helpers/translations"
+import CustomLinkComponent from "../microComponents/CustomLinkComponent"
 
 const NavigationBar = (): React.JSX.Element => {
-
+    const pathname = usePathname()
     const fixedElement = useRef<HTMLDivElement>(null)
     const menuBtnRef = useRef<HTMLInputElement>(null)
 
@@ -35,13 +38,13 @@ const NavigationBar = (): React.JSX.Element => {
 
     return (
         <nav className={styles.navigationBar}>
-            <Link href="/">
+            <CustomLinkComponent href="/">
                 <Image
                     alt="Usługi IT - Jakub Wojtysiak - Logo"
                     className={styles.logo}
                     src={Logo}
                 />
-            </Link>
+            </CustomLinkComponent>
             <label htmlFor="burgerMenu" className={styles.burgerMenuLabel} >
                 <input type="checkbox" id="burgerMenu" className={styles.burgerMenuInput} ref={menuBtnRef} />
                 <Image src={burgerMenu} alt="Menu" className={styles.burgerMenu} />
@@ -50,41 +53,67 @@ const NavigationBar = (): React.JSX.Element => {
                 <Image src={Close} alt="Schowaj menu" className={styles.burgerMenuClose} onClick={closeMenu} />
                 <div className={styles.navLinks}>
                     <div className={styles.navItem}>
-                        <Link className={`${styles.navItemText}`} href="/" onClick={closeMenu}>
-                            Strona Główna
-                        </Link>
+                        <CustomLinkComponent
+                            className={styles.navItemText}
+                            href="/"
+                            onClick={closeMenu}
+                            plText="Strona Główna"
+                            enText="Home Page"
+                        />
                     </div>
                     <div className={styles.navItem}>
-                        <Link className={styles.navItemText} href="/o-mnie" onClick={closeMenu}>O mnie</Link>
+                        <CustomLinkComponent
+                            className={styles.navItemText}
+                            href="/o-mnie"
+                            onClick={closeMenu}
+                            plText="O mnie"
+                            enText="About me"
+                        />
                     </div>
                     <div className={styles.navItem}>
-                        <Link className={styles.navItemText} href="/#usługi" onClick={closeMenu} >Usługi</Link>
+                        <CustomLinkComponent
+                            className={styles.navItemText}
+                            href="/#uslugi"
+                            onClick={closeMenu}
+                            plText="Usługi"
+                            enText="Services"
+                        />
                     </div>
                     <div className={styles.navItem}>
-                        <Link className={styles.navItemText} href="/portfolio" onClick={closeMenu} >Portfolio</Link>
+                        <CustomLinkComponent
+                            className={styles.navItemText}
+                            href="/portfolio"
+                            onClick={closeMenu}
+                            plText="Portfolio"
+                            enText="Portfolio"
+                        />
                     </div>
                     <div className={styles.navItem}>
-                        <Link className={styles.navItemText} href="/blog-it" onClick={closeMenu} >Naucz Się IT</Link>
+                        <CustomLinkComponent
+                            className={styles.navItemText}
+                            href="/blog-it"
+                            onClick={closeMenu}
+                            plText="Naucz Się IT"
+                            enText="Learn IT"
+                        />
                     </div>
                     <div className={styles.navItem}>
-                        <Link className={styles.navItemText} href="/#kontakt" onClick={closeMenu} >Kontakt</Link>
+                        <CustomLinkComponent
+                            className={styles.navItemText}
+                            href="/#kontakt"
+                            onClick={closeMenu}
+                            plText="Kontakt"
+                            enText="Contact"
+                        />
                     </div>
                 </div>
-                {/* <div className={styles.horizontalDivider} />
+                <div className={styles.horizontalDivider} />
                 <div className={styles.flagSection}>
-                    <img
-                        alt=""
-                        className={styles.flag}
-                        src="https://static.overlay-tech.com/assets/2d26e259-59fe-492f-abd4-0e47b4545d7f.png"
-                    />
-                    <img
-                        alt=""
-                        className={styles.flag}
-                        src="https://static.overlay-tech.com/assets/bfe5d8a9-d149-46a8-a0f9-5484b59fc391.png"
-                    />
-                </div> */}
+                    <Link href={goToPolish(pathname)} onClick={closeMenu} className={`${styles.flag} ${styles.polishFlag}`} />
+                    <Link href={goToEnglish(pathname)} onClick={closeMenu} className={`${styles.flag} ${styles.englishFlag}`} />
+                </div>
             </div>
-        </nav>
+        </nav >
     )
 }
 

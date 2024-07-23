@@ -36,13 +36,6 @@ export default function BlogNewsletter() {
                 <div className={styles.newsletterIcon} />
             </div>
             <p>Nie przegap żadnych nowości !</p>
-            {/* <ol>
-                <li>0 SPAMU</li>
-                <li>Kursy programowania JavaScript</li>
-                <li>Kursy Devops</li>
-                <li>Najlepsze Zasady Bezpieczeńśtwa</li>
-                <li>Będziesz zawsze ze mną na bieżąco</li>
-            </ol> */}
             <form onSubmit={submitForm}>
                 <input type="email" id="email" name="email" placeholder="Twoj adres e-mail" />
                 <button type="submit">Chcę wejść do IT</button>

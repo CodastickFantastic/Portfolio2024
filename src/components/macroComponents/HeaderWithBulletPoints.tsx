@@ -6,7 +6,8 @@ import protect from "@/../public/img/icons/protect.png";
 
 
 const HeaderWithBulletPoints = (
-    { h1, underTitle, bullets, cta1, cta2, protectBadge }: { h1: string, underTitle: string, bullets: string[], cta1: { text: string, url: string }, cta2: { text: string, url: string }, protectBadge?: boolean }
+    { h1, underTitle, bullets, cta1, cta2, protectBadge }:
+        { h1: string, underTitle: string, bullets: string[], cta1: { text: string, url: string }, cta2: { text: string, url: string }, protectBadge?: string }
 ): React.JSX.Element => {
 
     return (
@@ -25,7 +26,7 @@ const HeaderWithBulletPoints = (
             {protectBadge &&
                 <div className="badgeWithText">
                     <Image src={protect} alt="Ikona ptaszka" />
-                    <p>Gwarancja <span className='purple'>satysfakcji</span> oraz najwyższej <span className='purple'>jakości</span></p>
+                    <p dangerouslySetInnerHTML={{ __html: protectBadge }} />
                 </div>
             }
         </section >
