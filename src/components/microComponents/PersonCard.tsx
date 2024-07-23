@@ -1,11 +1,15 @@
+"use client"
+
 import styles from '@/scss/components/PersonCard.module.scss';
 import Image, { StaticImageData } from 'next/image';
 import openArrow from "@/../public/img/icons/openArrow.png"
+import { determineLanguage } from '@/helpers/translations';
 
 const PersonCard = (
     { color, imageBg, imageBgAlt, imageFg, imageFgAlt, icon, label, showMoreNo, description }:
         { color: string, imageBg: StaticImageData, imageBgAlt: string, imageFg: StaticImageData, imageFgAlt: string, icon: StaticImageData, label: string, showMoreNo?: number, description: string }
 ): React.JSX.Element => {
+    const language = determineLanguage()
     return (
         <div className={styles.personCard}>
             <div className={styles.front}>
@@ -31,7 +35,7 @@ const PersonCard = (
                 <label htmlFor={`showMore${showMoreNo}`} className={styles.showMoreBtn} style={{ backgroundColor: color }}>
                     <input type="checkbox" id={`showMore${showMoreNo}`} className={styles.showMoreBtnInput} />
                     <p className={styles.showMoreBtnText}>
-                        Poznaj szczegóły
+                        {language === 'pl' ? 'Poznaj szczegóły' : 'Show more'}
                     </p>
                     <Image
                         alt="Strzałka w prawo"
@@ -64,7 +68,7 @@ const PersonCard = (
                         src={openArrow}
                     />
                     <p className={styles.showMoreBtnText}>
-                        Pokaż mniej
+                        {language === 'pl' ? 'Pokaż wiecej' : 'Show less'}
                     </p>
                 </label>
                 <div className={styles.label} style={{ backgroundColor: color }}>

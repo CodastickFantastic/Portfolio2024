@@ -1,3 +1,4 @@
+"use client"
 
 import Image from 'next/image';
 import styles from '@/scss/components/HeaderWithQuote.module.scss';
@@ -6,22 +7,23 @@ import Link from 'next/link';
 
 import Github from '@/../public/img/icons/github.png';
 import Linkedin from '@/../public/img/icons/linkedIn.png';
+import { determineLanguage } from '@/helpers/translations';
 
 const HeaderWithQuote = (): React.JSX.Element => {
+    const languages = determineLanguage()
     return (
         <section className={styles.header}>
-            <h1>Witaj, jetem <span className="purple">Jakub</span></h1>
+            <h1 dangerouslySetInnerHTML={{ __html: languages === 'pl' ? 'Witaj, jestem <span class="purple">Jakub</span>' : 'Hello, I am <span class="purple">Jakub</span>' }} />
             <p className={styles.paragraph}>
                 JavaScript <span className='purple'>Developer</span></p>
-            <p className={styles.paragraph}>
-                Programowanie jest moją <span className='purple'>pasją</span>, czymś co sprawia mi niezwykłą frajdę i satysfakcję.</p>
+            <p className={styles.paragraph} dangerouslySetInnerHTML={{ __html: languages === 'pl' ? "Programowanie jest moją <span className='purple'>pasją</span>, czymś co sprawia mi niezwykłą frajdę i satysfakcję." : "Programming is my <span className='purple'>passion</span>, something that gives me great fun and satisfaction." }} />
             <Quote
-                quote={`"Większość programistów programuje nie dlatego, że spodziewają się zapłaty lub uwielbienia tłumów, ale dlatego, że programowanie jest dla nich zabawą."`}
+                quote={`${languages === 'pl' ? 'Większość programistów programuje nie dlatego, że spodziewają się zapłaty lub uwielbienia tłumów, ale dlatego, że programowanie jest dla nich zabawą.' : 'Most programmers code not because they expect to be paid or admired by crowds, but because programming is fun for them.'}`}
                 author="Linus Torvalds"
             />
             <div className={styles.buttons}>
-                <a href="#process" className='button active'>Opis Współpracy</a>
-                <a href="#technologies" className='button'>Technologie</a>
+                <a href="#process" className='button active'>{languages === 'pl' ? 'Opis Współpracy' : 'Know my workflow'}</a>
+                <a href="#technologies" className='button'>{languages === 'pl' ? 'Technologie' : 'Technologies'}</a>
             </div>
             <div className={styles.buttons}>
                 <a href="#time-line" className='button'>Time Line</a>

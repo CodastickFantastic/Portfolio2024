@@ -1,26 +1,21 @@
 import styles from "@/scss/pages/aboutMe.module.scss";
 
-import dynamic from "next/dynamic";
 import type { Metadata } from 'next'
 
-const HeaderWithQuote = dynamic(() => import("@/components/macroComponents/HeaderWithQuote"));
-const PersonSlider = dynamic(() => import("@/components/macroComponents/PersonSlider"));
-const Technologies = dynamic(() => import("@/components/macroComponents/Technologies"));
-const ProcessDescription = dynamic(() => import("@/components/macroComponents/ProcessDescription"));
-const TimeLine = dynamic(() => import("@/components/macroComponents/TimeLine"));
+import HeaderWithQuote from "@/components/macroComponents/HeaderWithQuote";
+import PersonSlider from "@/components/macroComponents/PersonSlider";
+import Technologies from "@/components/macroComponents/Technologies";
+import ProcessDescription from "@/components/macroComponents/ProcessDescription";
+import TimeLine from "@/components/macroComponents/TimeLine";
 
 export const metadata: Metadata = {
   title: 'O mnie - Jakub Wojtysiak, Uługi IT',
-  description: 'Tworzę strony internetowe, sklepy internetowe, aplikacje mobilne. Zajmuję się również pozycjonowaniem stron internetowych. Postaw na pewnego partnera IT i zacznij zarabiać w internecie już dziś!',
-  keywords: ['strony internetowe', 'sklepy internetowe', 'aplikacje mobilne',
-    'pozycjonowanie stron', 'tworzenie stron', 'tworzenie sklepów internetowych',
-    'tworzenie aplikacji mobilnych', 'pozycjonowanie stron internetowych', 'pozycjonowanie stron www',
-    'pozycjonowanie sklepów internetowych', 'pozycjonowanie aplikacji mobilnych', 'pozycjonowanie aplikacji mobilnych'
-  ],
+  description: 'Nazywam się Jakub i zapraszam Cię do zapoznania się z moimi umiejętnościami.',
   alternates: {
-    canonical: 'https://jakubwojtysiak.pl/o-mnie',
+    canonical: 'https://jakubwojtysiak.online/o-mnie',
     languages: {
-      'pl-PL': 'https://jakubwojtysiak.pl/o-mnie',
+      'pl': 'https://jakubwojtysiak.online/o-mnie',
+      "en": 'https://jakubwojtysiak.online/en/about-me'
     }
   }
 }
