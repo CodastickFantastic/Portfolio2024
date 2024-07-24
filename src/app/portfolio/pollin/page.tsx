@@ -15,9 +15,10 @@ export const metadata: Metadata = {
         "Aplikacja React Native", "Aplikacja React Native IoT", "Aplikacja React Native sterująca urządzeniami IoT"
     ],
     alternates: {
-        canonical: 'http://jakubwojtysiak.pl/portfolio/pollin',
+        canonical: 'https://jakubwojtysiak.online/portfolio/pollin',
         languages: {
-            'pl-PL': 'http://jakubwojtysiak.pl/portfolio/pollin',
+            'pl': 'https://jakubwojtysiak.online/portfolio/pollin',
+            'en': 'https://jakubwojtysiak.online/en/portfolio/pollin'
         }
     }
 }
@@ -33,7 +34,7 @@ const PollinPage = (): React.JSX.Element => {
                         info="Aplikacja mobilna która umożliwia sterowanie urządzeniami IoT firmy Pollin"
                         bullets={["Android", "Urzadzenia IoT", "Zdalne Sterowanie"]}
                         technologies="React Native"
-                        time="2 tydzień"
+                        time="2 tygodnie"
                     />
                 </div>
                 <div className={styles.right}>

@@ -21,9 +21,10 @@ export const metadata = {
   title: 'Jak bezpiecznie skonfigurowć mój pierwszy serwer VPS?',
   description: 'Konfiguracja Twójego pierwszego serwera VPS w bezpieczny sposób nie jest tak straszna jak Ci się wydaje...',
   alternates: {
-    canonical: 'https://jakubwojtysiak.pl/blog-it/kurs-devops-dla-juniorow/jak-bezpiecznie-skonfigurowac-moj-pierwszy-serwer-vps',
+    canonical: 'https://jakubwojtysiak.online/blog-it/kurs-devops-dla-juniorow/jak-bezpiecznie-skonfigurowac-moj-pierwszy-serwer-vps',
     languages: {
-      'pl-PL': 'https://jakubwojtysiak.pl/blog-it/kurs-devops-dla-juniorow/jak-bezpiecznie-skonfigurowac-moj-pierwszy-serwer-vps',
+      'pl': 'https://jakubwojtysiak.online/blog-it/kurs-devops-dla-juniorow/jak-bezpiecznie-skonfigurowac-moj-pierwszy-serwer-vps',
+      "en": "https://jakubwojtysiak.online/en/blog-it/devops-course-for-juniors/how-to-securely-configure-my-first-vps"
     }
   }
 }

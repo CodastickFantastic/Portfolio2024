@@ -227,7 +227,7 @@ p {
     }
 
     &.badge::after {
-        content: "Polecane";
+        content: "Recommended";
         position: absolute;
         background-color: #FFD700;
         color: variables.$deep-purple;

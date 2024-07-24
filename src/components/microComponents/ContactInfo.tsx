@@ -1,3 +1,5 @@
+"use client";
+
 import styles from "@/scss/components/ContactInfo.module.scss";
 
 import Image from "next/image";
@@ -6,12 +8,14 @@ import phone from "@/../public/img/icons/phone.png";
 import at from "@/../public/img/icons/at.png";
 import linkedIn from "@/../public/img/icons/linkedIn.png";
 import fb from "@/../public/img/icons/fb.png";
+import { determineLanguage } from "@/helpers/translations";
 
 const ContactInfo = (): React.JSX.Element => {
+    const language = determineLanguage();
 
     return (
         <section className={styles.contactInfo}>
-            <p className={styles.title}>Odezwij się</p>
+            <p className={styles.title}>{language === "pl" ? "Odezwij się" : "Contact me"}</p>
             <a href="tel:+48501721417" className={styles.contactTile}>
                 <Image src={phone} alt="Ikona telefonu" />
                 <p className={styles.contactTileText}>+48 501 721 417</p>

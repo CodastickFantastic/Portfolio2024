@@ -1,3 +1,5 @@
+"use client"
+
 import type { StaticImageData } from 'next/image';
 
 import styles from '@/scss/components/ProjectHeader.module.scss';
@@ -7,6 +9,7 @@ import ok from '@/../public/img/icons/ok.png';
 import clock from '@/../public/img/icons/clock.png';
 import techImg from '@/../public/img/icons/technologies.png';
 import Link from 'next/link';
+import { determineLanguage } from '@/helpers/translations';
 
 const ProjectHeader = ({
     title, info, bullets, technologies, time, clientLogo = undefined
@@ -19,6 +22,7 @@ const ProjectHeader = ({
     clientLogo?: StaticImageData
 }
 ): JSX.Element => {
+    const language = determineLanguage()
 
     return (
         <div className={styles.projectHeader}>
@@ -30,12 +34,12 @@ const ProjectHeader = ({
                 })}
             </ul>
 
-            <p className={styles.infoSectionHeader}>Informacje Ogólne</p>
-            <p className={styles.addInfo}><Image src={techImg} alt="Ikona technologii" />Technologia: {technologies}</p>
-            <p className={styles.addInfo}><Image src={clock} alt="Ikona zegarka" />Czas Realizacji: {time}</p>
+            <p className={styles.infoSectionHeader}>{language === 'pl' ? 'Informacje ogołne' : 'General Information'}</p>
+            <p className={styles.addInfo}><Image src={techImg} alt="Ikona technologii" />{language === 'pl' ? 'Technologia:' : 'Technology: '} {technologies}</p>
+            <p className={styles.addInfo}><Image src={clock} alt="Ikona zegarka" />{language === 'pl' ? 'Czas Realizacji:' : 'Lead Time:'} {time}</p>
 
             {clientLogo && <>
-                <p className={styles.infoSectionHeader}>Wykonane we współpracy z</p>
+                <p className={styles.infoSectionHeader}>{language === 'pl' ? 'Wykonane we współpracy z' : 'Created in cooperation with'}</p>
                 <Link href="https://www.skanowanie.pl" target="_blank" className={styles.clientLogo}>
                     <Image src={clientLogo} alt="Logo Skanowanie.pl" height={32} />
                 </Link>

@@ -15,9 +15,10 @@ export const metadata = {
   title: 'Naucz się IT - Blog o IT',
   description: 'Nazywam się Jakub i zapraszam Cię na mojego bloga poświęconego szerokopojętym zagadnieniom IT',
   alternates: {
-    canonical: 'https://jakubwojtysiak.pl/blog-it',
+    canonical: 'https://jakubwojtysiak.online/blog-it',
     languages: {
-      'pl-PL': 'https://jakubwojtysiak.pl/blog-it',
+      'pl': 'https://jakubwojtysiak.online/blog-it',
+      "en": 'https://jakubwojtysiak.online/en/blog-it'
     }
   }
 }
@@ -29,7 +30,7 @@ export default function BlogHomePage() {
         <BlogHeader
           h1="Naucz się <span class='purple'>IT</span>"
           headerImg={articleHero}
-          contentsTitle="Cześć, miło mi powitać Cię na moim blogu poświęconym szerokopojętym zagadnieniom IT. Nie zwlekaj i znajdź temat swoich zainteresowań!<br/><br/>Znajdziesz tutaj artykuły oraz kursy z szerokopojetej dziedziny Web Developmentu. Nauczysz się aktualnych i bezpiecznych zasad programowania oraz hostowania aplikacji webowych. Dowiesz się o najnowszych nowinkach ze świata IT.<br/><br/>Przekonaj się na własnej skórze, że IT nie jest nudne oraz nie wymaga zaawansowanych umiejętności matematycznych.<br/><br/>Większość artykułów jest pisana z myślą o początkujących, dlatego niezależnie czy dopiero zaczynasz karierę w IT, czy masz 12 czy 60 lat, razem ze mną będziesz mógł zostać specjalistą IT!"
+          contentsTitle="Cześć, miło mi powitać Cię na moim blogu poświęconym szerokopojętym zagadnieniom IT. Nie zwlekaj i znajdź temat swoich zainteresowań!<br/><br/>Znajdziesz tutaj artykuły oraz kursy z szerokopojetej dziedziny Web Developmentu. Nauczysz się aktualnych i bezpiecznych zasad programowania oraz hostowania aplikacji webowych. Dowiesz się o najnowszych nowinkach ze świata IT.<br/><br/>Przekonaj się na własnej skórze, że IT nie jest nudne oraz nie wymaga zaawansowanych umiejętności matematycznych.<br/><br/>Większość artykułów jest pisana z myślą o początkujących, dlatego niezależnie czy dopiero zaczynasz karierę w IT, czy jeteś już zaawansowany, razem ze mną będziesz mógł zostać specjalistą IT!"
         />
       </div>
       {/* Kursy IT */}

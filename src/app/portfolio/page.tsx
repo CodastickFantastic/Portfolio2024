@@ -21,15 +21,11 @@ import p1Img from "@/../public/img/portfolio/p1.webp"
 export const metadata: Metadata = {
     title: 'Portfolio - Jakub Wojtysiak, Uługi IT',
     description: 'Sprawdź moje portfolio. Zobacz jakie projekty udało mi się zrealizować. Postaw na pewnego partnera IT i zacznij zarabiać w internecie już dziś!',
-    keywords: ['strony internetowe', 'sklepy internetowe', 'aplikacje mobilne',
-        'pozycjonowanie stron', 'tworzenie stron', 'tworzenie sklepów internetowych',
-        'tworzenie aplikacji mobilnych', 'pozycjonowanie stron internetowych', 'pozycjonowanie stron www',
-        'pozycjonowanie sklepów internetowych', 'pozycjonowanie aplikacji mobilnych', 'pozycjonowanie aplikacji mobilnych'
-    ],
     alternates: {
-        canonical: 'http://jakubwojtysiak.pl/portfolio',
+        canonical: 'https://jakubwojtysiak.online/portfolio',
         languages: {
-            'pl-PL': 'http://jakubwojtysiak.pl/portfolio',
+            'pl': 'https://jakubwojtysiak.online/portfolio',
+            'en': 'https://jakubwojtysiak.online/en/portfolio'
         }
     }
 }

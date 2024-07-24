@@ -1,3 +1,5 @@
+"use client"
+
 import styles from '@/scss/components/Technologies.module.scss';
 import Image from 'next/image';
 
@@ -17,13 +19,16 @@ import obs from '@/../public/apps/obs.png';
 import ps from '@/../public/apps/ps.png';
 import react from '@/../public/apps/react.png';
 import xd from '@/../public/apps/xd.png';
+import { determineLanguage } from '@/helpers/translations';
 
 
 const Technologies = (): React.JSX.Element => {
+    const language = determineLanguage()
+
     return (
         <section id="technologies" className={styles.technologies}>
-            <h2>Technologie</h2>
-            <p>Dowiedz się z jakich <span className='purple'>narzędzi</span> korzystam</p>
+            <h2>{language === "pl" ? "Technologie" : "Technologies"}</h2>
+            <p dangerouslySetInnerHTML={{ __html: language === "pl" ? "Dowiedz się z jakich <span class='purple'>narzędzi</span> korzystam" : "Find out what <span class='purple'>tools</span> I use" }} />
             <div className={styles.slider}>
                 <div className={styles.sliderTrack}>
                     {/* First Round */}

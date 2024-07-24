@@ -1,3 +1,5 @@
+"use server";
+
 import nodemailer from "nodemailer";
 
 const transporter = nodemailer.createTransport({
@@ -16,10 +18,10 @@ export async function POST(request: Request) {
     const { name, number, email, rodo } = REQUEST_BODY;
 
     try {
-        if (!name) throw new Error("Imię i nazwisko jest wymagane");
-        if (!number) throw new Error("Numer telefonu jest wymagany");
-        if (!email) throw new Error("Adres email jest wymagany");
-        if (!rodo) throw new Error("Zgoda RODO jest wymagana");
+        if (!name) throw new Error("Name is required");
+        if (!number) throw new Error("Phone number is required");
+        if (!email) throw new Error("Email is required");
+        if (!rodo) throw new Error("RODO is required");
 
         const MESSAGE = `
       <h1>Nowy kontakt z formularza</h1>
@@ -36,7 +38,7 @@ export async function POST(request: Request) {
             html: MESSAGE,
         });
 
-        return new Response(JSON.stringify({ success: "Wiadomośćw wysłana poprawnie" }), {
+        return new Response(JSON.stringify({ success: "Message sent" }), {
             status: 200,
             headers: { "Content-Type": "application/json" },
         });

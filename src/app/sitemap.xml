@@ -1,98 +1,337 @@
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
-        <loc>https://jakubwojtysiak.online/o-mnie</loc>
-        <lastmod>2024-03-01</lastmod>
+        <loc>https://jakubwojtysiak.online</loc>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://jakubwojtysiak.online" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://jakubwojtysiak.online/en" />
+        <lastmod>2024-07-24</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1</priority>
+    </url>
+    <url>
+        <loc>https://jakubwojtysiak.online/en</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://jakubwojtysiak.online/en" />
+        <xhtml:link rel="alternate" hreflang="pl" href="https://jakubwojtysiak.online" />
+        <lastmod>2024-07-24</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1</priority>
+    </url>
+    <url>
+        <loc>https://jakubwojtysiak.online/o-mnie</loc>
+        <lastmod>2024-07-24</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1</priority>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://jakubwojtysiak.online/o-mnie" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://jakubwojtysiak.online/en/about-me" />
+    </url>
+    <url>
+        <loc>https://jakubwojtysiak.online/en/about-me</loc>
+        <lastmod>2024-07-24</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://jakubwojtysiak.online/en/about-me" />
+        <xhtml:link rel="alternate" hreflang="pl" href="https://jakubwojtysiak.online/o-mnie" />
     </url>
     <url>
         <loc>https://jakubwojtysiak.online/portfolio</loc>
-        <lastmod>2024-03-01</lastmod>
+        <lastmod>2024-07-24</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1</priority>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://jakubwojtysiak.online/portfolio" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://jakubwojtysiak.online/en/portfolio" />
+    </url>
+    <url>
+        <loc>https://jakubwojtysiak.online/en/portfolio</loc>
+        <lastmod>2024-07-24</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1</priority>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://jakubwojtysiak.online/portfolio" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://jakubwojtysiak.online/en/portfolio" />
     </url>
     <url>
         <loc>https://jakubwojtysiak.online/portfolio/landingpage-p1</loc>
-        <lastmod>2024-03-01</lastmod>
+        <lastmod>2024-07-24</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1</priority>
+        <xhtml:link rel="alternate" hreflang="pl"
+            href="https://jakubwojtysiak.online/portfolio/landingpage-p1" />
+        <xhtml:link rel="alternate" hreflang="en"
+            href="https://jakubwojtysiak.online/en/portfolio/landingpage-p1" />
+    </url>
+    <url>
+        <loc>https://jakubwojtysiak.online/en/portfolio/landingpage-p1</loc>
+        <lastmod>2024-07-24</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1</priority>
+        <xhtml:link rel="alternate" hreflang="pl"
+            href="https://jakubwojtysiak.online/portfolio/landingpage-p1" />
+        <xhtml:link rel="alternate" hreflang="en"
+            href="https://jakubwojtysiak.online/en/portfolio/landingpage-p1" />
     </url>
     <url>
         <loc>https://jakubwojtysiak.online/portfolio/pollin</loc>
-        <lastmod>2024-03-01</lastmod>
+        <lastmod>2024-07-24</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1</priority>
+        <xhtml:link rel="alternate" hreflang="pl"
+            href="https://jakubwojtysiak.online/portfolio/pollin" />
+        <xhtml:link rel="alternate" hreflang="en"
+            href="https://jakubwojtysiak.online/en/portfolio/pollin" />
+    </url>
+    <url>
+        <loc>https://jakubwojtysiak.online/en/portfolio/pollin</loc>
+        <lastmod>2024-07-24</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1</priority>
+        <xhtml:link rel="alternate" hreflang="pl"
+            href="https://jakubwojtysiak.online/portfolio/pollin" />
+        <xhtml:link rel="alternate" hreflang="en"
+            href="https://jakubwojtysiak.online/en/portfolio/pollin" />
     </url>
     <url>
         <loc>https://jakubwojtysiak.online/portfolio/kredyteo</loc>
-        <lastmod>2024-03-01</lastmod>
+        <lastmod>2024-07-24</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1</priority>
+        <xhtml:link rel="alternate" hreflang="pl"
+            href="https://jakubwojtysiak.online/portfolio/kredyteo" />
+        <xhtml:link rel="alternate" hreflang="en"
+            href="https://jakubwojtysiak.online/en/portfolio/kredyteo" />
+    </url>
+    <url>
+        <loc>https://jakubwojtysiak.online/en/portfolio/kredyteo</loc>
+        <lastmod>2024-07-24</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1</priority>
+        <xhtml:link rel="alternate" hreflang="pl"
+            href="https://jakubwojtysiak.online/portfolio/kredyteo" />
+        <xhtml:link rel="alternate" hreflang="en"
+            href="https://jakubwojtysiak.online/en/portfolio/kredyteo" />
     </url>
     <url>
         <loc>https://jakubwojtysiak.online/portfolio/system-logistyczny-crm</loc>
-        <lastmod>2024-03-01</lastmod>
+        <lastmod>2024-07-24</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1</priority>
+        <xhtml:link rel="alternate" hreflang="pl"
+            href="https://jakubwojtysiak.online/portfolio/system-logistyczny-crm" />
+        <xhtml:link rel="alternate" hreflang="en"
+            href="https://jakubwojtysiak.online/en/portfolio/logistics-system-crm" />
+    </url>
+    <url>
+        <loc>https://jakubwojtysiak.online/en/portfolio/logistics-system-crm</loc>
+        <lastmod>2024-07-24</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1</priority>
+        <xhtml:link rel="alternate" hreflang="pl"
+            href="https://jakubwojtysiak.online/portfolio/system-logistyczny-crm" />
+        <xhtml:link rel="alternate" hreflang="en"
+            href="https://jakubwojtysiak.online/en/portfolio/logistics-system-crm" />
     </url>
     <url>
         <loc>https://jakubwojtysiak.online/portfolio/stalomat</loc>
-        <lastmod>2024-03-01</lastmod>
+        <lastmod>2024-07-24</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1</priority>
+        <xhtml:link rel="alternate" hreflang="pl"
+            href="https://jakubwojtysiak.online/portfolio/stalomat" />
+        <xhtml:link rel="alternate" hreflang="en"
+            href="https://jakubwojtysiak.online/en/portfolio/stalomat" />
+    </url>
+    <url>
+        <loc>https://jakubwojtysiak.online/en/portfolio/stalomat</loc>
+        <lastmod>2024-07-24</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1</priority>
+        <xhtml:link rel="alternate" hreflang="pl"
+            href="https://jakubwojtysiak.online/portfolio/stalomat" />
+        <xhtml:link rel="alternate" hreflang="en"
+            href="https://jakubwojtysiak.online/en/portfolio/stalomat" />
     </url>
     <url>
         <loc>https://jakubwojtysiak.online/portfolio/czysty-kamien</loc>
-        <lastmod>2024-03-01</lastmod>
+        <lastmod>2024-07-24</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1</priority>
+        <xhtml:link rel="alternate" hreflang="pl"
+            href="https://jakubwojtysiak.online/portfolio/czysty-kamien" />
+        <xhtml:link rel="alternate" hreflang="en"
+            href="https://jakubwojtysiak.online/en/portfolio/czysty-kamien" />
+    </url>
+    <url>
+        <loc>https://jakubwojtysiak.online/en/portfolio/czysty-kamien</loc>
+        <lastmod>2024-07-24</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1</priority>
+        <xhtml:link rel="alternate" hreflang="pl"
+            href="https://jakubwojtysiak.online/portfolio/czysty-kamien" />
+        <xhtml:link rel="alternate" hreflang="en"
+            href="https://jakubwojtysiak.online/en/portfolio/czysty-kamien" />
     </url>
     <url>
         <loc>https://jakubwojtysiak.online/portfolio/system-archiwalno-biblioteczny</loc>
-        <lastmod>2024-03-01</lastmod>
+        <lastmod>2024-07-24</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1</priority>
+        <xhtml:link rel="alternate" hreflang="pl"
+            href="https://jakubwojtysiak.online/portfolio/system-archiwalno-biblioteczny" />
+        <xhtml:link rel="alternate" hreflang="en"
+            href="https://jakubwojtysiak.online/en/portfolio/archive-library-system" />
+    </url>
+    <url>
+        <loc>https://jakubwojtysiak.online/en/portfolio/archive-library-system</loc>
+        <lastmod>2024-07-24</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1</priority>
+        <xhtml:link rel="alternate" hreflang="pl"
+            href="https://jakubwojtysiak.online/portfolio/system-archiwalno-biblioteczny" />
+        <xhtml:link rel="alternate" hreflang="en"
+            href="https://jakubwojtysiak.online/en/portfolio/archive-library-system" />
     </url>
     <url>
         <loc>https://jakubwojtysiak.online/portfolio/jazba</loc>
-        <lastmod>2024-03-01</lastmod>
+        <lastmod>2024-07-24</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1</priority>
+        <xhtml:link rel="alternate" hreflang="pl"
+            href="https://jakubwojtysiak.online/portfolio/jazba" />
+        <xhtml:link rel="alternate" hreflang="en"
+            href="https://jakubwojtysiak.online/en/portfolio/jazba" />
+    </url>
+    <url>
+        <loc>https://jakubwojtysiak.online/en/portfolio/jazba</loc>
+        <lastmod>2024-07-24</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1</priority>
+        <xhtml:link rel="alternate" hreflang="pl"
+            href="https://jakubwojtysiak.online/portfolio/jazba" />
+        <xhtml:link rel="alternate" hreflang="en"
+            href="https://jakubwojtysiak.online/en/portfolio/jazba" />
     </url>
     <url>
         <loc>https://jakubwojtysiak.online/portfolio/skanowanie</loc>
-        <lastmod>2024-03-01</lastmod>
+        <lastmod>2024-07-24</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1</priority>
+        <xhtml:link rel="alternate" hreflang="pl"
+            href="https://jakubwojtysiak.online/portfolio/skanowanie" />
+        <xhtml:link rel="alternate" hreflang="en"
+            href="https://jakubwojtysiak.online/en/portfolio/scanning" />
+    </url>
+    <url>
+        <loc>https://jakubwojtysiak.online/en/portfolio/scanning</loc>
+        <lastmod>2024-07-24</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1</priority>
+        <xhtml:link rel="alternate" hreflang="pl"
+            href="https://jakubwojtysiak.online/portfolio/skanowanie" />
+        <xhtml:link rel="alternate" hreflang="en"
+            href="https://jakubwojtysiak.online/en/portfolio/scanning" />
     </url>
     <url>
         <loc>https://jakubwojtysiak.online/blog-it</loc>
-        <lastmod>2024-03-01</lastmod>
+        <lastmod>2024-07-24</lastmod>
         <changefreq>daily</changefreq>
         <priority>1</priority>
+        <xhtml:link rel="alternate" hreflang="pl"
+            href="https://jakubwojtysiak.online/blog-it" />
+        <xhtml:link rel="alternate" hreflang="en"
+            href="https://jakubwojtysiak.online/en/blog-it" />
+    </url>
+    <url>
+        <loc>https://jakubwojtysiak.online/en/blog-it</loc>
+        <lastmod>2024-07-24</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1</priority>
+        <xhtml:link rel="alternate" hreflang="pl"
+            href="https://jakubwojtysiak.online/blog-it" />
+        <xhtml:link rel="alternate" hreflang="en"
+            href="https://jakubwojtysiak.online/en/blog-it" />
     </url>
     <url>
         <loc>https://jakubwojtysiak.online/blog-it/kurs-devops-dla-juniorow</loc>
-        <lastmod>2024-03-01</lastmod>
+        <lastmod>2024-07-24</lastmod>
         <changefreq>daily</changefreq>
         <priority>1</priority>
+        <xhtml:link rel="alternate" hreflang="pl"
+            href="https://jakubwojtysiak.online/blog-it/kurs-devops-dla-juniorow" />
+        <xhtml:link rel="alternate" hreflang="en"
+            href="https://jakubwojtysiak.online/en/blog-it/devops-course-for-juniors" />
     </url>
     <url>
-        <loc>https://jakubwojtysiak.online/blog-it/kurs-devops-dla-juniorow/jak-bezpiecznie-skonfigurowac-moj-pierwszy-serwer-vps</loc>
-        <lastmod>2024-03-01</lastmod>
+        <loc>https://jakubwojtysiak.online/en/blog-it/devops-course-for-juniors</loc>
+        <lastmod>2024-07-24</lastmod>
         <changefreq>daily</changefreq>
         <priority>1</priority>
+        <xhtml:link rel="alternate" hreflang="pl"
+            href="https://jakubwojtysiak.online/blog-it/kurs-devops-dla-juniorow" />
+        <xhtml:link rel="alternate" hreflang="en"
+            href="https://jakubwojtysiak.online/en/blog-it/devops-course-for-juniors" />
     </url>
     <url>
-        <loc>https://jakubwojtysiak.online/blog-it/kurs-devops-dla-juniorow/dokeryzacja-aplikacji-podstawy-dockera</loc>
-        <lastmod>2024-03-01</lastmod>
+        <loc>
+            https://jakubwojtysiak.online/blog-it/kurs-devops-dla-juniorow/jak-bezpiecznie-skonfigurowac-moj-pierwszy-serwer-vps</loc>
+        <lastmod>2024-07-24</lastmod>
         <changefreq>daily</changefreq>
         <priority>1</priority>
+        <xhtml:link rel="alternate" hreflang="pl"
+            href="https://jakubwojtysiak.online/blog-it/kurs-devops-dla-juniorow/jak-bezpiecznie-skonfigurowac-moj-pierwszy-serwer-vps" />
+        <xhtml:link rel="alternate" hreflang="en"
+            href="https://jakubwojtysiak.online/en/blog-it/devops-course-for-juniors/how-to-securely-configure-my-first-vps" />
     </url>
     <url>
-        <loc>https://jakubwojtysiak.online/blog-it/nowosci-ze-swiata-it/gigantyczna-awaria-microsoftu-subkietywna-opinia</loc>
-        <lastmod>2024-03-01</lastmod>
+        <loc>
+            https://jakubwojtysiak.online/en/blog-it/devops-course-for-juniors/how-to-securely-configure-my-first-vps</loc>
+        <lastmod>2024-07-24</lastmod>
         <changefreq>daily</changefreq>
         <priority>1</priority>
+        <xhtml:link rel="alternate" hreflang="pl"
+            href="https://jakubwojtysiak.online/blog-it/kurs-devops-dla-juniorow/jak-bezpiecznie-skonfigurowac-moj-pierwszy-serwer-vps" />
+        <xhtml:link rel="alternate" hreflang="en"
+            href="https://jakubwojtysiak.online/en/blog-it/devops-course-for-juniors/how-to-securely-configure-my-first-vps" />
+    </url>
+    <url>
+        <loc>
+            https://jakubwojtysiak.online/en/blog-it/devops-course-for-juniors/application-containerization-docker-basics</loc>
+        <lastmod>2024-07-24</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1</priority>
+        <xhtml:link rel="alternate" hreflang="pl"
+            href="https://jakubwojtysiak.online/blog-it/kurs-devops-dla-juniorow/dokeryzacja-aplikacji-podstawy-dockera" />
+        <xhtml:link rel="alternate" hreflang="en"
+            href="https://jakubwojtysiak.online/en/blog-it/devops-course-for-juniors/application-containerization-docker-basics" />
+    </url>
+    <url>
+        <loc>
+            https://jakubwojtysiak.online/blog-it/kurs-devops-dla-juniorow/dokeryzacja-aplikacji-podstawy-dockera</loc>
+        <lastmod>2024-07-24</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1</priority>
+        <xhtml:link rel="alternate" hreflang="pl"
+            href="https://jakubwojtysiak.online/blog-it/kurs-devops-dla-juniorow/dokeryzacja-aplikacji-podstawy-dockera" />
+        <xhtml:link rel="alternate" hreflang="en"
+            href="https://jakubwojtysiak.online/en/blog-it/devops-course-for-juniors/application-containerization-docker-basics" />
+    </url>
+    <url>
+        <loc>
+            https://jakubwojtysiak.online/blog-it/nowosci-ze-swiata-it/gigantyczna-awaria-microsoftu-subkietywna-opinia</loc>
+        <lastmod>2024-07-24</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1</priority>
+        <xhtml:link rel="alternate" hreflang="pl"
+            href="https://jakubwojtysiak.online/blog-it/nowosci-ze-swiata-it/gigantyczna-awaria-microsoftu-subkietywna-opinia" />
+        <xhtml:link rel="alternate" hreflang="en"
+            href="https://jakubwojtysiak.online/en/blog-it/it-news/giant-microsoft-crash-subjective-opinion" />
+    </url>
+    <url>
+        <loc>
+            https://jakubwojtysiak.online/en/blog-it/it-news/giant-microsoft-crash-subjective-opinion</loc>
+        <lastmod>2024-07-24</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1</priority>
+        <xhtml:link rel="alternate" hreflang="pl"
+            href="https://jakubwojtysiak.online/blog-it/nowosci-ze-swiata-it/gigantyczna-awaria-microsoftu-subkietywna-opinia" />
+        <xhtml:link rel="alternate" hreflang="en"
+            href="https://jakubwojtysiak.online/en/blog-it/it-news/giant-microsoft-crash-subjective-opinion" />
     </url>
 </urlset>

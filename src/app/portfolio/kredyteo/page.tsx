@@ -15,9 +15,10 @@ export const metadata: Metadata = {
         "Strona dla pośrednika kredytowego", "Strona dla pośrednika ubezpieczeńiowego"
     ],
     alternates: {
-        canonical: 'http://jakubwojtysiak.pl/portfolio/kredyteo',
+        canonical: 'https://jakubwojtysiak.online/portfolio/kredyteo',
         languages: {
-            'pl-PL': 'http://jakubwojtysiak.pl/portfolio/kredyteo',
+            'pl': 'https://jakubwojtysiak.pl/portfolio/kredyteo',
+            'en': 'https://jakubwojtysiak.online/en/portfolio/kredyteo'
         }
     }
 }
@@ -33,7 +34,7 @@ const KredyteoPage = (): React.JSX.Element => {
                         info="Strona internetowea dla pośrednika finansowego z kampanią reklamową na facebooku i google"
                         bullets={["Responsywność", "Elegancki Design", "Filmik Reklamowy", "Kampania Reklamowa"]}
                         technologies="NextJs"
-                        time="1 tydzień"
+                        time="2 dni"
                     />
                 </div>
                 <div className={styles.right}>

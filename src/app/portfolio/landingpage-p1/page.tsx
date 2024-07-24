@@ -14,9 +14,10 @@ export const metadata: Metadata = {
     keywords: ["Landing page", "Strona landing page", "Strona landing page dla firmy wynajmującej apartamenty",
     ],
     alternates: {
-        canonical: 'http://jakubwojtysiak.pl/portfolio/landingpage-p1',
+        canonical: 'https://jakubwojtysiak.online/portfolio/landingpage-p1',
         languages: {
-            'pl-PL': 'http://jakubwojtysiak.pl/portfolio/landingpage-p1',
+            'pl': 'https://jakubwojtysiak.online/portfolio/landingpage-p1',
+            "en": 'https://jakubwojtysiak.online/en/portfolio/landingpage-p1'
         }
     }
 }
