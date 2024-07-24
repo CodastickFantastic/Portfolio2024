@@ -9,13 +9,13 @@ import RealizationTile from '@/components/microComponents/RealizationTile';
 import heroImg from '@/../public/img/portfolio/megatrans.webp';
 
 export const metadata: Metadata = {
-    title: 'System Logistyczny (CRM)',
-    description: 'System logistyczny z elementami CRM dla firmy z sektora TSL. System pozwala na zarządzanie zleceniami, kierowcami, pojazdami, oraz klientami.',
-    keywords: ["System Logistyczny", "System CRM", "System dla firmy TSL",
-        "System dla firmy transportowej", "System dla firmy spedycyjnej", "System dla firmy logistycznej"
+    title: 'Logistics System (CRM)',
+    description: 'Logistics system with CRM elements for a company from the TSL sector. The system allows you to manage orders, drivers, vehicles and customers.',
+    keywords: ["Logistics System", "CRM System", "System for TSL company",
+        "System for a transport company", "System for a forwarding company", "System for a logistics company"
     ],
     alternates: {
-        canonical: 'https://jakubwojtysiak.online/portfolio/system-logistyczny-crm',
+        canonical: 'https://jakubwojtysiak.online/en/portfolio/logistics-system-crm',
         languages: {
             'pl': 'https://jakubwojtysiak.online/portfolio/system-logistyczny-crm',
             'en': 'https://jakubwojtysiak.online/en/portfolio/logistics-system-crm',
@@ -30,11 +30,11 @@ const LogisticCRM = (): React.JSX.Element => {
             <section className={styles.header}>
                 <div className={styles.left}>
                     <ProjectHeader
-                        title="System Logistyczny (CRM)"
-                        info="System logistyczny dla firmy z sektora TLS z elementami CRM. System pozwala na zarządzanie zleceniami, kierowcami, pojazdami, oraz klientami."
-                        bullets={["Zarządzanie Przesyłkami", "Generowanie Zamówień", "Śledzenie Przesyłek", "Aplikacja Mobilna"]}
+                        title="Logistics System (CRM)"
+                        info="Logistics system for a company from the TLS sector with CRM elements. The system allows you to manage orders, drivers, vehicles and customers."
+                        bullets={["Shipment Management", "Order Generation", "Shipment Tracking", "Mobile Application"]}
                         technologies="NextJs"
-                        time="4 tygodnie"
+                        time="4 weeks"
                     />
                 </div>
                 <div className={styles.right}>
@@ -46,7 +46,7 @@ const LogisticCRM = (): React.JSX.Element => {
                 </div>
             </section>
             <section className={styles.step1}>
-                <h2 className={styles.step1_title}>Pierwotna Makieta Figma</h2>
+                <h2 className={styles.step1_title}>Original Figma Mockup</h2>
                 <iframe className={styles.figmaWindow} src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2Fmood4Khhjw10d7W1zoXldY%2FMegatrans%3Ftype%3Ddesign%26node-id%3D0%253A1%26mode%3Ddesign%26t%3DcArrsGRBj4NuHJqL-1" allowFullScreen />
             </section>
         </main>

@@ -15,8 +15,8 @@ export default function CustomLinkComponent({
     return (
         <>
             {
-                language === "pl" && plText ? <Link href={href} className={className} onClick={onClick}>{plText}</Link>
-                    : language === "en" && enText ? <Link href={goToEnglish(href)} className={className} onClick={onClick}>{enText}</Link>
+                language === "pl" && plText ? <Link href={href} className={className} onClick={onClick}>{children ? children : plText}</Link>
+                    : language === "en" && enText ? <Link href={goToEnglish(href)} className={className} onClick={onClick}>{children ? children : enText}</Link>
                         : language === "pl" && !plText && !enText ? <Link href={href}>{children}</Link>
                             : language === "en" && !plText && !enText && <Link href={goToEnglish(href)}>{children}</Link>
             }

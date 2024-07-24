@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title: 'About me - Jakub Wojtysiak, IT services',
   description: 'My name is Jakub and I invite you to learn about my skills.',
   alternates: {
-    canonical: 'https://jakubwojtysiak.online/o-mnie',
+    canonical: 'https://jakubwojtysiak.online/en/about-me',
     languages: {
       'pl': 'https://jakubwojtysiak.online/o-mnie',
       "en": 'https://jakubwojtysiak.online/en/about-me'

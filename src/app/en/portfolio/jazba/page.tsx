@@ -9,11 +9,11 @@ import RealizationTile from '@/components/microComponents/RealizationTile';
 import heroImg from '@/../public/img/portfolio/jazba.webp';
 
 export const metadata: Metadata = {
-    title: 'Sklep Interentowy - Jazba',
-    description: 'Sklep internetowy oparty o Shopify, z wysoką customizacją, oraz integracją z Baselinkerem',
-    keywords: ["Sklep Interentowy", "Sklep Internetowy Shopify", "Integracja Baselinker", "Sklep Internetowy Jazba"],
+    title: 'Online Store - Jazba',
+    description: 'Online store based on Shopify, with high customization and integration with Baselinker',
+    keywords: ["Online Store", "Shopify Online Store", "Baselinker Integration", "Jazba Online Store"],
     alternates: {
-        canonical: 'https://jakubwojtysiak.online/portfolio/jazba',
+        canonical: 'https://jakubwojtysiak.online/en/portfolio/jazba',
         languages: {
             'pl': 'https://jakubwojtysiak.online/portfolio/jazba',
             "en": 'https://jakubwojtysiak.online/en/portfolio/jazba'
@@ -28,11 +28,11 @@ const ArBiPage = (): React.JSX.Element => {
             <section className={styles.header}>
                 <div className={styles.left}>
                     <ProjectHeader
-                        title="Sklep Internetowy Jazba"
-                        info="System do osbługi sklepu internetowego opraty o Shopify z wysoką customizacją podstron."
-                        bullets={["Sklep Internetowy", "Integracja Baselinker", "Obsługa Drukarek Fiskalnych", "Integracja Magazynowa"]}
+                        title="Jazba Online Store"
+                        info="A system for operating an online store based on Shopify with high customization of subpages."
+                        bullets={["Online Store", "Baselinker Integration", "Fiscal Printer Service", "Warehouse Integration"]}
                         technologies="Shopify Hydrogen + Baselinker"
-                        time="2 tygodnie"
+                        time="2 weeks"
                     />
                 </div>
                 <div className={styles.right}>

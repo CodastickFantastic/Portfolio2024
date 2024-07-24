@@ -9,11 +9,11 @@ import RealizationTile from '@/components/microComponents/RealizationTile';
 import heroImg from '@/../public/img/portfolio/czystykamien.webp';
 
 export const metadata: Metadata = {
-    title: 'Strona Firmowa',
-    description: 'Strona firmowa dla firmy z branży czyszczenia kostki brukowej. Aplikacja PWA z możliwością instalacji na urządzeniu mobilnym. Pełna responsywność, szybkie ładowanie oraz cusotmowe podstrony.',
-    keywords: ["Strona firmowa", "Strona firmowa PWA", "Strona firmowa NextJS", "Strona firmowa z możliwością instalacji na urządzeniu mobilnym", "Strona firmowa wordpress", "Strona firmowa dla firmy czyszczącej kostkę brukową"],
+    title: 'Company Website',
+    description: 'Company website for a company in the paving stone cleaning industry. PWA application that can be installed on a mobile device. Full responsiveness, fast loading and custom subpages.',
+    keywords: ["Company website", "PWA company website", "NextJS company website", "Company website with the possibility of installation on a mobile device", "Wordpress company website", "Company website for a paving stone cleaning company"],
     alternates: {
-        canonical: 'https://jakubwojtysiak.online/portfolio/czysty-kamien',
+        canonical: 'https://jakubwojtysiak.online/en/portfolio/czysty-kamien',
         languages: {
             'pl': 'https://jakubwojtysiak.online/portfolio/czysty-kamien',
             'en': 'https://jakubwojtysiak.online/en/portfolio/czysty-kamien'
@@ -28,11 +28,11 @@ const LogisticCRM = (): React.JSX.Element => {
             <section className={styles.header}>
                 <div className={styles.left}>
                     <ProjectHeader
-                        title="Strona Firmowa"
-                        info="System dla firmy zajmującej się myciem kostki brukowej. Aplikacja PWA z możliwością instalacji na urządzeniu mobilnym. Pełna responsywność, szybkie ładowanie oraz cusotmowe podstrony."
-                        bullets={["Elegancki Design", "Tworzenie Logo", "Aplikacja PWA", "Blog", "Wizytówka Google"]}
+                        title="Company Website"
+                        info="System for a company dealing with washing paving stones. PWA application with the possibility of installation on a mobile device. Full responsiveness, fast loading and custom subpages."
+                        bullets={["Elegant Design", "Logo Creation", "PWA Application", "Blog", "Google Business Card"]}
                         technologies="NextJs"
-                        time="1.5 tygodnia"
+                        time="1.5 weeks"
                     />
                 </div>
                 <div className={styles.right}>
@@ -44,7 +44,7 @@ const LogisticCRM = (): React.JSX.Element => {
                 </div>
             </section>
             <section className={styles.step1}>
-                <h2 className={styles.step1_title}>Pierwotna Makieta Figma</h2>
+                <h2 className={styles.step1_title}>Original Figma Mockup</h2>
                 <iframe className={styles.figmaWindow} src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F9d2sopQuaT22RwXkCOHLR2%2FCzysty-Kamie%25C5%2584%3Ftype%3Ddesign%26mode%3Ddesign%26t%3DcArrsGRBj4NuHJqL-1" allowFullScreen />
             </section>
         </main>

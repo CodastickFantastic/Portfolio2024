@@ -6,16 +6,11 @@ import styles from "@/scss/pages/politykaPrywatnosci.module.scss";
 export const metadata: Metadata = {
     title: 'Polityka Prywatności',
     description: 'Polityka prywatnosci strony jakubwojtysiak.online',
-
-    keywords: ['strony internetowe', 'sklepy internetowe', 'aplikacje mobilne',
-        'pozycjonowanie stron', 'tworzenie stron', 'tworzenie sklepów internetowych',
-        'tworzenie aplikacji mobilnych', 'pozycjonowanie stron internetowych', 'pozycjonowanie stron www',
-        'pozycjonowanie sklepów internetowych', 'pozycjonowanie aplikacji mobilnych', 'pozycjonowanie aplikacji mobilnych'
-    ],
     alternates: {
-        canonical: 'https://jakubwojtysiak.pl',
+        canonical: 'https://jakubwojtysiak.online/polityka-prywatnosci',
         languages: {
-            'pl-PL': 'https://jakubwojtysiak.pl',
+            'pl': 'https://jakubwojtysiak.online/polityka-prywatnosci',
+            "en": 'https://jakubwojtysiak.online/en/privacy-policy'
         }
     }
 }

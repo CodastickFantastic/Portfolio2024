@@ -9,10 +9,10 @@ import RealizationTile from '@/components/microComponents/RealizationTile';
 import heroImg from '@/../public/img/portfolio/pollin2.webp';
 
 export const metadata: Metadata = {
-    title: 'Aplikacja IoT',
-    description: 'Aplikacja mobilna która umożliwia sterowanie urządzeniami IoT firmy Pollin',
-    keywords: ["Aplikacja mobilna", "Aplikacja IoT", "Aplikacja mobilna IoT", "Aplikacja mobilna sterująca urządzeniami IoT",
-        "Aplikacja React Native", "Aplikacja React Native IoT", "Aplikacja React Native sterująca urządzeniami IoT"
+    title: 'IoT Application',
+    description: "Mobile application that allows you to control Pollin's IoT devices",
+    keywords: ["Mobile application", "IoT application", "IoT mobile application", "Mobile application controlling IoT devices",
+        "React Native App", "React Native IoT App", "React Native App Controlling IoT Devices"
     ],
     alternates: {
         canonical: 'https://jakubwojtysiak.online/portfolio/pollin',
@@ -30,11 +30,11 @@ const PollinPage = (): React.JSX.Element => {
             <section className={styles.header}>
                 <div className={styles.left}>
                     <ProjectHeader
-                        title="Aplikacja IoT"
-                        info="Aplikacja mobilna która umożliwia sterowanie urządzeniami IoT firmy Pollin"
-                        bullets={["Android", "Urzadzenia IoT", "Zdalne Sterowanie"]}
-                        technologies="React Native"
-                        time="2 tygodnie"
+                        title="IoT Application"
+                        info="Mobile application that allows you to control Pollin IoT devices"
+                        bullets={["Android", "IoT Devices", "Remote Control"]}
+                        technologies="ReactNative"
+                        time="2 week"
                     />
                 </div>
                 <div className={styles.right}>
@@ -45,7 +45,7 @@ const PollinPage = (): React.JSX.Element => {
                 </div>
             </section>
             <section className={styles.step1}>
-                <h2 className={styles.step1_title}>Pierwotna Makieta Figma</h2>
+                <h2 className={styles.step1_title}>Original Figma Mockup</h2>
                 <iframe className={styles.figmaWindow} src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FQNvufPD752opwEpUrarTfl%2FPollin%3Ftype%3Ddesign%26node-id%3D0%253A1%26mode%3Ddesign%26t%3DcArrsGRBj4NuHJqL-1" allowFullScreen />
             </section>
         </main>

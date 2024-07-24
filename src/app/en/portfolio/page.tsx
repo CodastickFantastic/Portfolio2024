@@ -19,10 +19,10 @@ import skanowanieImg from "@/../public/img/portfolio/skanowanie.webp"
 import p1Img from "@/../public/img/portfolio/p1.webp"
 
 export const metadata: Metadata = {
-    title: 'Portfolio - Jakub Wojtysiak, Uługi IT',
-    description: 'Sprawdź moje portfolio. Zobacz jakie projekty udało mi się zrealizować. Postaw na pewnego partnera IT i zacznij zarabiać w internecie już dziś!',
+    title: 'Portfolio - Jakub Wojtysiak, IT Services',
+    description: 'Check out my portfolio. See what projects I managed to complete. Choose a reliable IT partner and start making money online today!',
     alternates: {
-        canonical: 'https://jakubwojtysiak.online/portfolio',
+        canonical: 'https://jakubwojtysiak.online/en/portfolio',
         languages: {
             'pl': 'https://jakubwojtysiak.online/portfolio',
             'en': 'https://jakubwojtysiak.online/en/portfolio'
@@ -41,8 +41,8 @@ const PortfolioPage = (): React.JSX.Element => {
                     <LastRealization
                         img={skanowanieImg}
                         type="Shopify - Hydrogen"
-                        link="/portfolio/skanowanie"
-                        title="Sklep Internetowy (W przebudowie...)"
+                        link="/en/portfolio/scanning"
+                        title="Online Store (Under construction...)"
                     />
                 </div>
             </section>
@@ -52,7 +52,7 @@ const PortfolioPage = (): React.JSX.Element => {
                         img={skanowanieStrukturalneImg}
                         type="NextJS"
                         link="https://skanowaniestrukturalne.pl"
-                        title="Nowoczesny Landing Page"
+                        title="Modern Landing Page"
                         noFollow
                     />
                 </div>
@@ -61,7 +61,7 @@ const PortfolioPage = (): React.JSX.Element => {
                         img={jazbaImg}
                         type="Shopify - Hydrogen"
                         link="/portfolio/jazba"
-                        title="Sklep Interentowy + Integracje"
+                        title="Online Store + Integrations"
                     />
                 </div>
                 <div className={styles.tile}>
@@ -69,7 +69,7 @@ const PortfolioPage = (): React.JSX.Element => {
                         img={naklejeczkaImg}
                         type="Wordpress"
                         link="https://naklejeczka.pl"
-                        title="Landing Page"
+                        title="LandingPage"
                         noFollow
                     />
                 </div>
@@ -78,7 +78,7 @@ const PortfolioPage = (): React.JSX.Element => {
                         img={franciszkanieImg}
                         type="NextJS"
                         link="/portfolio/system-archiwalno-biblioteczny"
-                        title="System Ar-Bi"
+                        title="Ar-Bi System"
                     />
                 </div>
                 <div className={styles.tile}>
@@ -86,7 +86,7 @@ const PortfolioPage = (): React.JSX.Element => {
                         img={czystykamienImg}
                         type="NextJS"
                         link="/portfolio/czysty-kamien"
-                        title="Strona Firmowa"
+                        title="Company Website"
                     />
                 </div>
                 <div className={styles.tile}>
@@ -94,7 +94,7 @@ const PortfolioPage = (): React.JSX.Element => {
                         img={stalomatImg}
                         type="Wordpress"
                         link="/portfolio/stalomat"
-                        title="Strona Firmowa"
+                        title="Company Website"
                     />
                 </div>
                 <div className={styles.tile}>
@@ -102,7 +102,7 @@ const PortfolioPage = (): React.JSX.Element => {
                         img={megatransImg}
                         type="NextJS"
                         link="/portfolio/system-logistyczny-crm"
-                        title="System Logistyczny (CRM)"
+                        title="Logistics System (CRM)"
                     />
                 </div>
                 <div className={styles.tile}>
@@ -110,15 +110,15 @@ const PortfolioPage = (): React.JSX.Element => {
                         img={kredyteoImg}
                         type="NextJS"
                         link="/portfolio/kredyteo"
-                        title="Strona Firmowa"
+                        title="Company Website"
                     />
                 </div>
                 <div className={styles.tile}>
                     <RealizationTile
                         img={pollinImage}
-                        type="React Native"
+                        type="ReactNative"
                         link="/portfolio/pollin"
-                        title="Aplikacja IoT"
+                        title="IoT Application"
                     />
                 </div>
                 <div className={styles.tile}>
@@ -126,7 +126,7 @@ const PortfolioPage = (): React.JSX.Element => {
                         img={p1Img}
                         type="NextJS"
                         link="/portfolio/landingpage-p1"
-                        title="Landing Page"
+                        title="LandingPage"
                     />
                 </div>
             </section>

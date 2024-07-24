@@ -9,13 +9,13 @@ import RealizationTile from '@/components/microComponents/RealizationTile';
 import heroImg from '@/../public/img/portfolio/stalomat.webp';
 
 export const metadata: Metadata = {
-    title: 'Strona Firmowa',
-    description: 'Strona firmowa Wordpress dla firmy konstrukcyjnej. Pełna responsywność, szybkie ładowanie oraz cusotmowe podstrony.',
-    keywords: ["Stroan firmowa", "Wordpress", "Strona Wordpress",
-        "Strona firmowa Wordpress", "Strona Wordpres dla firmy budowlanej", "Strona Wordpress dla firmy konstrukcyjnej"
+    title: 'Company Website',
+    description: 'Wordpress company website for a construction company. Full responsiveness, fast loading and custom subpages.',
+    keywords: ["Company website", "Wordpress", "Wordpress website",
+        "Wordpress company website", "Wordpress website for a construction company", "Wordpress website for a construction company"
     ],
     alternates: {
-        canonical: 'https://jakubwojtysiak.online/portfolio/stalomat',
+        canonical: 'https://jakubwojtysiak.online/en/portfolio/stalomat',
         languages: {
             'pl': 'https://jakubwojtysiak.online/portfolio/stalomat',
             'en': 'https://jakubwojtysiak.online/en/portfolio/stalomat'
@@ -30,11 +30,11 @@ const StalomatPage = (): React.JSX.Element => {
             <section className={styles.header} style={{ height: "calc(100dvh - 200px)", paddingTop: 0 }}>
                 <div className={styles.left}>
                     <ProjectHeader
-                        title="Strona Firmowa"
-                        info="Strona internetowa Wordpress dla firmy z branży konstrukcyjnej z dużą customizacją podstron"
-                        bullets={["Wordpress", "Elementor", "Customowe podstrony"]}
+                        title="Company Website"
+                        info="Wordpress website for a construction company with highly customizable subpages"
+                        bullets={["Wordpress", "Elementor", "Custom subpages"]}
                         technologies="Wordpress"
-                        time="1 tydzień"
+                        time="1 week"
                     />
                 </div>
                 <div className={styles.right}>

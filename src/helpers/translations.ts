@@ -17,6 +17,54 @@ const pages: { pl: string, en: string }[] = [
     {
         pl: "/o-mnie",
         en: "/en/about-me"
+    },
+    {
+        pl: "/polityka-prywatnosci",
+        en: "/en/privacy-policy"
+    },
+    {
+        pl: "/portfolio",
+        en: "/en/portfolio"
+    },
+    {
+        pl: "/portfolio/landingpage-p1",
+        en: "/en/portfolio/landingpage-p1"
+    },
+    {
+        pl: "/portfolio/pollin",
+        en: "/en/portfolio/pollin"
+    },
+    {
+        pl: "/portfolio/kredyteo",
+        en: "/en/portfolio/kredyteo"
+    },
+    {
+        pl: "/portfolio/system-logistyczny-crm",
+        en: "/en/portfolio/logistics-system-crm"
+    },
+    {
+        pl: "/portfolio/stalomat",
+        en: "/en/portfolio/stalomat"
+    },
+    {
+        pl: "/portfolio/czysty-kamien",
+        en: "/en/portfolio/czysty-kamien"
+    },
+    {
+        pl: "/portfolio/system-archiwalno-biblioteczny",
+        en: "/en/portfolio/archive-library-system"
+    },
+    {
+        pl: "/portfolio/jazba",
+        en: "/en/portfolio/jazba"
+    },
+    {
+        pl: "/portfolio/skanowanie",
+        en: "/en/portfolio/scanning"
+    },
+    {
+        pl: "/blog-it",
+        en: "/en/blog-it"
     }
 ]
 

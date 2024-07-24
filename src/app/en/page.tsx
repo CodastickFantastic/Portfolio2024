@@ -21,7 +21,7 @@ export const metadata: Metadata = {
         canonical: 'https://jakubwojtysiak.online/en',
         languages: {
             'pl': 'https://jakubwojtysiak.online',
-            'en': 'https://jakubwojtysiak.online/en'
+            'en': 'https://jakubwojtysiak.online/en',
         }
     }
 }
