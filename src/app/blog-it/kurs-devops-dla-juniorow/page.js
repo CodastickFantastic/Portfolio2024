@@ -9,15 +9,14 @@ import articleHero from "@/../public/blogImgs/coursesPresentation/lesson_101.png
 import roadMapImg from "@/../public/blogImgs/coursesPresentation/devOps_roadmap.png";
 
 
-
-
 export const metadata = {
   title: 'Kurs DevOps dla Juniorów - Czyli od 0 do DevOps w kilku krokach',
   description: 'Postaw pierwsze kroki w DevOps i dowiedz się jak samodzielnie hostować aplikacje na VPS.',
   alternates: {
-    canonical: 'https://jakubwojtysiak.pl/blog-it/kurs-devops-dla-juniorow',
+    canonical: 'https://jakubwojtysiak.online/blog-it/kurs-devops-dla-juniorow',
     languages: {
-      'pl-PL': 'https://jakubwojtysiak.pl/blog-it/kurs-devops-dla-juniorow',
+      'pl': 'https://jakubwojtysiak.online/blog-it/kurs-devops-dla-juniorow',
+      "en": "https://jakubwojtysiak.online/en/blog-it/devops-course-for-juniors"
     }
   }
 }

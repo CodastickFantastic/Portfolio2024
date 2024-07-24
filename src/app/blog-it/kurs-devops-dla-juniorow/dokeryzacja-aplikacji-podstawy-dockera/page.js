@@ -16,9 +16,10 @@ export const metadata = {
   title: 'Dokeryzacja aplikacji, czyli podstawy Dockera',
   description: 'Zapoznaj się Dockerem w kilku prostych krokach i już dziś zacznij z niego korzystać!',
   alternates: {
-    canonical: 'https://jakubwojtysiak.pl/blog-it/kurs-devops-dla-juniorow/dokeryzacja-aplikacji-podstawy-dockera',
+    canonical: 'https://jakubwojtysiak.online/blog-it/kurs-devops-dla-juniorow/dokeryzacja-aplikacji-podstawy-dockera',
     languages: {
-      'pl-PL': 'https://jakubwojtysiak.pl/blog-it/kurs-devops-dla-juniorow/dokeryzacja-aplikacji-podstawy-dockera',
+      'pl': 'https://jakubwojtysiak.online/blog-it/kurs-devops-dla-juniorow/dokeryzacja-aplikacji-podstawy-dockera',
+      "en": 'https://jakubwojtysiak.online/en/blog-it/devops-course-for-juniors/application-containerization-docker-basics'
     }
   }
 }
@@ -34,7 +35,7 @@ export default function ArticlePage() {
         <div className={styles.articleContainer}>
           <ArticleHeader
             h1="Dokeryzacja <span class='purple'>aplikacji</span>, czyli podstawy <span class='purple'>Dockera</span>"
-            articleInfo={{ time: "45 minut", specialization: "DevOps/Developer", level: "Junior" }}
+            articleInfo={{ time: "20 minut", specialization: "DevOps/Developer", level: "Junior" }}
             headerImg={articleHero}
             contentsTitle="Poznaj Docker w kilku prostych krokach"
             contents={[

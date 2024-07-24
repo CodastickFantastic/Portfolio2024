@@ -6,16 +6,16 @@ import BlogNewsletter from "@/components/blogComponents/BlogNewsletter";
 import Link from "next/link";
 
 import Image from "next/image";
-import articleHero from "@/../public/blogImgs/_index/blog_hero_img.png";
-import awariaMicrosoftu from "@/../public/blogImgs/blogPreviews/awaria_microsoft.png";
+import articleHero from "@/../public/blogImgs/_index/blog_hero_img_eng.png";
+import awariaMicrosoftu from "@/../public/blogImgs/blogPreviews/awaria_microsoft_eng.png";
 import frontend2024 from "@/../public/blogImgs/blogPreviews/frontend_placeholder.png";
 
 
 export const metadata = {
-  title: 'Naucz się IT - Blog o IT',
-  description: 'Nazywam się Jakub i zapraszam Cię na mojego bloga poświęconego szerokopojętym zagadnieniom IT',
+  title: 'Learn IT Right Now - Blog about IT',
+  description: 'My name is Jakub and I invite you to my blog devoted to broadly understood IT issues',
   alternates: {
-    canonical: 'https://jakubwojtysiak.online/blog-it',
+    canonical: 'https://jakubwojtysiak.online/en/blog-it',
     languages: {
       'pl': 'https://jakubwojtysiak.online/blog-it',
       "en": 'https://jakubwojtysiak.online/en/blog-it'
@@ -28,25 +28,25 @@ export default function BlogHomePage() {
     <main className={`${styles.articlePage} ${styles.blogIndexPage}`}>
       <div className={styles.articleContainer}>
         <BlogHeader
-          h1="Naucz się <span class='purple'>IT</span>"
+          h1="Learn <span class='purple'>IT</span> Right Now"
           headerImg={articleHero}
-          contentsTitle="Cześć, miło mi powitać Cię na moim blogu poświęconym szerokopojętym zagadnieniom IT. Nie zwlekaj i znajdź temat swoich zainteresowań!<br/><br/>Znajdziesz tutaj artykuły oraz kursy z szerokopojetej dziedziny Web Developmentu. Nauczysz się aktualnych i bezpiecznych zasad programowania oraz hostowania aplikacji webowych. Dowiesz się o najnowszych nowinkach ze świata IT.<br/><br/>Przekonaj się na własnej skórze, że IT nie jest nudne oraz nie wymaga zaawansowanych umiejętności matematycznych.<br/><br/>Większość artykułów jest pisana z myślą o początkujących, dlatego niezależnie czy dopiero zaczynasz karierę w IT, czy jeteś już zaawansowany, razem ze mną będziesz mógł zostać specjalistą IT!"
+          contentsTitle="Hi, I am pleased to welcome you to my blog devoted to broadly understood IT issues. Don't hesitate and find the topic of your interests!<br/><br/>Here you will find articles and courses in the broad field of Web Development. You will learn current and safe rules programming and hosting web applications. You will learn about the latest news from the world of IT.<br/><br/>See for yourself that IT is not boring and does not require advanced mathematical skills.<br/><br/>Most The articles are written with beginners in mind, so regardless of whether you are just starting your IT career or are already advanced, you will be able to become an IT specialist with me!"
         />
       </div>
       {/* Kursy IT */}
       <section id="dostepne-kursy" className={styles.articleSection}>
         <div className={styles.sectionDivider}>
-          <h2 className={styles.articleContainer}>Kursy IT</h2>
+          <h2 className={styles.articleContainer}>IT Courses</h2>
         </div>
         <div className={styles.articleContainer}>
           <div className={`${styles.sectionWithTiles} ${styles.sectionContent} `}>
             <div className={styles.sectionTrack}>
-              <CourseTile title="Kurs DevOps" level="Junior - 6 lekcji" icon="iconDevops" url="/blog-it/kurs-devops-dla-juniorow" available />
-              <CourseTile title="Kurs JavaScript" level="Junior-Mid" icon="iconJavaScript" url="/blog-it" />
-              <CourseTile title="Kurs React" level="Mid" icon="iconReact" url="/blog-it" />
-              <CourseTile title="Kurs Next.js" level="Mid" icon="iconNextJs" url="/blog-it" />
-              <CourseTile title="Kurs WordPress" level="Mid" icon="iconWordpress" url="/blog-it" />
-              <CourseTile title="Kurs Cybersecurity" level="Mid" icon="iconSecurity" url="/blog-it" />
+              <CourseTile title="DevOps Course" level="Junior - 6 lessons" icon="iconDevops" url="/en/blog-it/devops-course-for-juniors" available />
+              <CourseTile title="JavaScript Course" level="Junior-Mid" icon="iconJavaScript" url="/en/blog-it" />
+              <CourseTile title="React Course" level="Mid" icon="iconReact" url="/en/blog-it" />
+              <CourseTile title="Next.js Course" level="Mid" icon="iconNextJs" url="/en/blog-it" />
+              <CourseTile title="WordPress Course" level="Mid" icon="iconWordpress" url="/en/blog-it" />
+              <CourseTile title="Cybersecurity Course" level="Mid" icon="iconSecurity" url="/en/blog-it" />
             </div>
           </div>
         </div>
@@ -54,15 +54,15 @@ export default function BlogHomePage() {
       {/* Artykuły */}
       <section id="artykuły" className={styles.articleSection}>
         <div className={styles.sectionDivider}>
-          <h2 className={styles.articleContainer}>Najnowsze artykuły</h2>
+          <h2 className={styles.articleContainer}>Latest Articles</h2>
         </div>
         <div className={`${styles.sectionContent} ${styles.articleContainer} ${styles.latestArticels}`}>
           <div className={styles.left}>
             <ArticleTile
-              title="Wielka awaria Microsoftu - Subiektywna Opinia"
+              title="Microsoft's great failure - Subjective Opinion"
               img={awariaMicrosoftu}
-              url="/blog-it/nowosci-ze-swiata-it/gigantyczna-awaria-microsoftu-subkietywna-opinia"
-              content="Dzisiaj (19.07.2024) doszło do jednej z największych w historii awarii serwerów firmy Microsoft, która doprowadziła do uziemienia lotnisk, koleii i firm na całym świecie. Czy nadal możemy ufać gigantom IT? "
+              url="/en/blog-it/it-news/giant-microsoft-crash-subjective-opinion"
+              content="Today (July 19, 2024) there was one of the largest Microsoft server failures in history, which led to the grounding of airports, railways and companies around the world. Can we still trust IT giants?"
             />
             {/* <ArticleTile
               title="Jaki język programowania jest najlepszy w 2024 roku?"
@@ -90,7 +90,7 @@ function CourseTile({ title, level, icon, available = false, url }) {
 
   return (
     <Link href={url} className={styles.courseTile}>
-      {!available && <span className={styles.badge}>Wkrótce</span>}
+      {!available && <span className={styles.badge}>Comming Soon</span>}
       <div className={`${styles.icon} ${styles[icon]}`} />
       {title}
       {level && <span className={styles.courseLevel}>{level}</span>}
@@ -105,7 +105,7 @@ function ArticleTile({ title, img, url, content }) {
       <div className={styles.articlePreview}>
         <h3>{title}</h3>
         <p dangerouslySetInnerHTML={{ __html: content }} />
-        <Link href={url} className={styles.articleLink}>Czytaj dalej &rarr;</Link>
+        <Link href={url} className={styles.articleLink}>Read more &rarr;</Link>
       </div>
     </article>
   )

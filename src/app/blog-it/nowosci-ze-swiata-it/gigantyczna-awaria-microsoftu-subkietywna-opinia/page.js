@@ -13,9 +13,10 @@ export const metadata = {
   title: 'Wielka Awaria Microsoftu. Czy gigantom IT nadal można ufać? Subkietywna opinia.',
   description: 'Gigantyczna awaria Microsoft. Lotniska odwołują loty, stacja Sky News nie działa, problemy w bankach...',
   alternates: {
-    canonical: 'https://jakubwojtysiak.pl/blog-it/nowosci-ze-swiata-it/gigantyczna-awaria-microsoftu-subkietywna-opinia',
+    canonical: 'https://jakubwojtysiak.online/blog-it/nowosci-ze-swiata-it/gigantyczna-awaria-microsoftu-subkietywna-opinia',
     languages: {
-      'pl-PL': 'https://jakubwojtysiak.pl/blog-it/nowosci-ze-swiata-it/gigantyczna-awaria-microsoftu-subkietywna-opinia',
+      'pl': 'https://jakubwojtysiak.online/blog-it/nowosci-ze-swiata-it/gigantyczna-awaria-microsoftu-subkietywna-opinia',
+      "en": 'https://jakubwojtysiak.online/en/blog-it/it-news/giant-microsoft-crash-subjective-opinion',
     }
   }
 }

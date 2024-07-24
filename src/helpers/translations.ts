@@ -1,7 +1,7 @@
 "use client"
 import { usePathname } from "next/navigation"
 
-const pages: { pl: string, en: string }[] = [
+export const pages: { pl: string, en: string }[] = [
     {
         pl: "/",
         en: "/en"
@@ -65,6 +65,23 @@ const pages: { pl: string, en: string }[] = [
     {
         pl: "/blog-it",
         en: "/en/blog-it"
+    },
+    {
+        pl: "/blog-it/nowosci-ze-swiata-it/gigantyczna-awaria-microsoftu-subkietywna-opinia",
+        en: "/en/blog-it/it-news/giant-microsoft-crash-subjective-opinion"
+    },
+    {
+        pl: "/blog-it/kurs-devops-dla-juniorow",
+        en: "/en/blog-it/devops-course-for-juniors"
+    },
+    {
+        pl: "/blog-it/kurs-devops-dla-juniorow/jak-bezpiecznie-skonfigurowac-moj-pierwszy-serwer-vps",
+        en: "/en/blog-it/devops-course-for-juniors/how-to-securely-configure-my-first-vps"
+    },
+    {
+        pl: "/blog-it/kurs-devops-dla-juniorow/dokeryzacja-aplikacji-podstawy-dockera",
+        en: "/en/blog-it/devops-course-for-juniors/application-containerization-docker-basics"
+
     }
 ]
 

@@ -1,4 +1,5 @@
 "use client"
+import { determineLanguage } from '@/helpers/translations';
 import styles from '@/scss/components/blogComponents/BlogNavigator.module.scss'
 import Link from 'next/link';
 
@@ -6,6 +7,7 @@ import { usePathname } from "next/navigation";
 
 
 export default function BlogNavigator({ hardCodedPreviousPage, previousLesson, nextLesson }) {
+    const language = determineLanguage()
     const location = usePathname()
     let previousPageArray = location.split("/")
     previousPageArray.pop()
@@ -13,7 +15,7 @@ export default function BlogNavigator({ hardCodedPreviousPage, previousLesson, n
 
     return (
         <div className={styles.blogNavigator}>
-            <Link href={hardCodedPreviousPage ? hardCodedPreviousPage : previousPage} className={`${styles.linkBtn} ${styles.pink}`}><span className={`${styles.icon} ${styles.arrowBack}`} />Powrót</Link>
+            <Link href={hardCodedPreviousPage ? hardCodedPreviousPage : previousPage} className={`${styles.linkBtn} ${styles.pink}`}><span className={`${styles.icon} ${styles.arrowBack}`} />{language === "pl" ? "Powrót" : "Go Back"}</Link>
             <div className={styles.lessonsNavigator}>
                 {previousLesson && <Link href={previousLesson.url} className={styles.linkBtn}><span className={`${styles.icon} ${styles.arrowBack}`} /> {previousLesson.title}</Link>}
                 {nextLesson && <Link href={nextLesson.url} className={styles.linkBtn}>{nextLesson.title} <span className={`${styles.icon} ${styles.arrowNext}`} /></Link>}
