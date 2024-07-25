@@ -13,7 +13,7 @@ import BlogNavigator from "@/components/blogComponents/BlogNavigator";
 
 
 export const metadata = {
-  title: 'Dokeryzacja aplikacji, czyli podstawy Dockera',
+  title: 'Konteneryzacja aplikacji, czyli podstawy Dockera',
   description: 'Zapoznaj się Dockerem w kilku prostych krokach i już dziś zacznij z niego korzystać!',
   alternates: {
     canonical: 'https://jakubwojtysiak.online/blog-it/kurs-devops-dla-juniorow/dokeryzacja-aplikacji-podstawy-dockera',
@@ -34,7 +34,7 @@ export default function ArticlePage() {
       <article>
         <div className={styles.articleContainer}>
           <ArticleHeader
-            h1="Dokeryzacja <span class='purple'>aplikacji</span>, czyli podstawy <span class='purple'>Dockera</span>"
+            h1="Konteneryzacja <span class='purple'>aplikacji</span>, czyli podstawy <span class='purple'>Dockera</span>"
             articleInfo={{ time: "20 minut", specialization: "DevOps/Developer", level: "Junior" }}
             headerImg={articleHero}
             contentsTitle="Poznaj Docker w kilku prostych krokach"
