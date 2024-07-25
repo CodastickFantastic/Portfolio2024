@@ -279,7 +279,7 @@ export default function ArticlePage() {
             <CodeBlock
               description="To run the previously created image from the Dockerfile, execute the following command"
               commands={[
-                "docker run -p <var>IP_ADDRESS</var>:<var>OPENED_CONTAINER_PORT</var>:<var>LOCAL_BROADCASTING_PORT</var>/<var>PROTOCOL</var> <var>IMG_ID</var>",
+                "docker run -p <var>IP_ADDRESS</var>:<var>LOCAL_BROADCASTING_PORT</var>:<var>OPENED_CONTAINER_PORT</var>/<var>PROTOCOL</var> <var>IMG_ID</var>",
                 "<var>EXAMPLE</var> docker run -p 127.0.0.1:8080:80/tcp <IMG-ID>",
               ]}
             />
