@@ -334,4 +334,26 @@
         <xhtml:link rel="alternate" hreflang="en"
             href="https://jakubwojtysiak.online/en/blog-it/it-news/giant-microsoft-crash-subjective-opinion" />
     </url>
+    <url>
+        <loc>
+            https://jakubwojtysiak.online/blog-it/kurs-devops-dla-juniorow/docker-compose-podstawy-yaml</loc>
+        <lastmod>2024-07-25</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1</priority>
+        <xhtml:link rel="alternate" hreflang="pl"
+            href="https://jakubwojtysiak.online/blog-it/kurs-devops-dla-juniorow/docker-compose-podstawy-yaml" />
+        <xhtml:link rel="alternate" hreflang="en"
+            href="https://jakubwojtysiak.online/en/blog-it/devops-course-for-juniors/docker-compose-yaml-basics" />
+    </url>
+    <url>
+        <loc>
+            https://jakubwojtysiak.online/en/blog-it/devops-course-for-juniors/docker-compose-yaml-basics</loc>
+        <lastmod>2024-07-25</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1</priority>
+        <xhtml:link rel="alternate" hreflang="pl"
+            href="https://jakubwojtysiak.online/blog-it/kurs-devops-dla-juniorow/docker-compose-podstawy-yaml" />
+        <xhtml:link rel="alternate" hreflang="en"
+            href="https://jakubwojtysiak.online/en/blog-it/devops-course-for-juniors/docker-compose-yaml-basics" />
+    </url>
 </urlset>

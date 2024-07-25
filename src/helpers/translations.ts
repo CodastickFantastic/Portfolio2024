@@ -81,7 +81,10 @@ export const pages: { pl: string, en: string }[] = [
     {
         pl: "/blog-it/kurs-devops-dla-juniorow/dokeryzacja-aplikacji-podstawy-dockera",
         en: "/en/blog-it/devops-course-for-juniors/application-containerization-docker-basics"
-
+    },
+    {
+        pl: "/blog-it/kurs-devops-dla-juniorow/docker-compose-podstawy-yaml",
+        en: "/en/blog-it/devops-course-for-juniors/docker-compose-yaml-basics"
     }
 ]
 

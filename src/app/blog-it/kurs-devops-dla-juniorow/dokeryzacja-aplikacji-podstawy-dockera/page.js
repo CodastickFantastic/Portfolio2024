@@ -13,7 +13,7 @@ import BlogNavigator from "@/components/blogComponents/BlogNavigator";
 
 
 export const metadata = {
-  title: 'Dokeryzacja aplikacji, czyli podstawy Dockera',
+  title: 'Konteneryzacja aplikacji, czyli podstawy Dockera',
   description: 'Zapoznaj się Dockerem w kilku prostych krokach i już dziś zacznij z niego korzystać!',
   alternates: {
     canonical: 'https://jakubwojtysiak.online/blog-it/kurs-devops-dla-juniorow/dokeryzacja-aplikacji-podstawy-dockera',
@@ -29,12 +29,12 @@ export default function ArticlePage() {
     <main className={styles.articlePage}>
       <BlogNavigator
         previousLesson={{ title: "Lekcja 1", url: "/blog-it/kurs-devops-dla-juniorow/jak-bezpiecznie-skonfigurowac-moj-pierwszy-serwer-vps" }}
-        nextLesson={{ title: "Lekcja 3", url: "/blog-it/kurs-devops-dla-juniorow" }}
+        nextLesson={{ title: "Lekcja 3", url: "/blog-it/kurs-devops-dla-juniorow/docker-compose-podstawy-yaml" }}
       />
       <article>
         <div className={styles.articleContainer}>
           <ArticleHeader
-            h1="Dokeryzacja <span class='purple'>aplikacji</span>, czyli podstawy <span class='purple'>Dockera</span>"
+            h1="Konteneryzacja <span class='purple'>aplikacji</span>, czyli podstawy <span class='purple'>Dockera</span>"
             articleInfo={{ time: "20 minut", specialization: "DevOps/Developer", level: "Junior" }}
             headerImg={articleHero}
             contentsTitle="Poznaj Docker w kilku prostych krokach"
@@ -267,6 +267,28 @@ export default function ArticlePage() {
               type="hint"
               title="Dockerfile w skrócie..."
               content="Wyobraź sobie, że za każdym razem kiedy chcesz dokonać deploymentu aplikacji na nowym serwerze musisz wykonać szereg czynności mający na celu przygotowanie środowiska dla Twojej aplikacji. Musisz w pierwszej kolejności pobrać potrzebne pliki, nastepnie zainstalować biblioteki, skonfigurować bazy danych a nastepnie uruchomić aplikację tak aby nasłuchiwała na danym porcie.<br/><br/>Wykonywanie tych czynności ręcznie jest monotonnym i mało rozwijającym zajęciem, jako że w kółko powtarzamy te same czynności. Z pomocą przychodzi nam Docker, który wykona te wszystkie operacje za nas.<br/><br/>Potraktuj plik Dockerfile jako instrukcję dla samego siebie w której krok po kroku wykonujesz wszystkie czynnosci mające na celu uruchomienie Twojej aplikacji. Jeśli w toku deploymentu musisz wykonać jakąś czynność to powinna być ona również zawarta w pliku Dockerfile.<br/><br/>Poprawnie skonstruowany plik Dockerfile odwdzięczy Ci się czasem który byś musiał poświęcić na jednorazowy samodzielny deployment aplikacji. Ponadto Twoja aplikacja stanie się bajecznie prosta do przenoszenia pomiędzy serwerami."
+            />
+            <h3 className={styles.sectionContentHeader}>2. Jak zbudować obraz z pliku Dockerfile?</h3>
+            <CodeBlock
+              description="W celu utworzenia obrazu z pliku Dockerfile należy wykonać następującą komendę (Terminal musi znajdować się w katalogu z plikiem Dockerfile)"
+              commands={[
+                "docker build . -t <var>image-name</var>:<var>tag</var>",
+                "<var>EXAMPLE</var> docker build . -t jakubwojtysiak.online:v1.0",
+              ]}
+            />
+            <h3 className={styles.sectionContentHeader}>3. Jak uruchomić obraz Docker z CMD?</h3>
+            <CodeBlock
+              description="W celu uruchomienia wcześniej utworzonego obrazu z pliku Dockerfile należy wykonać następującą komendę"
+              commands={[
+                "docker run -p <var>IP_ADDRESS</var>:<var>LOCAL_BROADCASTING_PORT</var>:<var>OPENED_CONTAINER_PORT</var>/<var>PROTOCOL</var> <var>IMG_ID</var>",
+                "<var>EXAMPLE</var> docker run -p 127.0.0.1:8080:80/tcp <IMG-ID>",
+              ]}
+            />
+            <p className={styles.sectionContentText}>Powyższa komenda uruchamia kontener Docker w naszej lokalnej maszynie na porcie 80. Aplikacja w kontenerze nasłuchuje na porcie 8080. Dokonano mapowania portu kontenera 8080 na port lokalny 80.<br /><br />Jeśli wszystko przebiegło pomyślnie twoja aplikacja powinna być dostepna pod adresem 127.0.0.1:80 lub localhost:80.</p>
+            <ArticleImportantInfo
+              type="hint"
+              title="Czy muszę wskazywać port 80 w URL?"
+              content="Aplikacje Webowe z natury nasłuchują na portach 80 oraz 443. Jeśli dokonasz powyższego mapowania to wystarczy że w pasku URL przeglądarki wpiszesz tylko 127.0.0.1 lub localhost a przeglądarka autoamtycznie przekieruje Cię na port 80.<br/><br/>Dzieje się tak ponieważ wszystkie przeglądarki automatycznie łączą klienta z portem 80 a następnie z portem 443 jeśli dostępny jest certyfikat SSL."
             />
           </div>
         </section>
