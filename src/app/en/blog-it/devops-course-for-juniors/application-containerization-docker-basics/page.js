@@ -29,7 +29,7 @@ export default function ArticlePage() {
     <main className={styles.articlePage}>
       <BlogNavigator
         previousLesson={{ title: "Lesson 1", url: "/en/blog-it/devops-course-for-juniors/how-to-securely-configure-my-first-vps" }}
-        nextLesson={{ title: "Lesson 3", url: "/en/blog-it/devops-course-for-juniors" }}
+        nextLesson={{ title: "Lesson 3", url: "/en/blog-it/devops-course-for-juniors/docker-compose-yaml-basics" }}
       />
       <article>
         <div className={styles.articleContainer}>
@@ -266,6 +266,28 @@ export default function ArticlePage() {
               type="hint"
               title="Dockerfile at a glance..."
               content="Imagine that every time you want to deploy an application on a new server, you have to perform a series of activities to prepare the environment for your application. You must first download the necessary files, then install the libraries, configure the databases and then run the application so that it listens on a given port.<br/><br/>Performing these activities manually is a monotonous and undeveloping task, as we repeat the same activities over and over again. Docker comes to our aid and performs all these operations for us.< br/><br/>Treat the Dockerfile as an instruction for yourself in which you perform all the steps to run your application step by step. If you need to perform any action during deployment, it should also be included in the Dockerfile.<br /><br/>A properly constructed Dockerfile will reward you with the time you would otherwise have to devote to a one-time, independent application deployment. In addition, your application will become incredibly easy to transfer between servers."
+            />
+            <h3 className={styles.sectionContentHeader}>2. How to build an image from a Dockerfile?</h3>
+            <CodeBlock
+              description="To create an image from a Dockerfile, execute the following command (The terminal must be in the directory with the Dockerfile)"
+              commands={[
+                "docker build . -t <var>image-name</var>:<var>tag</var>",
+                "<var>EXAMPLE</var> docker build . -t jakubwojtysiak.online:v1.0",
+              ]}
+            />
+            <h3 className={styles.sectionContentHeader}>3. How to run a Docker image from CMD?</h3>
+            <CodeBlock
+              description="To run the previously created image from the Dockerfile, execute the following command"
+              commands={[
+                "docker run -p <var>IP_ADDRESS</var>:<var>OPENED_CONTAINER_PORT</var>:<var>LOCAL_BROADCASTING_PORT</var>/<var>PROTOCOL</var> <var>IMG_ID</var>",
+                "<var>EXAMPLE</var> docker run -p 127.0.0.1:8080:80/tcp <IMG-ID>",
+              ]}
+            />
+            <p className={styles.sectionContentText}>The above command starts the Docker container on our local machine on port 80. The application in the container listens on port 8080. The container port 8080 has been mapped to local port 80.<br /><br />If everything went well, your application should be available at 127.0.0.1:80 or localhost:80.</p>
+            <ArticleImportantInfo
+              type="hint"
+              title="Do I have to specify port 80 in the URL?"
+              content="Web applications by default listen on ports 80 and 443. If you do the above mapping, just enter 127.0.0.1 or localhost in the browser's URL bar and the browser will automatically redirect you to port 80.<br/><br/>This happens because all browsers automatically connect the client to port 80 and then to port 443 if an SSL certificate is available."
             />
           </div>
         </section>
