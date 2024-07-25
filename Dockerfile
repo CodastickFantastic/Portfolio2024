@@ -1,6 +1,6 @@
 ### Build img with CMD: 
 ##  docker build . -t jakubwojtysiak.online:v1.0
-##  docker run -p 127.0.0.1:8080:80/tcp <IMG-ID>
+##  docker run -p 127.0.0.1:80:8080/tcp <IMG-ID>
 #
 
 # Use the official secure Node.js image
