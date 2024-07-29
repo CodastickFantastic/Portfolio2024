@@ -40,7 +40,7 @@ const ArBiPage = (): React.JSX.Element => {
                 <div className={styles.right}>
                     <RealizationTile
                         img={heroImg}
-                        link="https://www.skanowanie.pl"
+                        link="https://www.skanerdobiura.pl/"
                         noFollow={true}
                     />
                 </div>
