@@ -85,6 +85,10 @@ export const pages: { pl: string, en: string }[] = [
     {
         pl: "/blog-it/kurs-devops-dla-juniorow/docker-compose-podstawy-yaml",
         en: "/en/blog-it/devops-course-for-juniors/docker-compose-yaml-basics"
+    },
+    {
+        pl: "/blog-it/nowosci-ze-swiata-it/dlaczego-sam-frontend-to-za-malo-w-2024-roku",
+        en: "/en/blog-it/it-news/why-frontend-is-not-enough-in-2024"
     }
 ]
 

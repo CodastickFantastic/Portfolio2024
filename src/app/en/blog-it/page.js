@@ -59,6 +59,12 @@ export default function BlogHomePage() {
         <div className={`${styles.sectionContent} ${styles.articleContainer} ${styles.latestArticels}`}>
           <div className={styles.left}>
             <ArticleTile
+              title="Why is Frontend not enough in 2024?"
+              img={frontend2024}
+              url="/en/blog-it/it-news/why-frontend-is-not-enough-in-2024"
+              content="Today's job market requires developers not only to be able to create attractive and functional user interfaces, but also to understand the entire application ecosystem, including Backend, DevOps and Cybersecurity."
+            />
+            <ArticleTile
               title="Microsoft's great failure - Subjective Opinion"
               img={awariaMicrosoftu}
               url="/en/blog-it/it-news/giant-microsoft-crash-subjective-opinion"
