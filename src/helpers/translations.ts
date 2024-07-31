@@ -89,6 +89,10 @@ export const pages: { pl: string, en: string }[] = [
     {
         pl: "/blog-it/nowosci-ze-swiata-it/dlaczego-sam-frontend-to-za-malo-w-2024-roku",
         en: "/en/blog-it/it-news/why-frontend-is-not-enough-in-2024"
+    },
+    {
+        pl: "/blog-it/kurs-devops-dla-juniorow/jak-hostowac-aplikacje-internetowe-za-pomoca-docker-traefik",
+        en: "/en/blog-it/devops-course-for-juniors/how-to-securely-host-website-with-docker-and-traefik"
     }
 ]
 

@@ -378,4 +378,26 @@
         <xhtml:link rel="alternate" hreflang="en"
             href="https://jakubwojtysiak.online/en/blog-it/it-news/why-frontend-is-not-enough-in-2024" />
     </url>
+    <url>
+        <loc>
+            https://jakubwojtysiak.online/blog-it/kurs-devops-dla-juniorow/jak-hostowac-aplikacje-internetowe-za-pomoca-docker-traefik</loc>
+        <lastmod>2024-07-30</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1</priority>
+        <xhtml:link rel="alternate" hreflang="pl"
+            href="https://jakubwojtysiak.online/blog-it/kurs-devops-dla-juniorow/jak-hostowac-aplikacje-internetowe-za-pomoca-docker-traefik" />
+        <xhtml:link rel="alternate" hreflang="en"
+            href="https://jakubwojtysiak.online/en/blog-it/devops-course-for-juniors/how-to-securely-host-website-with-docker-and-traefik" />
+    </url>
+    <url>
+        <loc>
+            https://jakubwojtysiak.online/en/blog-it/devops-course-for-juniors/how-to-securely-host-website-with-docker-and-traefik</loc>
+        <lastmod>2024-07-30</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1</priority>
+        <xhtml:link rel="alternate" hreflang="pl"
+            href="https://jakubwojtysiak.online/blog-it/kurs-devops-dla-juniorow/jak-hostowac-aplikacje-internetowe-za-pomoca-docker-traefik" />
+        <xhtml:link rel="alternate" hreflang="en"
+            href="https://jakubwojtysiak.online/en/blog-it/devops-course-for-juniors/how-to-securely-host-website-with-docker-and-traefik" />
+    </url>
 </urlset>
