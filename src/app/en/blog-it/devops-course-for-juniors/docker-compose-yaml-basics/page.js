@@ -26,7 +26,7 @@ export default function ArticlePage() {
     <main className={styles.articlePage}>
       <BlogNavigator
         previousLesson={{ title: "Lesson 2", url: "/en/blog-it/devops-course-for-juniors/application-containerization-docker-basics" }}
-        nextLesson={{ title: "Lesson 4", url: "/en/blog-it/devops-course-for-juniors" }}
+        nextLesson={{ title: "Lesson 4", url: "/en/blog-it/devops-course-for-juniors/how-to-securely-host-website-with-docker-and-traefik" }}
       />
       <article>
         <div className={styles.articleContainer}>

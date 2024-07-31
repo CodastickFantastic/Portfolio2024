@@ -24,6 +24,10 @@
         .tile {
             width: 32%;
             flex: 1 1 auto;
+
+            &:last-of-type{
+                max-width: 32%;
+            }
         }
 
     }

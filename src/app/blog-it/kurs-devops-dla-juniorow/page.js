@@ -38,8 +38,8 @@ export default function KursDevOpsDlaJuniorow() {
               { text: "Bezpieczna konfiguracja serwera VPS ", url: "/blog-it/kurs-devops-dla-juniorow/jak-bezpiecznie-skonfigurowac-moj-pierwszy-serwer-vps", icon: "pageIcon" },
               { text: "Dokeryzacja Aplikacji - Podstawy Docker’a", url: "/blog-it/kurs-devops-dla-juniorow/dokeryzacja-aplikacji-podstawy-dockera", icon: "pageIcon" },
               { text: "Docker Compose - Podstawy YAML’a", url: "/blog-it/kurs-devops-dla-juniorow/docker-compose-podstawy-yaml", icon: "pageIcon" },
+              { text: "Pokaż Aplikację Światu - Traefik Reverse Proxy", url: "/blog-it/kurs-devops-dla-juniorow/jak-hostowac-aplikacje-internetowe-za-pomoca-docker-traefik", icon: "pageIcon" },
               { text: "Składowanie Obrazu - Github Container Registry", url: "/blog-it/kurs-devops-dla-juniorow", icon: "pageIcon", notAvailable: true },
-              { text: "Pokaż Aplikację Światu - Traefik Reverse Proxy", url: "/blog-it/kurs-devops-dla-juniorow", icon: "pageIcon", notAvailable: true },
               { text: "CI/CD Docker x GithubActions", url: "/blog-it/kurs-devops-dla-juniorow", icon: "pageIcon", notAvailable: true }
             ]}
           />
